@@ -26,3 +26,18 @@ nav a {
     text-decoration: none;
     padding: 35px;
 }
+
+main {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: 3(1fr);
+}
+
+main h2 {
+    text-align: center;
+    text-decoration: underline;
+}
+
+main section ul li {
+    list-style: none;
+}
