@@ -16,7 +16,7 @@ header {
 }
 #td-headshot {
     max-width: 150px;
-    padding-left: 130px;
+    padding-left: 120px;
     grid-column: 1/2;
     margin: 0px;
 }
