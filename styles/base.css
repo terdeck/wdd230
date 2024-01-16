@@ -1,9 +1,9 @@
-@import url('https://fonts.google.com/specimen/Libre+Baskerville?query=libre');
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&display=swap');
 
 body {
     max-width: 800px;
     margin: 0 auto;
-    font-family: 'libre baskerville', serif;
+    font-family: 'Libre Baskerville', serif;
 }
 #background {
     background-color: #73346F;
@@ -25,7 +25,6 @@ header h1 {
     color: white;
     padding-top: 85px;
     padding-right: 150px;
-    z-index: -100px;
     margin: 0px;
 }
 nav {
@@ -58,12 +57,11 @@ main h2 {
 hr {
     color: #73346F;
     justify-content: center;
-    padding: auto 20px;
 }
 .card {
     border-style: solid;
     border-color: #72A67F;
-    margin: 10px;
+    margin: 20px;
 }
 .card h3 {
     background-color: #72A67F;
