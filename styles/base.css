@@ -1,4 +1,4 @@
-@import url('https://fonts.google.com/specimen/Libre+Baskerville?query=baskerville');
+@import url('https://fonts.google.com/specimen/Libre+Baskerville?query=libre');
 
 body {
     max-width: 800px;
@@ -90,5 +90,4 @@ footer {
     margin-top: 200px;
     text-align: center;
     font-family: 'libre baskerville', serif;
-    type
 }
