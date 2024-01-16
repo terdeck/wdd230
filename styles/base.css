@@ -1,28 +1,33 @@
 @import url('https://fonts.google.com/specimen/Libre+Baskerville?query=baskerville');
 
-#content {
-    max-width: 1600px;
+body {
+    max-width: 800px;
     margin: 0 auto;
 }
 #background {
-    height: 600px;
+    /* height: 600px; */
     background-color: #73346F;
 }
 header {
     justify-self: center;
     display: grid;
-    grid-template-columns: .25fr 1fr .25fr;
+    grid-template-columns: 2(1fr);
+    padding: 50px;
+    /* margin: 2px auto; */
 }
-.td-headshot {
-    max-width: 200px;
-    margin-top: 50px;
-    margin: 2px auto;
-    grid-column: 2/3;
+#td-headshot {
+    max-width: 150px;
+    padding-left: 130px;
+    grid-column: 1/2;
+    margin: 0px;
 }
 header h1 {
     grid-column: 2/3;
     color: white;
-    margin: 2px auto;
+    padding-top: 85px;
+    padding-right: 150px;
+    z-index: -100px;
+    margin: 0px;
 }
 nav {
     display: block; /* block items take up the full width available by default */
@@ -51,21 +56,35 @@ main {
 }
 main h2 {
     text-align: center;
+    font-weight: 100;
+    padding: 0px;
 }
 hr {
     color: #73346F;
     justify-content: center;
+    padding: auto 20px;
 }
-#card {
+.card {
+    border-style: solid;
+    border-color: #72A67F;
+}
+.card h3 {
     background-color: #72A67F;
-}
-#card h3 {
     color: white;
+    text-align: center;
+    font-size: large;
+    font-weight:700;
+    margin: 0;
 }
 li {
     list-style-type: none;
     text-decoration: none;
     list-style: none;
+    padding: 4px 0px 4px 0px;
+}
+section p {
+    /* padding: 0px 0px 0px 40px; */
+    text-align: center;
 }
 footer {
     background-color: #73346F;
@@ -73,8 +92,9 @@ footer {
     font-size: 1em;
     padding: 25px 50px;
     margin-top: 200px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    text-align: center;
+    /* display: flex; */
+    /* justify-content: center;
+    align-items: center; */
     text-decoration: none;
 }
