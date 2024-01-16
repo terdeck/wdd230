@@ -3,6 +3,7 @@
 body {
     max-width: 800px;
     margin: 0 auto;
+    font-family: 'libre baskerville', serif;
 }
 #background {
     background-color: #73346F;
@@ -10,7 +11,7 @@ body {
 header {
     justify-self: center;
     display: grid;
-    grid-template-columns: 2(1fr);
+    grid-template-columns: 1fr 1fr;
     padding: 50px;
 }
 #td-headshot {
@@ -88,4 +89,6 @@ footer {
     padding: 25px 50px;
     margin-top: 200px;
     text-align: center;
+    font-family: 'libre baskerville', serif;
+    type
 }
