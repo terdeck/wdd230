@@ -64,7 +64,7 @@ hr {
 }
 .card h3 {
     background-color: #72A67F;
-    color: white;
+    color: black; /* change to different shade later */
     text-align: center;
     font-size: large;
     font-weight:700;
