@@ -53,5 +53,18 @@
     footer {
         margin-top: 10px;
         padding: 10px;
+        display: grid;
+        grid-template-columns: 1fr .5fr 1fr .25fr;
+        grid-template-rows: .5fr .5fr;
+    }
+    footer p {
+        margin-top: 10px;
+        /* grid-column: 1/5;
+        grid-row: 1/2; */
+    }
+    #modified, #lastModified {
+        margin-top: 10px;
+        grid-column: 1/5;
+        grid-row: 2/3;
     }
 }

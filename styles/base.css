@@ -95,3 +95,6 @@ footer {
     text-align: center;
     font-family: 'libre baskerville', serif;
 }
+#modified, #lastModified {
+    font-size: small;
+}
