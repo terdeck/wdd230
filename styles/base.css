@@ -12,18 +12,20 @@ header {
     justify-self: center;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    padding: 50px;
+    padding: 30px;
 }
 #td-headshot {
     max-width: 150px;
-    padding-left: 120px;
+    justify-content: center;
     grid-column: 1/2;
+    padding-right: 30px;
     margin: 0px;
 }
 header h1 {
     grid-column: 2/3;
     color: white;
-    padding-top: 85px;
+    padding: 85px 0px 0px 20px;
+    justify-content: center;
     margin: 0px;
 }
 nav {
@@ -54,20 +56,25 @@ main h2 {
     padding: 0px;
 }
 hr {
-    color: #73346F;
     justify-content: center;
+    border: .5px solid;
 }
 .card {
     border-style: solid;
-    border-color: #72A67F;
+    /* border-color: #72A67F; */
+    border-color: #73346F;  /* main purple */
+    border-radius: 5px;
     margin: 20px;
 }
 .card h3 {
-    background-color: #72A67F;
-    color: black; /* change to different shade later */
+    /* background-color: #72A67F; */ /* sage green try to get it to work again later */
+    border-radius: 2.5px;
+    background-color: #73346F;  /* main purple */
+    color: white;
     text-align: center;
     font-size: large;
     font-weight:700;
+    padding: .5em;
     margin: 0;
 }
 li {
