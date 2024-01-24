@@ -6,7 +6,7 @@
     }
     main {
         display: grid;
-        grid-template-columns: 4(1fr);
+        grid-template-columns: repeat(4, 1fr);
         grid-template-rows: .5fr 1fr;
     }
     .card {
@@ -23,7 +23,7 @@
         grid-row: 2/3;
         max-width: 630px;
     }
-    #design-example {
+    .design-example {
         max-width: 285px;
     }
     #card3 img {

@@ -37,7 +37,7 @@ main {
     padding: 7px;
     /* max-width: 600px; */
     display: grid;
-    grid-template-columns: 5(1fr);
+    grid-template-columns: repeat(5, 1fr);
     justify-content: center;
 }
 .card {
@@ -75,7 +75,7 @@ main {
 #card3 {
     grid-column: 4/5;
 }
-#design-example {
+.design-example {
     max-width: 337px;
     justify-content: center;
     margin: 10px 5px 5px 5px;
