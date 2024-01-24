@@ -1,9 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&display=swap');
 
 body {
     max-width: 800px;
     margin: 0 auto;
-    font-family: 'Libre Baskerville', serif;
+    font-family: 'Montserrat', sans-serif;
 }
 #background {
     background-color: #73346F;
@@ -46,7 +46,7 @@ hr {
 }
 .card h3 {
     /* background-color: #72A67F; */ /* sage green try to get it to work again later */
-    border-radius: 2.5px;
+    border-radius: 2.5px 2.5px 0px 2.5px;
     background-color: #73346F;  /* main purple */
     color: white;
     text-align: center;

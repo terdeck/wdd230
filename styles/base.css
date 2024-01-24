@@ -68,7 +68,7 @@ hr {
 }
 .card h3 {
     /* background-color: #72A67F; */ /* sage green try to get it to work again later */
-    border-radius: 2.5px;
+    border-radius: 2.5px 2.5px 0px 2.5px;
     background-color: #73346F;  /* main purple */
     color: white;
     text-align: center;
