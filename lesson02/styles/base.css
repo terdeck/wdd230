@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&display=swap');
+
+body {
+    max-width: 800px;
+    margin: 0 auto;
+    font-family: 'Libre Baskerville', serif;
+}
+#background {
+    background-color: #73346F;
+}
+header {
+    justify-self: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 30px;
+}
+header h1 {
+    grid-column: 2/3;
+    color: white;
+    padding: 85px 0px 0px 20px;
+    justify-content: center;
+    margin: 0px;
+}
+main {
+    margin: 40px auto;
+    border-radius: 5px;
+    background-color: white;
+    padding: 20px;
+    max-width: 600px;
+}
+/* main h2 {
+    text-align: center;
+    font-weight: 100;
+    padding: 0px;
+}
+hr {
+    justify-content: center;
+    border: .5px solid;
+} */
+.card {
+    border-style: solid;
+    /* border-color: #72A67F; */
+    border-color: #73346F;  /* main purple */
+    border-radius: 5px;
+    margin: 20px;
+}
+.card h3 {
+    /* background-color: #72A67F; */ /* sage green try to get it to work again later */
+    border-radius: 2.5px;
+    background-color: #73346F;  /* main purple */
+    color: white;
+    text-align: center;
+    font-size: large;
+    font-weight:700;
+    padding: .5em;
+    margin: 0;
+}
+li {
+    list-style-type: none;
+    text-decoration: none;
+    list-style: none;
+    padding: 4px 0px 4px 0px;
+}
+section p {
+    text-align: center;
+}
+footer {
+    background-color: #73346F;
+    color: white;
+    font-size: 1em;
+    padding: 25px 50px;
+    margin-top: 200px;
+    text-align: center;
+    font-family: 'libre baskerville', serif;
+}
+#modified, #lastModified {
+    font-size: small;
+}
