@@ -1,70 +1,31 @@
 @media screen and (min-width: 720px) {
     body {
         max-width: 1600px;
-        column-gap: 0px;
+        /* column-gap: 0px; */
     }
-    header {
+    /* header {
         grid-template-columns: 1fr .5fr 1fr .25fr;
-    }
-    #td-headshot {
-        grid-column: 2/3;
-        box-shadow: 0 0 35px black;
-        padding: 0px;
-    }
-    header h1 {
+    } */
+    /* header h1 {
         padding-left: 20px;
         grid-column: 3/4;
-    }
-	nav {
-		display: flex;
-        justify-content: center;
-		flex: 1 1 100%;
-	}
-    nav a {
-        padding: 15px 45px 15px 45px;
-        margin-bottom: 0px;
-    }
-    .home-grid {
-        display: grid;
-        grid-template-columns: .25fr 2fr 1fr .25fr;
-        grid-template-rows: .25fr .25fr 2fr;
-        margin-bottom: 0px;
-    }
-    .card {
+    } */
+    /* .card {
         margin: 10px;
-        box-shadow: 0 0 15px gray;
-    }
-    main h2 {
+    } */
+    /* main h2 {
         grid-column: 2/4;
         grid-row: 1/2;
         margin-bottom: 5px;
-    }
-    hr {
-        grid-column: 2/4;
-        grid-row: 2/3;
-        margin: 0px 10px;
-    }
-    #learn {
-        grid-column: 2/3;
-    }
-    #info {
-        grid-column: 3/4;
-    }
+    } */
     footer {
-        margin-top: 10px;
-        padding: 10px;
         display: grid;
-        grid-template-columns: 1fr .5fr 1fr .25fr;
-        grid-template-rows: .5fr .5fr;
+        grid-template-columns: .5fr 1fr .5fr;
     }
     footer p {
-        margin-top: 10px;
-        /* grid-column: 1/5;
-        grid-row: 1/2; */
-    }
-    #modified, #lastModified {
-        margin-top: 10px;
-        grid-column: 1/5;
-        grid-row: 2/3;
+        grid-column: 2/3;
+        justify-content: center;
+        margin: 0px;
+        padding: 0px;
     }
 }

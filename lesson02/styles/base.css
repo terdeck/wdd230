@@ -2,56 +2,85 @@
 
 body {
     max-width: 800px;
-    margin: 0 auto;
+    margin: 0px auto;
     font-family: 'Montserrat', sans-serif;
 }
 #background {
     background-color: #73346F;
-}
-header {
-    justify-self: center;
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    padding: 30px;
+    /* justify-content: center; */
+    grid-template-rows: 1fr .5fr;
+    grid-template-columns: .5fr 1fr .5fr;
+    padding: 20px;
 }
 header h1 {
+    grid-row: 1/2;
+    grid-column: 1/4;
+    color: white;
+    /* padding: 10px 0px 0px 10px; */
+    /* justify-content: center; */
+    /* margin: 0px; */
+}
+header h2 {
+    grid-row: 2/3;
     grid-column: 2/3;
     color: white;
-    padding: 85px 0px 0px 20px;
-    justify-content: center;
-    margin: 0px;
+    font-size: xx-large;
+    /* justify-content: center; */
+    /* padding: 20px 0px 0px 10px; */
+    /* margin: 0px; */
 }
 main {
-    margin: 40px auto;
+    margin: 5px;
     border-radius: 5px;
     background-color: white;
-    padding: 20px;
-    max-width: 600px;
+    padding: 7px;
+    /* max-width: 600px; */
+    display: grid;
+    grid-template-columns: 5(1fr);
+    justify-content: center;
 }
 .card {
+    max-width: 350px;
     border-style: solid;
-    /* border-color: #72A67F; */
-    border-color: #73346F;  /* main purple */
-    border-radius: 5px;
-    margin: 20px;
+    border-color: #73346F;
+    border-radius: 10px 10px 0px 0px;
+    margin: 10px;
+    background-color: #ece9ec;
 }
-.card h2 {
-    /* background-color: #72A67F; */ /* sage green try to get it to work again later */
-    border-radius: 2.5px 2.5px 0px 0px;
-    background-color: #73346F;  /* main purple */
+.card h3 {
+    border-radius: 5px 5px 0px 0px;
+    background-color: #73346F; 
     color: white;
-    text-align: center;
-    font-size: large;
+    text-align: left;
+    font-size: larger;
     font-weight:700;
     padding: .5em;
     margin: 0;
 }
+.card p, a {
+    text-align: left;
+
+    margin: .5em;
+}
+.card a {
+    color: blue;
+}
+#card1 {
+    grid-column: 2/3;
+}
+#card2 {
+    grid-column: 3/4;
+}
+#card3 {
+    grid-column: 4/5;
+}
 #design-example {
-    max-width: 500px;
+    max-width: 337px;
     justify-content: center;
-    /* grid-column: 1/2; */
-    padding-right: 30px;
-    margin: 0px;
+    margin: 10px 5px 5px 5px;
+    border-style: solid;
+    border-color: #73346F;
 }
 li {
     list-style-type: none;
@@ -66,11 +95,5 @@ footer {
     background-color: #73346F;
     color: white;
     font-size: 1em;
-    padding: 25px 50px;
-    margin-top: 200px;
     text-align: center;
-    font-family: 'libre baskerville', serif;
-}
-#modified, #lastModified {
-    font-size: small;
 }
