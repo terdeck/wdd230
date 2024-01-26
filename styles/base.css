@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&display=swap');
+/* main base */
 
 body {
     max-width: 800px;
@@ -42,6 +43,12 @@ nav a {
     list-style-type: none;
     text-decoration: none;
     font-size: larger;
+}
+.show li {
+    display: block;
+}
+#menu.show::before {
+    content: "x";
 }
 main {
     margin: 40px auto;

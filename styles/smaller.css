@@ -1,4 +1,17 @@
 @media screen and (min-width: 500px) {
+    /* main smaller */
+    
+    nav {
+        display: flex;
+    }
+    nav a {
+        display: block;
+        flex: 1 1 100%;
+        text-align: center;
+    }
+    #menu {
+        display: none;
+    }
     main {
         display: grid;
         /* grid-template-columns: 1fr 1fr; */
