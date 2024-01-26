@@ -53,15 +53,15 @@ body {
 ol, ul {
 	list-style: inherit;
 }
-/* blockquote, q {
+blockquote, q {
 	quotes: inherit;
-} */
-/* blockquote:before, blockquote:after,
+}
+blockquote:before, blockquote:after,
 q:before, q:after {
 	content: '';
 	content: none;
-} */
-/* table {
+}
+table {
 	border-collapse: inherit;
 	border-spacing: inherit;
-} */
+}
