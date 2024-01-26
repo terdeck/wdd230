@@ -28,8 +28,10 @@
     }
     .home-grid {
         display: grid;
-        grid-template-columns: .25fr 2fr 1fr .25fr;
-        grid-template-rows: .25fr .25fr 2fr;
+        /* grid-template-columns: .25fr 2fr 1fr .25fr; */
+        grid-template-columns: repeat(4, auto);
+        /* grid-template-rows: .25fr .25fr 2fr; */
+        grid-template-rows: repeat(3, auto);
         margin-bottom: 0px;
     }
     .card {
@@ -52,12 +54,18 @@
     #info {
         grid-column: 3/4;
     }
+    iframe {
+        grid-column: 2/4;
+    }
     footer {
         margin-top: 10px;
         padding: 10px;
         display: grid;
+        text-align: center;
         grid-template-columns: 1fr .5fr 1fr .25fr;
         grid-template-rows: .5fr .5fr;
+        /* grid-template-columns: repeat(4, auto);
+        grid-template-rows: repeat(2, auto); */
     }
     footer p {
         margin-top: 10px;
