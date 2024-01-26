@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&display=swap');
-/* main base */
+/* main page base */
 
 body {
     max-width: 800px;
@@ -12,7 +12,7 @@ body {
 header {
     justify-self: center;
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(2, auto);
     padding: 30px;
 }
 #td-headshot {
@@ -30,7 +30,8 @@ header h1 {
     margin: 0px;
 }
 nav {
-    display: block; /* block items take up the full width available by default */
+    display: flex; /* block items take up the full width available by default */
+    flex: 1 1 100%;
     background-color: black;
     text-align: center;
 }
@@ -43,12 +44,6 @@ nav a {
     list-style-type: none;
     text-decoration: none;
     font-size: larger;
-}
-.show li {
-    display: block;
-}
-#menu.show::before {
-    content: "x";
 }
 main {
     margin: 40px auto;
