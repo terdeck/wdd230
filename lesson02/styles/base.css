@@ -2,14 +2,16 @@
 /* lesson 2 base - should be small */
 
 body {
-    /* max-width: 1600px; */
+    max-width: 375px;
     margin: 0px auto;
     font-family: 'Montserrat', sans-serif;
 }
 #background {
     background-color: #73346F;
-
     padding: 20px;
+}
+header {
+    justify-content: center;
 }
 header h1 {
     color: white;
@@ -26,7 +28,6 @@ main {
     background-color: white;
     padding: 7px;
     display: grid;
-    /* grid-template-columns: repeat(5, auto); */
     grid-template-columns: 1fr;   /* only 1fr for mobile view - no positioning for cards */
     justify-content: center;
 }
@@ -37,6 +38,7 @@ main {
     border-radius: 10px 10px 0px 0px;
     margin: 10px;
     background-color: #ece9ec;
+    justify-content: 100%;
 }
 .card h3 {
     border-radius: 5px 5px 0px 0px;
@@ -55,15 +57,6 @@ main {
 }
 .card a {
     color: blue;
-}
-#card1 {
-    grid-column: 2/3;
-}
-#card2 {
-    grid-column: 3/4;
-}
-#card3 {
-    grid-column: 4/5;
 }
 .design-example {
     max-width: 337px;

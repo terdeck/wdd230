@@ -1,16 +1,37 @@
 @media screen and (min-width: 720px) {
+/* lesson 2 larger */
+
     body {
-        max-width: 1600px;
-        /* column-gap: 0px; */
+        max-width: 90%;
+        margin: 0 auto;
     }
-    footer {
+    main {
         display: grid;
-        grid-template-columns: .5fr 1fr .5fr;
-    }
-    footer p {
-        grid-column: 2/3;
+        grid-template-columns: repeat(5, 1fr); 
+        /* grid-template-columns: .5fr 1fr 1fr 1fr .5fr; */
+        grid-template-rows: 1fr; 
         justify-content: center;
-        margin: 0px;
-        padding: 0px;
+    }
+    .design-example {
+        max-width: 285px;
+    }
+    .card {
+        max-width: 330px;
+    }
+    #card1 {
+        grid-column: 2/3;
+        grid-row: 1/2;
+    }
+    #card2 {
+        grid-column: 3/4;
+        grid-row: 1/2;
+    }
+    #card3 {
+        grid-column: 4/5;
+        grid-row: 1/2;
+        max-width: 285px;
+    }
+    #card3 .design-example {
+        max-width: 270px;
     }
 }
