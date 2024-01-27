@@ -9,8 +9,8 @@
     <title>Tara Decker - WDD 230 - Web Frontend Development</title>
     <link rel="icon" href="favicon.ico">
     <link rel="stylesheet" href="styles/normalize.css">  <!-- normalize css stylesheet -->
-    <link rel="stylesheet" type="text/css" href="styles/base.css">
-    <link rel="stylesheet" type="text/css" href="styles/smaller.css">
+    <link rel="stylesheet" type="text/css" href="styles/base.css"> 
+    <!-- <link rel="stylesheet" type="text/css" href="styles/smaller.css"> -->
     <link rel="stylesheet" type="text/css" href="styles/larger.css">
     <meta name="description" content="Tara Decker WDD 230 Frontend Development I course assignment portal">
     <meta name="author" content="Tara Decker">
@@ -26,7 +26,7 @@
         <img id="td-headshot" src="images/td_headshot.jpg" alt="Tara Decker photo">
         <h1>Tara Decker</h1>
     </header>
-    <a id="menu" href="#"></a>
+    <button id="menu"></button>
     <nav class="navigation">
         <a href="index.html">Home</a>
         <a href="">Site Plan</a>
@@ -35,31 +35,33 @@
         <a href="https://www.churchofjesuschrist.org/study/scriptures/ot/isa/54?lang=eng&id=p10#p10" target="_blank"
             rel="noopener noreferrer">Scripture</a>
     </nav>
-    <main class="home-grid">
+    <main>
         <h2>WDD 230: Web Frontend Development</h2>
         <hr>
-        <section class="card" id="learn">
-            <h3>Learning Activities</h3>
-            <ul>
-                <li>01: <a href="lesson01/holygrail.html">Holy Layout</a> | <a href="https://codepen.io/terdeck/pen/qBvqXOx">JS Pen</a></li>
-                <li>02: <a href="lesson02/media-query.html">Media Query</a> | <a href="lesson02/design-principles.html">Design Principles Document</a></li>
-                <li>03: <a href="https://github.com/terdeck/wdd230/blob/main/lesson03/images/css-combinators.png">Combinators</a> | <a href="https://codepen.io/terdeck/pen/BabmaNb">Pseudo-Element</a> | <a href="https://codepen.io/terdeck/pen/bGZYNRq">Responsive Menu</a></li>
-                <!-- <li>04: <a href="#"> </a><a href=""></a></li> -->
-                <!-- <li>05: <a href="#"> </a><a href=""></a></li> -->
-                <!-- <li>06: <a href="#"> </a><a href=""></a></li> -->
-                <!-- <li>07: <a href="#"> </a><a href=""></a></li> -->
-                <!-- <li>08: <a href="#"> </a><a href=""></a></li> -->
-                <!-- <li>09: <a href="#"> </a><a href=""></a></li> -->
-                <!-- <li>10: <a href="#"> </a><a href=""></a></li> -->
-            </ul>
-        </section>
-        <section class="card" id="info">
-            <h3>Information</h3>
-            <p>Location</p>
-            <p>Forecast</p>
-            <p>Page Visits: </p>
-        </section>
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d51891.43371488566!2d-117.70232724976974!3d35.62243555772381!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c16cbc000c8aa5%3A0xdcb273036710aeba!2sRidgecrest%2C%20CA%2093555!5e0!3m2!1sen!2sus!4v1706236367857!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <div class="home-grid">
+            <section class="card" id="learn">
+                <h3>Learning Activities</h3>
+                <ul>
+                    <li>01: <a href="lesson01/holygrail.html">Holy Layout</a> | <a href="https://codepen.io/terdeck/pen/qBvqXOx">JS Pen</a></li>
+                    <li>02: <a href="lesson02/media-query.html">Media Query</a> | <a href="lesson02/design-principles.html">Design Principles Document</a></li>
+                    <li>03: <a href="https://github.com/terdeck/wdd230/blob/main/lesson03/images/css-combinators.png">Combinators</a> | <a href="https://codepen.io/terdeck/pen/BabmaNb">Pseudo-Element</a> | <a href="https://codepen.io/terdeck/pen/bGZYNRq">Responsive Menu</a></li>
+                    <!-- <li>04: <a href="#"> </a><a href=""></a></li> -->
+                    <!-- <li>05: <a href="#"> </a><a href=""></a></li> -->
+                    <!-- <li>06: <a href="#"> </a><a href=""></a></li> -->
+                    <!-- <li>07: <a href="#"> </a><a href=""></a></li> -->
+                    <!-- <li>08: <a href="#"> </a><a href=""></a></li> -->
+                    <!-- <li>09: <a href="#"> </a><a href=""></a></li> -->
+                    <!-- <li>10: <a href="#"> </a><a href=""></a></li> -->
+                </ul>
+            </section>
+            <section class="card" id="info">
+                <h3>Information</h3>
+                <p>Location</p>
+                <p>Forecast</p>
+                <p>Page Visits: </p>
+            </section>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d51891.43371488566!2d-117.70232724976974!3d35.62243555772381!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c16cbc000c8aa5%3A0xdcb273036710aeba!2sRidgecrest%2C%20CA%2093555!5e0!3m2!1sen!2sus!4v1706236367857!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
     </main>
     <footer>
         <p>&copy; <span id="copyright"></span><br>
@@ -68,6 +70,7 @@
         <p id="modified">Last Modification: <span id="lastModified"></span></p>
     </footer>
     <script src="scripts/getdates.js"></script>
+    <script src="scripts/hamnav.js"></script>
 </body>
 
 </html>

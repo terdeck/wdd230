@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&display=swap');
-/* lesson 2 base */
+/* lesson 2 base - should be small */
 
 body {
     /* max-width: 1600px; */
@@ -26,7 +26,8 @@ main {
     background-color: white;
     padding: 7px;
     display: grid;
-    grid-template-columns: repeat(5, auto);
+    /* grid-template-columns: repeat(5, auto); */
+    grid-template-columns: 1fr;   /* only 1fr for mobile view - no positioning for cards */
     justify-content: center;
 }
 .card {
