@@ -6,7 +6,8 @@
 .color-theme_redwood-park-palette-2-hex { color: #523000; }
 .color-theme_redwood-park-palette-3-hex { color: #8B2F00; }
 .color-theme_redwood-park-palette-4-hex { color: #FFC283; }
-.color-theme_redwood-park-palette-5-hex { color: #B5B016; }
+/* .color-theme_redwood-park-palette-5-hex { color: #B5B016; } lighter green that wasn't working*/ 
+.color-theme_redwood-park-palette-5-hex { color: #5F6E0E; } /* darker green still a bit persnickety */
 
 body{
     margin: 0 auto;
@@ -63,13 +64,17 @@ main h2 {
     text-align: center;
     font-weight: bold;
     padding: 0px;
-    color:#B5B016
+    /* color:#809313; */
+    /* color:#748611; */
+    color: #5F6E0E;
 }
 hr {
     justify-content: center;
     min-width: 250px;
     border: 1px solid;
-    color: #B5B016;
+    /* color:#809313; */
+    /* color:#748611; */
+    color: #5F6E0E;
 }
 .card {
     border-style: solid;
@@ -89,7 +94,9 @@ hr {
 }
 .card h4 {
     text-align: center;
-    color:#B5B016;
+    /* color:#809313; */
+    /* color:#748611; */
+    color: #5F6E0E;
 }
 #color img {
     max-width: 250px;
