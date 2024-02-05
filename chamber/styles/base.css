@@ -1,3 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Almarai:wght@400;700;800&display=swap');
+/* chamber site mobile page */
+
 body {
-    display:flex;
+    margin: 0 auto;
+    font-family: 'Almarai', sans-serif;
 }

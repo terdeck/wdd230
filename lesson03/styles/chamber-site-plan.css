@@ -14,18 +14,19 @@ body{
     font-family: 'Almarai', sans-serif;
 }
 #background {
-    background-color: #523000;
+    background-color: #5F6E0E;
 }
 header {
     justify-self: center;
     padding: 30px;
 }
 header h1 {
-    color: #FDFEFF;
+    color: white;
     padding: 5px;
     justify-content: center;
     margin: 0px;
     text-align: center;
+    font-size:xx-large;
 }
 .navigation {
     display: flex;
@@ -35,7 +36,7 @@ header h1 {
     text-align: center;
     justify-content: space-around;
     background-color: #FDFEFF;
-    color: #523000;
+    color: #5F6E0E;
 }
 .navigation a {
     /* display: none; */
@@ -66,7 +67,7 @@ main h2 {
     padding: 0px;
     /* color:#809313; */
     /* color:#748611; */
-    color: #5F6E0E;
+    color: #523000;
 }
 hr {
     justify-content: center;
@@ -74,20 +75,20 @@ hr {
     border: 1px solid;
     /* color:#809313; */
     /* color:#748611; */
-    color: #5F6E0E;
+    color: #523000;
 }
 .card {
     border-style: solid;
-    border-color: #523000;
+    border-color: #5F6E0E;
     border-radius: 5px;
     margin: 20px;
 }
 .card h3 {
     border-radius: 2.5px 2.5px 0px 0px;
-    background-color: #523000; 
+    background-color: #5F6E0E; 
     color: #FDFEFF;
     text-align: center;
-    font-size: large;
+    font-size: x-large;
     font-weight:700;
     padding: .5em;
     margin: 0;
@@ -96,7 +97,7 @@ hr {
     text-align: center;
     /* color:#809313; */
     /* color:#748611; */
-    color: #5F6E0E;
+    color: #523000;
 }
 #color img {
     max-width: 250px;
