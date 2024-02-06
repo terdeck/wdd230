@@ -1,0 +1,57 @@
+@media screen and (min-width: 640px) {
+    /* chamber medium */
+    body {
+        max-width: 800px;
+    }
+    nav {
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    nav a {
+        display: block;
+        padding: 1rem;
+        text-decoration: none;
+        color: #523000;
+        font-weight: 700;
+        transition: 0.5s;
+        font-size: clamp(1rem, 2vmin, 1.5rem);
+    }
+    nav a:hover, nav a:active {
+        color: #523000;
+        background-color: #FFC283;
+    }
+    #menu {
+        display: none;
+    }
+    #hero {
+        display: grid;
+        grid-template-rows: 2fr 1fr;
+    }
+    #hero-img {
+        grid-row: 1/2;
+        max-width: 550px;
+        justify-self: center;
+    }
+    #hero-msg {
+        grid-row: 2/3;
+        text-align: left;
+    }
+    #background {
+        height: 175px;
+        display: flex;
+        flex-direction: row;
+    }
+    .ads {
+        max-height: 165px;
+        justify-items: center;
+        padding: 5px;
+    }
+    .ad-msg {
+        padding: 20px 5px;
+    }
+    footer {
+        display: block;
+        max-height: 200px;
+        font-weight: 600;
+    }
+}

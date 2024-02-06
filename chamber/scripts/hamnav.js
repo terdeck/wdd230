@@ -1,6 +1,6 @@
 // chamber hamnav
 
-const navigation = document.querySelector('.navigation');
+const navigation = document.querySelector(nav);
 const hamButton = document.querySelector('#menu');
 
 hamButton.addEventListener('click', () => {

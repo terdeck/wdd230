@@ -1,7 +1,186 @@
 @import url('https://fonts.googleapis.com/css2?family=Almarai:wght@400;700;800&display=swap');
 /* chamber site mobile page */
 
+:root {
+    --back-color: #5F6E0E;
+    --font-color: #523000;
+    --white-color: #FDFEFF;
+    --footer-color: #FFC283;
+}
 body {
+    max-width: 375px;
     margin: 0 auto;
+    font-family: 'Almarai', sans-serif;
+}
+header {
+    background-color: var(--back-color);
+    display: flex;
+    justify-content: center;
+    margin: 0px;
+    max-width: 100%;
+}
+.logo {
+    max-width: 180px;
+    align-items: center;
+    margin: 5px;
+    /* box-shadow: 20px; */
+}
+header h1 {
+    color: FDFEFF;
+    padding: 5px;
+    justify-content: center;
+    margin: 0px;
+    text-align: center;
+    font-size:xx-large;
+}
+#menu {
+    display: block;
+    font-size: 2rem;
+    font-weight: 700;
+    text-decoration: none;
+    padding: .5rem .75rem;
+    background-color: var(--font-color);
+    color: var(--white-color);
+    position: absolute;
+    top: 1rem;
+	right: 1rem;
+}
+#menu::before {
+    content: "≡";
+}
+#menu.open::before {
+	content: "☑️";
+}
+nav {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    text-align: center;
+    background-color: #FDFEFF;
+    color: var(--back-color);
+}
+nav a {
+    display: none;
+    padding: 1rem;
+    text-decoration: none;
+    color: var(--font-color);
+    font-weight: 700;
+    transition: 0.5s;
+    font-size: clamp(1rem, 2vmin, 1.5rem);
+}
+nav a:hover, nav a:active {
+    color: var(--font-color);
+    background-color: var(--footer-color);
+}
+.open a {
+	display: block;
+}
+#hero {
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 100%;
+    text-align: left;
+    justify-content: space-around;
+    padding: 5px;
+    margin: 10px;
+}
+#hero-img {
+    max-width: 375px;
+    /* justify-content: center; */
+    margin: 10px 0px 10px 0px;
+}
+#hero-msg h1 {
+    color: var(--font-color);
+}
+#hero-msg p {
+    color: black;
+    padding: 10px 0px;
+    text-align: left;
+}
+.join {
+    text-align: left;
+    color: var(--white-color);
+    background-color: var(--font-color);
+    padding: 10px;
+    text-decoration: none;
+    margin: 12px 0px;
+}
+.join a {
+    padding: 1rem;
+    text-decoration: none;
+    font-weight: 700;
+    transition: 0.5s;
+    font-size: clamp(1rem, 2vmin, 1.5rem);
+}
+.join a:hover, join a:active {
+    color: var(--font-color);
+    background-color: var(--footer-color);
+}
+#background {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    background-color: var(--back-color);
+    height: 275px;
+    margin: 40px 0px;
+}
+.ads {
+    max-height: 150px;
+    grid-row: 1/2;
+    padding: 5px 5px;
+    justify-content: center;
+}
+.ad-msg {
+    grid-row: 2/3;
+    color: var(--white-color);
+    text-align: left;
+    padding: 5px 10px;
+    margin: 5px;
+    font-size: larger;
+    font-weight:600;
+}
+main h2 {
+    color: var(--font-color);
+    text-align: left;
+    padding: 5px;
+    margin: 10px 0px -5px 10px;
+}
+.events {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 0px;
+}
+.fair {
+    grid-column: 1/2;
+    text-align: left;
+    padding: 5px;
+    margin: 5px 5px 5px 10px;
+}
+.fair h3 {
+    color: var(--font-color)
+}
+.sebastion {
+    grid-column: 2/3;
+    text-align: left;
+    padding: 5px;
+    margin: 10px;
+}
+.sebastion h3 {
+    color: var(--font-color);
+}
+.weather {
+    margin: 20px 0px 40px 0px;
+    max-width: 375;
+}
+footer {
+    display: flex;
+    max-height: 300px;
+    background-color: var(--footer-color);
+    padding: 10px 0px;
+    text-align: center;
+    color: var(--font-color);
+    /* font-weight: 500; */
+}
+#modified, #lastModified {
+    font-size: medium;
     font-family: 'Almarai', sans-serif;
 }
