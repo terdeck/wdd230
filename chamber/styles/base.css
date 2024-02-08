@@ -94,11 +94,14 @@ header h1 {
 }
 #hero-msg h1 {
     color: var(--font-color);
+    padding: 0px;
 }
 #hero-msg p {
     color: black;
-    padding: 10px 0px;
+    padding: 5px 0px;
     text-align: left;
+    margin-top: -10px;
+    margin-bottom: 23px;
 }
 .join {
     text-align: left;
@@ -106,7 +109,7 @@ header h1 {
     background-color: var(--font-color);
     padding: 10px;
     text-decoration: none;
-    margin: 12px 0px;
+    margin: 15px 0px;
 }
 .join a {
     padding: 1rem;
