@@ -59,7 +59,7 @@ header h1 {
     flex-direction: column;
     list-style: none;
     text-align: center;
-    background-color: #FDFEFF;
+    background-color: var(--white-color);
     color: var(--back-color);
 }
 .navigation a {
