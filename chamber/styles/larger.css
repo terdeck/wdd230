@@ -4,6 +4,11 @@
     body {
         max-width: 90%;
     }
+    /* header {
+        padding: 0px;
+        margin: 0px;
+        width: 100vw;
+        } */
     #hero {
         display: grid;
         grid-template-columns: 2fr 1fr;

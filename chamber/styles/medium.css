@@ -3,6 +3,11 @@
     body {
         max-width: 800px;
     }
+    /* header {
+    padding: 0px;
+    margin: 0px;
+    width: 100vw;
+    } */
     nav {
         flex-direction: row;
         justify-content: space-around;
@@ -29,7 +34,7 @@
     }
     #hero-img {
         grid-row: 1/2;
-        max-width: 550px;
+        max-width: 525px;
         justify-self: center;
     }
     #hero-msg {
@@ -49,6 +54,9 @@
     .ad-msg {
         padding: 20px 5px;
     }
+    /* .weather {
+        max-width: 100%;
+    } */
     footer {
         display: block;
         max-height: 200px;

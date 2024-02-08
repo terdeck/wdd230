@@ -4,11 +4,12 @@
 :root {
     --back-color: #5F6E0E;
     --font-color: #523000;
-    --white-color: #FDFEFF;
+    /* --white-color: #FDFEFF; */
+    --white-color: white;
     --footer-color: #FFC283;
 }
 body {
-    max-width: 375px;
+    /* max-width: 375px; */
     margin: 0 auto;
     font-family: 'Almarai', sans-serif;
 }
@@ -16,8 +17,10 @@ header {
     background-color: var(--back-color);
     display: flex;
     justify-content: center;
+    padding: 0px;
     margin: 0px;
     max-width: 100%;
+    /* width: 100vw; */
 }
 .logo {
     max-width: 180px;
@@ -167,10 +170,10 @@ main h2 {
 .sebastion h3 {
     color: var(--font-color);
 }
-.weather {
+/* .weather {
     margin: 20px 0px 40px 0px;
-    max-width: 375;
-}
+    max-width: 375px;
+} */
 footer {
     display: flex;
     max-height: 300px;
