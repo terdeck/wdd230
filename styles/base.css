@@ -1,13 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&display=swap');
 /* main page base - smaller */
 
+:root {
+    --main-purple: #73346F;
+    --darker-purple: #51254e;
+}
 body {
     /* max-width: 800px; */
     margin: 0 auto;
     font-family: 'Libre Baskerville', serif;
 }
 #background {
-    background-color: #73346F;
+    background-color: var(--main-purple);
 }
 header {
     /* justify-self: center; */
@@ -22,7 +26,7 @@ header {
     max-width: 150px;
     padding: 0px;
     margin: 0px;
-    box-shadow: 15px 15px 15px #51254e;
+    box-shadow: 15px 15px 15px var(--darker-purple);
 }
 header h1 {
     /* grid-column: 2/3; */
@@ -86,21 +90,23 @@ main h2 {
     text-align: center;
     font-weight: 100;
     padding: 0px;
+    color: var(--darker-purple);
 }
 hr {
     justify-content: center;
     min-width: 250px;
-    border: .5px solid;
+    border: .75px solid;
+    color: var(--darker-purple);
 }
 .card {
     border-style: solid;
-    border-color: #73346F;  /* main purple */
+    border-color: var(--main-purple);
     border-radius: 5px;
     margin: 20px;
 }
 .card h3 {
     border-radius: 2.5px 2.5px 0px 0px;
-    background-color: #73346F;  /* main purple */
+    background-color: var(--main-purple); 
     color: white;
     text-align: center;
     font-size: large;
@@ -124,7 +130,7 @@ iframe {
     margin: 20px;
 }
 footer {
-    background-color: #73346F;
+    background-color: var(--main-purple);
     color: white;
     font-size: 1em;
     padding: 25px 50px;
