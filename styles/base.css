@@ -10,24 +10,24 @@ body {
     background-color: #73346F;
 }
 header {
-    justify-self: center;
-    display: grid;
+    /* justify-self: center; */
+    /* display: grid; */
+    display: flex;
     grid-template-columns: repeat(2, auto);
     padding: 30px;
+    justify-content: center;
 }
 #td-headshot {
+    /* grid-column: 1/2; */
     max-width: 150px;
-    justify-content: center;
-    grid-column: 1/2;
-    padding-right: 30px;
+    padding: 0px;
     margin: 0px;
-    box-shadow: 10px;
+    box-shadow: 15px 15px 15px #51254e;
 }
 header h1 {
-    grid-column: 2/3;
+    /* grid-column: 2/3; */
     color: white;
-    padding: 85px 0px 0px 20px;
-    justify-content: center;
+    padding: 85px 0px 0px 75px;
     margin: 0px;
 }
 #menu {
