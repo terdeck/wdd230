@@ -25,6 +25,10 @@
         <a id="logo_link" href="index.html">
             <img class="logo" src="images/pawnee-seal-parks-and-rec.png" alt="Pawnee Seal">
         </a>
+        <label class="switch">
+            <input id="switch" type="checkbox">
+            <span class="slider round"></span>
+        </label>
     </header>
     <button id="menu"></button>
     <nav class="navigation">
@@ -33,41 +37,43 @@
         <a href="#">Directory</a>
         <a href="#">Join</a>
     </nav>
-    <div id="hero">
-        <img id="hero-img" src="images/pawnee-3.jpg" alt="flower seller in a park next to a street">
-        <section id="hero-msg">
-            <h1 class="chamber-title">Pawnee Chamber of Commerce</h1>
-            <p>Come experience the quaint charm of small town living with big opportunities. With famous locals such as city hall, JJ's Diner, Sweetums, and Li'l Sebastian, you won't want to miss this opportunity to join.</p>
-            <div class="join-button">
-                <a class="join" href="#" target="_blank">Join Now</a>
+    <div id="mode">
+        <div id="hero">
+            <img id="hero-img" src="images/pawnee-3---hero-edit.jpg" alt="flower seller in a park next to a street">
+            <section id="hero-msg">
+                <h1 class="chamber-title">Pawnee Chamber of Commerce</h1>
+                <p>Come experience the quaint charm of small town living with big opportunities. With famous locals such as city hall, JJ's Diner, Sweetums, and Li'l Sebastian, you won't want to miss this opportunity to join.</p>
+                <div class="join-button">
+                    <a class="join" href="#" target="_blank">Join Now</a>
+                </div>
+            </section>
+        </div>
+        <main>
+            <div id="background">
+                <img class="ads" id="jj-img" src="images/jj-diner.png" alt="logo for JJ's Diner">
+                <p class="ad-msg" id="jj-msg">Try the famous waffles at JJ's Diner!</p>
+                <img class="ads" id="sweet-img" src="images/sweetums.png" alt="logo for Sweetums">
+                <p class="ad-msg" id="sweet-msg" >The best soda in town. Now in child sized containers!</p>
             </div>
-        </section>
+            <div>
+                <div class="events">
+                <h2>Current Events</h2>
+                    <section class="fair">
+                        <h3>County Fair</h3>
+                        <p>The annual county fair is a chance for Pawnee and Eagleton community members to come together and celebrate with rides, food, and fun.</p>
+                    </section>
+                    <section class="sebastion">
+                        <h3>Li'l Sebastion Celebration</h3>
+                        <p>Celebrate the life of Li'l Sebastian with musical performances from local talents including Duke Silver, Mouse Rat, and more.</p>
+                    </section>
+                </div>
+            </div>
+            <div class="weather">
+                <!-- <p>Forecast</p> -->
+                <a class="weatherwidget-io" href="https://forecast7.com/en/40d19n85d39/muncie/" data-label_1="MUNCIE" data-label_2="WEATHER" data-theme="original" >MUNCIE WEATHER</a>
+            </div>
+        </main>
     </div>
-    <main>
-        <div id="background">
-            <img class="ads" src="images/jj-diner.png" alt="logo for JJ's Diner">
-            <p class="ad-msg">Try the famous waffles at JJ's Diner!</p>
-            <img class="ads" src="images/sweetums.png" alt="logo for Sweetums">
-            <p class="ad-msg">The best soda in town. Now in child sized containers!</p>
-        </div>
-        <div>
-            <h2>Current Events</h2>
-            <div class="events">
-                <section class="fair">
-                    <h3>County Fair</h3>
-                    <p>The annual county fair is a chance for Pawnee and Eagleton community members to come together and celebrate with rides, food, and fun.</p>
-                </section>
-                <section class="sebastion">
-                    <h3>Li'l Sebastion Celebration</h3>
-                    <p>Celebrate the life of Li'l Sebastian with musical performances from local talents including Duke Silver, Mouse Rat, and more.</p>
-                </section>
-            </div>
-        </div>
-        <div class="weather">
-            <!-- <p>Forecast</p> -->
-            <a class="weatherwidget-io" href="https://forecast7.com/en/40d19n85d39/muncie/" data-label_1="MUNCIE" data-label_2="WEATHER" data-theme="original" >MUNCIE WEATHER</a>
-        </div>
-    </main>
     <footer>
         <p>&copy;<span id="copyright"></span>   Pawnee Chamber of Commerce   |   <b>Tara Decker</b>   |   WDD 230 Project</p>
         <p id="modified">Last Modification: <span id="lastModified"></span></p>
@@ -77,5 +83,6 @@
     </script>
     <script src="scripts/hamnav.js"></script>
     <script src="scripts/getdates.js"></script>
+    <script src="scripts/darkmode.js"></script>
 </body>
 </html>
