@@ -23,7 +23,12 @@
 
 <body>
     <header id="background">
-        <img id="td-headshot" src="images/td_headshot.jpg" alt="Tara Decker photo">
+        <div>
+            <picture id="td-headshot">
+                <source media="(max-width: 150px)" srcset="images/td_headshot.webp">
+                <img src="images/td_headshot.webp" alt="Tara Decker photo">
+            </picture>
+        </div>
         <h1>Tara Decker</h1>
     </header>
     <button id="menu"></button>
@@ -36,6 +41,16 @@
             rel="noopener noreferrer">Scripture</a>
     </nav>
     <main>
+        <div class="hero">
+            <picture>
+                <source media="(max-width: 500px)" srcset="images/hero-small.webp">
+                    <source media="(max-width: 1000px)" srcset="images/hero-medium.webp">
+                    <img src="images/hero-large.webp" alt="St George Temple" width="1278" height="800">
+            </picture>
+            <div class="hero-label">
+                <p>St. George Temple</p>
+            </div>
+        </div>
         <h2>WDD 230: Web Frontend Development</h2>
         <hr>
         <div class="home-grid">
