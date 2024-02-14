@@ -47,17 +47,21 @@
     #menu {
         display: none; /* hide hamburger button */
     }
-    /*main h2 {
+    /* .hero img {
+        width: 100%;
+        height: auto;
+    } */
+    main h2 {
         text-align: center;
         font-weight: 100;
-        padding: 0px;
-    }*/
+        padding: 15px 0px 0px 0px;
+    }
     hr {
         min-width: 80%;
     }
     .home-grid {
         display: grid;
-        grid-template-columns: 2fr 1fr;
+        /* grid-template-columns: 2fr 1fr; */
     }
     .card {
         border-style: solid;
