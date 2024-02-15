@@ -135,9 +135,9 @@ input:checked + .slider:before {
     padding: 5px;
     margin: 10px;
 }
-#hero-img {
-    /* max-width: 375px; */
-    max-width: 675px; /* hero edit */
+#hero-img { 
+    max-width: 375px;
+    /*max-width: 675px; /* hero edit */
     /* justify-content: center; */
     margin: 10px 0px 10px 0px;
 }

@@ -44,7 +44,7 @@
         display: grid;
         grid-template-rows: 2fr 1fr;
     }
-    #hero-img {
+    #hero-img { 
         grid-row: 1/2;
         /* max-width: 525px; */
         max-width: 675px;

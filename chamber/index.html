@@ -23,7 +23,7 @@
 <body>
     <header>
         <a id="logo_link" href="index.html">
-            <img class="logo" src="images/pawnee-seal-parks-and-rec.png" alt="Pawnee Seal">
+            <img class="logo" src="images/pawnee-seal-parks-and-rec.webp" alt="Pawnee Seal">
         </a>
         <label class="switch">
             <input id="switch" type="checkbox">
@@ -39,7 +39,12 @@
     </nav>
     <div id="mode">
         <div id="hero">
-            <img id="hero-img" src="images/pawnee-3---hero-edit.jpg" alt="flower seller in a park next to a street">
+            <!-- <img id="hero-img" src="images/pawnee-3---hero-edit.webp" alt="flower seller in a park next to a street"> -->
+            <picture id="hero-img">
+                <source media="(max-width: 375px)" srcset="images/wdd230-org-small.webp">
+                <source media="(max-width: 675px)" srcset="images/wdd230-org-medium.webp">
+                <img src="images/wdd230-org-large2.webp" alt="WDD 230 hero img test" width="2200" height="1467">
+            </picture>
             <section id="hero-msg">
                 <h1 class="chamber-title">Pawnee Chamber of Commerce</h1>
                 <p>Come experience the quaint charm of small town living with big opportunities. With famous locals such as city hall, JJ's Diner, Sweetums, and Li'l Sebastian, you won't want to miss this opportunity to join.</p>
@@ -50,9 +55,9 @@
         </div>
         <main>
             <div id="background">
-                <img class="ads" id="jj-img" src="images/jj-diner.png" alt="logo for JJ's Diner">
+                <img class="ads" id="jj-img" src="images/jj-diner.webp" alt="logo for JJ's Diner">
                 <p class="ad-msg" id="jj-msg">Try the famous waffles at JJ's Diner!</p>
-                <img class="ads" id="sweet-img" src="images/sweetums.png" alt="logo for Sweetums">
+                <img class="ads" id="sweet-img" src="images/sweetums.webp" alt="logo for Sweetums">
                 <p class="ad-msg" id="sweet-msg" >The best soda in town. Now in child sized containers!</p>
             </div>
             <div>

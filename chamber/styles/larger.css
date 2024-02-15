@@ -25,7 +25,7 @@
         grid-template-columns: .05fr 1fr .5fr .05fr;
         grid-template-rows: 1fr;
     }
-    #hero-img {
+    #hero-img { 
         grid-column: 2/3;
         grid-row: 1/2;
         max-width: 100%;
