@@ -135,11 +135,30 @@ input:checked + .slider:before {
     padding: 5px;
     margin: 10px;
 }
-#hero-img { 
-    max-width: 375px;
+#hero-img {   
+    /* max-width: 375px; */
     /*max-width: 675px; /* hero edit */
     /* justify-content: center; */
     margin: 10px 0px 10px 0px;
+    width: 100%; /* this width and height is for testing wk6 */
+    height: auto;
+}
+.hero-label {   /* wk6 test chamber */
+	position: absolute;
+	top: 240px;
+	left: 30px;
+	background: radial-gradient(#fff, var(--footer-color));
+	border: 1px solid var(--font-color);
+	padding: 1.5rem;
+	box-shadow: 0 0 3rem #fff;
+	opacity: 0.75;
+}
+.hero-label p {    /* wk6 test chamber */
+	margin: 0;
+	padding: .25rem;
+	font-weight: 700;
+	font-size: 1rem;
+    color: var(--font-color);
 }
 #hero-msg h1 {
     color: var(--font-color);

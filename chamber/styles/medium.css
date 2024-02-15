@@ -47,7 +47,7 @@
     #hero-img { 
         grid-row: 1/2;
         /* max-width: 525px; */
-        max-width: 675px;
+        /* max-width: 675px; */  /* this one */
         margin: 10px 0px 0px 0px;
         padding: 0px;
         justify-self: center;

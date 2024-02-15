@@ -40,11 +40,16 @@
     <div id="mode">
         <div id="hero">
             <!-- <img id="hero-img" src="images/pawnee-3---hero-edit.webp" alt="flower seller in a park next to a street"> -->
-            <picture id="hero-img">
-                <source media="(max-width: 375px)" srcset="images/wdd230-org-small.webp">
-                <source media="(max-width: 675px)" srcset="images/wdd230-org-medium.webp">
-                <img src="images/wdd230-org-large2.webp" alt="WDD 230 hero img test" width="2200" height="1467">
-            </picture>
+            <div id="hero-img">
+                <picture>
+                    <source media="(max-width: 675px)" srcset="images/wdd230-org-medium.webp">
+                    <source media="(max-width: 2200px)" srcset="images/wdd230-org-large2.webp">
+                    <img src="images/wdd230-org-small.webp" alt="WDD 230 hero img test" width="375" height="250">
+                </picture>
+                <div class="hero-label">
+                    <p>Small</p>
+                </div>
+            </div>
             <section id="hero-msg">
                 <h1 class="chamber-title">Pawnee Chamber of Commerce</h1>
                 <p>Come experience the quaint charm of small town living with big opportunities. With famous locals such as city hall, JJ's Diner, Sweetums, and Li'l Sebastian, you won't want to miss this opportunity to join.</p>
