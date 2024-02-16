@@ -143,7 +143,7 @@ input:checked + .slider:before {
     width: 100%; /* this width and height is for testing wk6 */
     height: auto;
 }
-.hero-label {   /* wk6 test chamber */
+/* .hero-label {   /* wk6 test chamber 
 	position: absolute;
 	top: 240px;
 	left: 30px;
@@ -153,13 +153,13 @@ input:checked + .slider:before {
 	box-shadow: 0 0 3rem #fff;
 	opacity: 0.75;
 }
-.hero-label p {    /* wk6 test chamber */
+.hero-label p {    /* wk6 test chamber 
 	margin: 0;
 	padding: .25rem;
 	font-weight: 700;
 	font-size: 1rem;
     color: var(--font-color);
-}
+} */
 #hero-msg h1 {
     color: var(--font-color);
     padding: 0px;

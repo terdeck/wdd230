@@ -51,6 +51,8 @@
         margin: 10px 0px 0px 0px;
         padding: 0px;
         justify-self: center;
+        width: 100%; /* this width and height is for testing wk6 */
+        height: auto;
     }
     #hero-msg {
         grid-row: 2/3;
