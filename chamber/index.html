@@ -83,23 +83,31 @@
                         <h3>Li'l Sebastion Celebration</h3>
                         <p>Celebrate the life of Li'l Sebastian with musical performances from local talents including Duke Silver, Mouse Rat, and more.</p>
                     </section>
+                    <div class="weather-info">
+                        <h3>Forecast</h3>
+                        <div id="weather">
+                            <p id="temperature">Temperature: </p>
+                            <p id="windSpeed">Wind Speed: </p>
+                            <p id="windChill">Wind Chill: </p>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <div class="weather">
-                <!-- <p>Forecast</p> -->
+            <!-- <div class="weather">
                 <a class="weatherwidget-io" href="https://forecast7.com/en/40d19n85d39/muncie/" data-label_1="MUNCIE" data-label_2="WEATHER" data-theme="original" >MUNCIE WEATHER</a>
-            </div>
+            </div> -->
         </main>
     </div>
     <footer>
         <p>&copy;<span id="copyright"></span>   Pawnee Chamber of Commerce   |   <b>Tara Decker</b>   |   WDD 230 Project</p>
         <p id="modified">Last Modification: <span id="lastModified"></span></p>
     </footer>
-    <script>
+    <!-- <script>
         !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src='https://weatherwidget.io/js/widget.min.js';fjs.parentNode.insertBefore(js,fjs);}}(document,'script','weatherwidget-io-js');
-    </script>
+    </script> -->
     <script src="scripts/hamnav.js"></script>
     <script src="scripts/getdates.js"></script>
     <script src="scripts/darkmode.js"></script>
+    <script src="scripts/windchill.js"></script>
 </body>
 </html>

@@ -215,7 +215,7 @@ input:checked + .slider:before {
 .events {
     display: grid;
     grid-template-columns: .05fr 1fr 1fr .05fr;
-    grid-template-rows: .25fr 1fr;
+    grid-template-rows: .25fr 1fr .25fr 1fr;
     margin: 0px;
 }
 main h2 {
@@ -246,10 +246,19 @@ main h2 {
 .sebastion h3 {
     color: var(--font-color);
 }
-/* .weather {
-    margin: 20px 0px 40px 0px;
-    max-width: 375px;
-} */
+.weather-info {
+    grid-column: 2/3;
+    grid-row: 4/5;
+    margin: 5px 5px 5px 10px;
+    /* max-width: 375px; */
+    color: var(--font-color);
+    text-align: left;
+}
+.weather-info h3 {
+    margin: 20px 0px 10px 0px;
+    /* max-width: 375px; */
+    color: var(--font-color);
+}
 footer {
     display: flex;
     max-height: 300px;
