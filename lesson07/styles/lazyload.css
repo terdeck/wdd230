@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Almarai:wght@400;700;800&display=swap');
+/* lazy loading wk7 */
+
+:root {
+    --font-color: #51254e;
+}
+body {
+    margin: 0 auto;
+    font-family: 'Almarai', sans-serif;
+}
+header {
+    display: flex;
+    justify-content: center;
+}
+header h1 {
+    color: var(--font-color);
+    text-align: center;
+    padding: 5px;
+}
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+main img {
+    padding: 20px;
+    margin: auto;
+}
+footer {
+    color: var(--font-color);
+    font-size: 1em;
+    padding: 25px 50px;
+    text-align: center;
+    font-family: 'Almarai', sans-serif;
+    font-weight: 600;
+}
+#modified, #lastModified {
+    font-size: small;
+}
