@@ -110,10 +110,10 @@ main {
 	opacity: 0.75;
 }
 
-.hero-label p {
+.hero-label h1 {
 	margin: 0;
 	padding: .25rem;
-	font-weight: 700;
+	font-weight:bold;
 	font-size: 1.5rem;
 }
 main h2 {
