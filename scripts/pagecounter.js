@@ -12,7 +12,7 @@ let numVisits = Number(window.localStorage.getItem("numVisits-ls")) || 0;
         visitsDisplay.textContent = `This is your first visit. ✨ Welcome!`;
         };
 // increment the number of visits by one.
-numVisits++;
+    numVisits++;
 
 // store the new visit total into localStorage, key=numVisits-ls
 localStorage.setItem("numVisits-ls", numVisits);
