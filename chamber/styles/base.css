@@ -71,7 +71,7 @@ header {
 	display: block;
 }
 /* dark mode */
-/* The switch - the box around the slider */
+/* The switch - the box around the slider 
 .switch {
     position: fixed;
     display: block;
@@ -80,13 +80,13 @@ header {
     margin: 100px 0px 0px 455px;
     padding: 0px;
   }
-  /* Hide default HTML checkbox */
+  /* Hide default HTML checkbox 
   .switch input {
     opacity: 0;
     width: 0;
     height: 0;
   }
-  /* The slider */
+  /* The slider 
 .slider {
     position: absolute;
     cursor: pointer;
@@ -120,13 +120,13 @@ input:checked + .slider:before {
     -ms-transform: translateX(26px);
     transform: translateX(26px);
   }
-  /* Rounded sliders */
+  /* Rounded sliders 
 .slider.round {
     border-radius: 34px;
   }
 .slider.round:before {
     border-radius: 50%;
-  }
+  } */
 #hero {
     display: flex;
     flex-direction: column;

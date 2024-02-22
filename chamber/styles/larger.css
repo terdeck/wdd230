@@ -15,11 +15,11 @@
         padding: 0px;
         margin: 0px;
         width: 100vw;
-        } */
-    .switch {
+    } */
+    /* .switch {
         margin: 20px -185px -150px 1000px;
-        /* margin: 10px 0px 0px -45px; */
-    }
+        /* margin: 10px 0px 0px -45px; 
+    } */
     #hero {
         display: grid;
         grid-template-columns: .05fr 1fr .5fr .05fr;
