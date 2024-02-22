@@ -46,9 +46,10 @@ header h1 {
     top: 1rem;
 	right: 1rem;
 }
-#menu::before {
+/* put the hamburger in the html button instead */
+/* #menu::before {
     content: "≡";
-}
+} */
 #menu.open::before {
 	content: "☑️";
 }
