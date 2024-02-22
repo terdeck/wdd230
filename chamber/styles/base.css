@@ -70,6 +70,7 @@ header {
 .open a {
 	display: block;
 }
+/* dark mode */
 /* The switch - the box around the slider */
 .switch {
     position: fixed;
@@ -137,10 +138,10 @@ input:checked + .slider:before {
 }
 #hero-img {   
     /* max-width: 375px; */
-    /*max-width: 675px; /* hero edit */
-    /* justify-content: center; */
+    max-width: 675px; /* hero edit */
+    justify-content: center;
     margin: 10px 0px 10px 0px;
-    width: 100%; /* this width and height is for testing wk6 */
+    /* width: 100%; this width and height is for testing wk6 */
     height: auto;
 }
 /* .hero-label {   /* wk6 test chamber 
