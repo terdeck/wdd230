@@ -157,6 +157,7 @@ iframe {
     justify-content: center;
     max-width: 80%;
     margin: 20px;
+    border: 0;
 }
 footer {
     background-color: var(--main-purple);
