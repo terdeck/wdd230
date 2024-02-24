@@ -1,5 +1,5 @@
 @media screen and (min-width: 640px) {
-    /* chamber medium */
+    /* chamber medium - main */
     
     :root {
         --back-color: #5F6E0E;
@@ -36,10 +36,6 @@
     #menu {
         display: none;
     }
-    /* .switch {
-        margin: 20px -205px -150px 360px;
-        /* margin: 10px 0px 0px -20px; 
-    } */
     #hero {
         display: grid;
         grid-template-rows: 2fr 1fr;
@@ -79,5 +75,26 @@
         display: block;
         max-height: 200px;
         font-weight: 600;
+    }
+
+    /* chamber medium - main */
+
+    .discover-grid {
+        display: grid;
+        grid-template-columns: 150px 1fr;
+    }
+    /* .sidebar {
+        position: sticky;
+        top: 0;
+        height: 100vh;
+    } */
+    .sidebar a {
+        display: none;
+    }
+    .openbtn {
+        display: none;
+    }
+    .attractions img {
+        max-width: 500px;
     }
 }

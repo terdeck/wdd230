@@ -25,10 +25,6 @@
         <a id="logo_link" href="index.html">
             <img class="logo" src="images/pawnee-seal-parks-and-rec.webp" alt="Pawnee Seal">
         </a>
-        <!-- <label class="switch">
-            <input id="switch" type="checkbox">
-            <span class="slider round"></span>
-        </label> -->
     </header>
     <button id="menu"></button>
     <nav class="navigation">
@@ -37,20 +33,107 @@
         <a href="#">Directory</a>
         <a href="#">Join</a>
     </nav>
-        <main>
-            
+    <div class="discover-grid">
+        <div id="mySidebar" class="sidebar">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                <div class="visit-data">
+
+                </div>
+                <div class="calendar-wrapper">
+                    <h3>February 2015</h3>
+                    <ol class="calendar">
+                    
+                    <li class="day-name">Sun</li>
+                    <li class="day-name">Mon</li>
+                    <li class="day-name">Tue</li>
+                    <li class="day-name">Wed</li>
+                    <li class="day-name">Thu</li>
+                    <li class="day-name">Fri</li>
+                    <li class="day-name">Sat</li>
+                    
+                    <li class="first-day">1</li>
+                    
+                    <li>2</li>
+                    <li>3</li>
+                    <li>4</li>
+                    <li>5</li>
+                    <li>6</li>
+                    <li>7</li>
+                    <li>8</li>
+                    <li>9</li>
+                    <li>10</li>
+                    <li>11</li>
+                    <li>12</li>
+                    <li>13</li>
+                    <li>14</li>
+                    <li>15</li>
+                    <li>16</li>
+                    <li>17</li>
+                    <li>18</li>
+                    <li>19</li>
+                    <li>20</li>
+                    <li>21</li>
+                    <li>22</li>
+                    <li>23</li>
+                    <li>⭐️</li>
+                    <li>25</li>
+                    <li>26</li>
+                    <li>27</li>
+                    <li>28</li>
+                    </ol>
+                </div>
+            <div class="upcoming">
+                <h3>Upcoming Events</h3>
+                <p>Stay tuned for info on upcoming events.</p>
+            </div>
+            <div class="subscribe">
+                <h3>Subscribe</h3>
+                <p>Be sure to subscribe to our monthly newsletter!</p>
+            </div>
+        </div>
+        <main id="discover-main" class="attractions">
+            <button class="openbtn" onclick="openNav()">☰ Open Sidebar</button>  
+
+            <h1>Local Attractions</h1>
+            <section class="attractions-block">
+                <h2>Pawnee City Hall</h2>
+                <p>Join us for local council and chamber meetings.</p>
+                <img class="hover" loading="lazy" src="images/pawnee-city-hall.webp" alt="Pawnee City Hall">
+            </section>
+            <section class="attractions-block">
+                <h2>Smallest Park in Indiana</h2>
+                <p>Come check out the smallest park in the state of Indiana! (Groups of three or less.)</p>
+                <img class="hover" loading="lazy" src="images/SmallestParkIndiana.webp" alt="Smallest Park in Indiana">
+
+            </section>
+            <section class="attractions-block">
+                <h2>JJ's Diner</h2>
+                <p>For the best breakfast and waffles in Pawnee, be sure to visit JJ's Diner.</p>
+                <img class="hover" loading="lazy" src="images/JJsDiner1.webp" alt="JJ's Diner">
+            </section>
+            <section class="attractions-block">
+                <h2>Cozy's Bar</h2>
+                <p>Take a journey with The Duke Silver Trio to Cozy's Bar in Eagleton on the 2nd Thursday of the month.</p>
+                <img class="hover" loading="lazy" src="images/Cozys-Bar.webp" alt="Cozy's Bar">
+            </section>
+            <section class="attractions-block">
+                <h2>Sweetums</h2>
+                <p>Visit Pawnee's leading candy manufacturer. Tours and samples offered daily.</p>
+                <img class="hover" loading="lazy" src="images/Sweetums.webp" alt="Sweetums Candy Manufacturer">
+            </section>
+            <section class="attractions-block">
+                <h2>Pawnee Today</h2>
+                <p>Home to the leading stars of Pawnee television, Joan Callamezzo and Perd Hapley.</p>
+                <img class="hover" loading="lazy" src="images/Pawnee-today.webp" alt="">
+            </section>
         </main>
     </div>
     <footer>
         <p>&copy;<span id="copyright"></span>   Pawnee Chamber of Commerce   |   <b>Tara Decker</b>   |   WDD 230 Project</p>
         <p id="modified">Last Modification: <span id="lastModified"></span></p>
     </footer>
-    <!-- <script>
-        !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src='https://weatherwidget.io/js/widget.min.js';fjs.parentNode.insertBefore(js,fjs);}}(document,'script','weatherwidget-io-js');
-    </script> -->
     <script src="scripts/hamnav.js"></script>
     <script src="scripts/getdates.js"></script>
-    <script src="scripts/darkmode.js"></script>
     <script src="scripts/windchill.js"></script>
 </body>
 </html>
