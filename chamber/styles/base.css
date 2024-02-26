@@ -193,6 +193,7 @@ footer {
     font-family: 'Almarai', sans-serif;
 }
 
+
 /* chamber site mobile page - discover */
 
 .discover-grid {
@@ -201,7 +202,10 @@ footer {
 }
 .sidebar {
     position: sticky;
+    /* position: fixed; */
+    z-index: 1;
     top: 0;
+    left: 0;
     height: 100vh;
     width: 0;
     background-color: var(--font-color);
@@ -209,7 +213,7 @@ footer {
     padding: 20px;
     overflow-x: hidden;
     transition: 0.5s;
-    z-index: 1;
+    
 }
 /* collapsable sidebar for mobile */
 .sidebar a {
@@ -218,6 +222,10 @@ footer {
   /* font-size: 25px; */
   color: var(--white-color);
   display: block;
+  transition: 0.3s;
+}
+.sidebar a:hover {
+    color: var(--footer-color);
 }
 .sidebar .closebtn {
   position: absolute;
@@ -232,6 +240,9 @@ footer {
     font: 100% system-ui;
     padding-bottom: 5px;
   }
+/* .calendar-wrapper a {
+    width: 0;
+} */
 .calendar {
     display: grid;
     grid-template-columns: repeat(7, 1fr);
@@ -273,24 +284,13 @@ footer {
     transition: margin-left .5s;
     padding: 16px;
 }
-/* .upcoming {
-
-}
-.subscribe {
-
-}
-
-.attractions-block {
-
-} */
-/* .attractions {
-    margin-left: 100px;
-} */
 .attractions h1 {
     color: var(--font-color);
+    margin-left: 10px;
 }
 .attractions img {
     max-width: 400px;
+    margin-left: -40px;
 }
 .hover:hover {
     box-shadow: 0 0 10px #333;
@@ -298,4 +298,9 @@ footer {
 .attractions h2 {
     padding: 0px;
     margin: 10px 0px -5px 0px;
+}
+figcaption {
+    font-size: smaller;
+    font-style: italic;
+    margin: 5px 0 30px -40px;
 }
