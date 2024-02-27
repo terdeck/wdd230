@@ -86,6 +86,7 @@
     .sidebar {
         width: 100%;
         font-size: medium;
+        padding: 20px;
     }
     .sidebar a {
         display: none;
