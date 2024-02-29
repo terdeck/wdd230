@@ -40,10 +40,25 @@
                     <label>Username* <input type="text" id="username" name="Username" required></label>
                     <label>Password* <input type="password" id="password" name="password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
                         title="Must contain at least one number, one uppercase and lowercase letter, and at least 8 or more characters" required></label>
-                    <label></label>
+                    <label>Re-Enter Password* <input type="password" id="password2" name="password2" required></label>
+                    <label>Email* <input type="email" id="email" name="email" placeholder="email@byui.edu" title="A valid byui.edu email address." pattern="[a-zA-Z0-9_.\-]+@byui.edu" required></label>
+                    <label>Page Rating <input type="range" id="rating" name="rating" min="0" max="10" value="0" step="1" list="rangevalues"></label>
+                        <datalist id="rangevalues">
+                            <option value="0">0</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                            <option value="9">9</option>
+                            <option value="10">10</option>
+                        </datalist>
                 </fieldset>
+                <input type="submit" value="Appropriate Text Label">
             </form>
-    
     </main>
     <footer>
         <p>&copy; <span id="copyright"></span><br>
