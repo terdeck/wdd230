@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&display=swap');
+/* main pg form */
+
+:root {
+    --main-purple: #73346F;
+    --darker-purple: #51254e;
+    --background-black: black;
+    --background-white: white;
+}
+
+/*----------- MAIN PG HEADER --------------*/
+body {
+    /* max-width: 800px; */
+    margin: 0 auto;
+    font-family: 'Libre Baskerville', serif;
+}
+#background {
+    background-color: var(--main-purple);
+}
+header {
+    display: flex;
+    grid-template-columns: repeat(2, auto);
+    padding: 30px;
+    justify-content: center;
+}
+#td-headshot {
+    max-width: 150px;
+    padding: 0px;
+    margin: 0px;
+}
+header h1 {
+    /* grid-column: 2/3; */
+    color: var(--background-white);
+    padding: 85px 0px 0px 75px;
+    margin: 0px;
+}
+#menu {
+    display: none;
+    /* font-size: 2rem;
+    font-weight: 700;
+    text-decoration: none;
+    padding: .5rem .75rem;
+    background-color: var(--background-black);
+    color: var(--background-white);
+    position: absolute;
+    top: 1rem;
+	right: 1rem; */
+}
+.navigation::before {
+    content: "🌼";
+}
+.navigation {
+    display: flex;
+    flex-direction: row;
+    flex: 1 1 100%;
+    text-align: center;
+    justify-content: space-around;
+    background-color: var(--background-black);
+	color: var(--background-white);
+}
+.navigation a {
+    display: block;
+    padding: 1rem;
+    text-align: center;
+    margin: 0;
+    padding: 12px;
+    list-style-type: none;
+    text-decoration: none;
+    font-size: larger;
+    color: var(--background-white);
+}
+.navigation a:hover, navigation a:active {
+    color: var(--background-black);
+    background-color: var(--background-white);
+}
+.open a {
+	display: block;
+}
+
+main {
+    margin: 40px auto;
+    border-radius: 5px;
+    background-color: var(--background-white);
+    padding: 20px;
+    max-width: 600px;
+}
+main h1 {
+    color: var(--darker-purple);
+}
+
+/*----------- FORM STYLING --------------*/
+.wf1 fieldset {
+    margin: 2rem 0;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    padding: .5rem 2%;
+    padding-bottom: 25px;
+}
+.wf1 legend {
+    color: var(--darker-purple);
+    padding: 0 .5rem;
+}
+.wf1 label {
+    display: block;
+    padding-top: 1rem;
+    color: var(--darker-purple);
+    font-size: .9rem;
+}
+.wf1 div {
+    padding-top: 1rem;
+    color: var(--background-black);
+    font-size: .9rem;
+}
+.wf1 input[type="text"], 
+.wf1 input[type="email"],
+.wf1 select    
+{
+    background-color: #eee;
+    display: block;
+    border: solid 1px #999;
+    border-radius: 6px;
+    padding: 1rem;
+    color: gray;
+    width: 100%;
+    max-width: 400px;
+    appearance: none;
+    margin: 4px 0px 4px 0px;
+}
+.wf1 input[type="radio"],
+.wf1 input[type="checkbox"] {
+    margin-right: 6px;
+}  
+.wf1 input[type="submit"] {
+    border: none;
+    background-image: linear-gradient(var(--main-purple), var(--darker-purple));
+    color: white;
+    border-radius: 6px;
+    padding: .8rem;
+    width: 100%;
+    max-width: 400px;
+    margin: -1rem 2% 2rem 2%;
+    box-shadow: 1px 1px 4px lightgray;
+    font-family: 'Libre Baskerville', serif;
+    font-size: medium;
+} 
+.wf1 input:required {
+    border-left: solid 8px var(--main-purple);
+}
+.wf1 input:required:valid {
+    border-left: solid 8px green;
+}
+
+/*----------- FOOTER --------------*/
+footer {
+    background-color: var(--main-purple);
+    color: white;
+    font-size: 1em;
+    padding: 25px 50px;
+    /* margin-top: 20px; */
+    text-align: center;
+    font-family: 'libre baskerville', serif;
+}
+#modified, #lastModified {
+    font-size: small;
+}
