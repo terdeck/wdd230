@@ -36,15 +36,6 @@ header h1 {
 }
 #menu {
     display: none;
-    /* font-size: 2rem;
-    font-weight: 700;
-    text-decoration: none;
-    padding: .5rem .75rem;
-    background-color: var(--background-black);
-    color: var(--background-white);
-    position: absolute;
-    top: 1rem;
-	right: 1rem; */
 }
 .navigation::before {
     content: "🌼";
@@ -86,11 +77,11 @@ main {
 }
 main h1 {
     color: var(--darker-purple);
-    font-weight: 100;
+    font-weight: 700;
 }
 main h3 {
     color: var(--main-purple);
-    font-weight: 700;
+    font-weight: 100;
 }
 
 /*----------- FORM STYLING --------------*/
