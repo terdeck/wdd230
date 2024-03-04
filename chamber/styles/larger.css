@@ -147,7 +147,6 @@
     }
     #member-tiers {
         padding: 15px 10px;
-        align-content: right;
         margin-top: 20px;
         grid-column: 3/4;
     }
