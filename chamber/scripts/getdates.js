@@ -9,3 +9,11 @@ document.addEventListener("DOMContentLoaded", function () {
     const lastModifiedDate = document.lastModified;
     document.getElementById('lastModified').textContent = lastModifiedDate;
 });
+
+// Get timestamp for Join application
+document.addEventListener("DOMContentLoaded", function() {
+    var timestampField = document.getElementById("timestamp");
+    if (timestampField) {
+      timestampField.value = Date.now();
+    }
+  });

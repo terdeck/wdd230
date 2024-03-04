@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Almarai:wght@400;700;800&display=swap');
-/* chamber site mobile page - main */
+
+
+/* chamber site mobile page - MAIN */
 
 :root {
     --back-color: #5F6E0E;
@@ -194,7 +196,7 @@ footer {
 }
 
 
-/* chamber site mobile page - discover */
+/* chamber site mobile page - DISCOVER */
 
 .discover-grid {
     display: grid;
@@ -286,7 +288,7 @@ footer {
 }
 .attractions h1 {
     color: var(--font-color);
-    margin: 30px 0px 20px 10px;
+    margin: 30px 0px 20px 0px;
 }
 .attractions img {
     max-width: 400px;
@@ -308,4 +310,113 @@ figcaption {
     font-size: smaller;
     font-style: italic;
     margin: 5px 0 30px -40px;
+}
+
+
+/* chamber site mobile page - JOIN */
+
+#join {
+    margin: 30px 30px 20px 30px;
+    display: flex;
+    flex-direction: column;
+}
+#join h1, #join h2 {
+    margin: 30px 0px 0px 0px;
+    color: var(--font-color);
+}
+#join img {
+    max-width: 600px;
+    margin: 0px 40px 0px 50px;
+}
+
+/*----------- Join Main Columns --------------*/
+#join-main {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+}
+#join-main h2{
+    padding: 0;
+}
+
+/*----------- FORM STYLING --------------*/
+#join-form {
+    border: solid 2px gray;
+    padding: 20px 50px 0px 15px;
+    border-radius: 6px;
+    align-content: left;
+    margin: auto 20px 40px 20px;
+}
+.wf1 fieldset {
+    margin: 2rem 0;
+    border: none;
+    padding: .5rem;
+}
+.wf1 legend {
+    color: var(--back-color);
+    font-size: medium;
+    font-weight: 600;
+    padding: 0;
+    margin: -3px;
+}
+.wf1 label {
+    display: block;
+    padding-top: 1rem;
+    color: gray;
+    font-size: .9rem;
+}
+.wf1 div {
+    padding-top: 1rem;
+    color: var(--font-color);
+    font-weight: 600;
+    font-size: .9rem;
+}
+.wf1 input[type="text"], 
+.wf1 input[type="email"],
+.wf1 input[type="tel"],
+.wf1 select    
+{
+    display: block;
+    border: solid 1px var(--font-color);
+    border-radius: 6px;
+    padding: 1rem;
+    color: var(--font-color);
+    width: 100%;
+    max-width: 400px;
+    appearance: none;
+    margin: 4px 0px 4px 0px;
+}
+#tiers label {
+    color: var(--font-color);
+    font-size: medium;
+}
+.wf1 input[type="radio"],
+.wf1 input[type="checkbox"] {
+    margin-right: 6px;
+}  
+.wf1 input[type="submit"] {
+    border: none;
+    background-image: linear-gradient(var(--font-color), #301c00);
+    color: white;
+    border-radius: 6px;
+    padding: .8rem;
+    width: 100%;
+    max-width: 400px;
+    margin: -1rem 2% 2rem 2%;
+    box-shadow: 1px 1px 4px lightgray;
+    font-size: large;
+    font-weight: 600;
+} 
+
+/* #member-tiers {
+    display:flex;
+    flex-direction: column;
+} */
+#member-tiers h2 {
+    margin: 20px 0px -5px 30px;
+    color: var(--font-color);
+    justify-content: center;
+}
+#member-tiers img {
+    max-width: 500px;
 }

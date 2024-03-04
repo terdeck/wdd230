@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Chamber of Commerce - Join page -->
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chamber of Commerce</title>
+    <link rel="icon" href="favicon.ico">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" type="text/css" href="styles/base.css">
+    <link rel="stylesheet" type="text/css" href="styles/medium.css">
+    <link rel="stylesheet" type="text/css" href="styles/larger.css">
+    <meta name="description" content="Pawnee Chamber of Commerce WDD 230 course assignment">
+    <meta name="author" content="Tara Decker">
+    <meta property="og:title" content="Pawnee Chamber of Commerce WDD 230 course assignment">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://demo.civicengageopen.help/sites/g/files/vyhlif6756/f/bulletins/pawnee_indiana_1.jpg">
+    <meta property="og:url" content="https://terdeck.github.io/wdd230/">
+</head>
+
+<body>
+    <header>
+        <a id="logo_link" href="index.html">
+            <img class="logo" src="images/pawnee-seal-parks-and-rec3.webp" alt="Pawnee Seal">
+        </a>
+    </header>
+    <button id="menu"></button>
+    <nav class="navigation">
+        <a href="index.html" target="_blank">Home</a>
+        <a href="discover.html" target="_blank">Discover</a>
+        <a href="#">Directory</a>
+        <a href="join.html">Join</a>
+    </nav>
+    <div id="join">
+        <h1>Join the Chamber Today!</h1>
+        <p>The Pawnee Chamber of Commerce is committed to supporting the Pawnee business community. As we continue to build stronger together, we aim to serve and engage the community.</p>
+        <h2>Membership Benefits</h2>
+        <p>What can you gain from a Chamber of Commerce membership? Businesses and Leaders in the community come together to network, support, and build better communities.</p>
+        <img loading="lazy" src="images/chamber-benefits2.svg" alt="chart displaying member and community benefits">
+    </div>
+    <main id="join-main">
+        <div id="join-form">
+            <form method="get" action="thankyou.html" class="wf1">
+                <h2>Chamber of Commerce Application</h2>
+                <fieldset>
+                    <legend>Contact Information</legend>
+                    <label>First Name* <input type="text" name="fname" id="fname" required></label>
+                    <label>Last Name* <input type="text" name="lname" id="lname" required></label>
+                    <label>Title or Position* <input type="text" name="position" id="position" pattern="[a-zA-Z\- ]{7,}" title="Please enter a valid title or position (minimum 7 characters, only letters, hyphens, and spaces)" required></label>
+                    <label>Email* <input type="email" name="email" placeholder="someone@gmail.com" required></label>
+                    <label>Phone* <input type="tel" name="phone" id="phone" placeholder="1235551234" required></label>
+                </fieldset>
+                <fieldset>
+                    <legend>Business Information</legend>
+                    <label>Business/Organization Name* <input type="text" name="busname" id="busname" required></label>
+                    <label for="description">Business/Organization Description:</label>
+                    <textarea id="description" name="description" rows="4" column="50"></textarea>
+                </fieldset>
+                <fieldset id="tiers">
+                    <legend>Membership Tier</legend>
+                    <div>Select One</div>
+                    <label><input type="radio" name="membership" value="gold"> Gold Membership</label>
+                    <label><input type="radio" name="membership" value="silver"> Silver Membership</label>
+                    <label><input type="radio" name="membership" value="bronze"> Bronze Membership</label>
+                    <label><input type="radio" name="membership" value="nonprofit"> Non-Profit Membership</label>
+                    <input type="hidden" id="timestamp" name="timestamp">
+                </fieldset>
+                <input type="submit" value="Join Now">
+            </form>
+        </div>
+        <div id="member-tiers">
+            <h2>Membership Tiers Available:</h2>
+            <img loading="lazy" src="images/chamber-tiers.svg" alt="four different membership tiers are available">
+        </div>
+    </main>
+    <footer>
+        <p>&copy;<span id="copyright"></span>   Pawnee Chamber of Commerce   |   <b>Tara Decker</b>   |   WDD 230 Project</p>
+        <p id="modified">Last Modification: <span id="lastModified"></span></p>
+    </footer>
+    <script src="scripts/hamnav.js"></script>
+    <script src="scripts/getdates.js"></script>
+</body>
+</html>

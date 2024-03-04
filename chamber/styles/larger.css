@@ -78,7 +78,7 @@
         padding: 5px 25px 5px 25px;
     }
 
-    /* chamber larger - main */
+    /* chamber larger - discover */
 
     .discover-grid {
         display: grid;
@@ -105,5 +105,58 @@
     }
     .attractions img {
         max-width: 500px;
+    }
+
+    /* chamber large - join */
+
+    #join {
+        /* display: flex;
+        flex-direction: column; */
+        display: grid;
+        grid-template-columns: .35fr 1fr .25fr;
+        margin: 30px;
+        justify-content: center;
+
+    }
+    #join h1, #join h2 {
+        grid-column: 2/3;
+    }
+    #join p {
+        font-size: large;
+        line-height: 1.5em;
+        grid-column: 2/3;
+    }
+    #join img {
+        max-width: 800px;
+        grid-column: 2/3;
+        margin-left: 60px;
+    }
+
+    #join-main {
+        display: grid;
+        grid-template-columns: .15fr 1fr 1.15fr;
+        /* flex-direction: row; */
+        margin: 30px;
+        justify-content: center;
+    }
+    #join-form {
+        max-width: 425px;
+        /* width: 100%; */
+        margin: 20px 10px 30px 150px;
+        grid-column: 2/3;
+    }
+    #member-tiers {
+        padding: 15px 10px;
+        align-content: right;
+        margin-top: 20px;
+        grid-column: 3/4;
+    }
+    #member-tiers h2 {
+        padding: 0px 20px;
+        /* text-align: center; */
+        /* margin-left: -5px; */
+    }
+    #member-tiers img {
+        max-width: 600px;
     }
 }

@@ -77,7 +77,7 @@
         font-weight: 600;
     }
 
-    /* chamber medium - main */
+    /* chamber medium - discover */
 
     .discover-grid {
         display: grid;
@@ -108,5 +108,28 @@
     }
     .attractions block {
         margin: 15px;
+    }
+
+    /* chamber medium - join */
+
+    #join-main {
+        display: grid;
+        grid-template-columns: repeat(2, auto);
+    }
+    #join-form {
+        grid-column: 1/2;
+        margin: 10px;
+        max-width: 200px;
+    }
+    #member-tiers {
+        padding: 15px 10px;
+        justify-content: left;
+    }
+    #member-tiers h2 {
+        padding: 0px;
+        margin-left: 20px;
+    }
+    #member-tiers img {
+        max-width: 800px;
     }
 }
