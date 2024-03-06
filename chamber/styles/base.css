@@ -361,7 +361,8 @@ figcaption {
 .wf1 label {
     display: block;
     padding-top: 1rem;
-    color: gray;
+    color: var(--font-color);
+    /* color: darkgray; */
     font-size: .9rem;
 }
 .wf1 div {
