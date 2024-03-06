@@ -1,0 +1,30 @@
+{
+    "wardInformation": {
+        "familyName" : "Smith",
+        "movedIn" : 2011,
+        "household" : 4,
+        "visited" : true,
+        "familyMembers" : [
+            {
+                "name" : "Bob Smith",
+                "gender" : "male",
+                "birthday" : "1993-01-02"
+            },
+            {
+                "name" : "Jean Smith",
+                "gender" : "female",
+                "birthday" : "1994-02-03"
+            },
+            {
+                "name" : "Molly Smith",
+                "gender" : "female",
+                "birthday" : "2016-04-05"
+            },
+            {
+                "name" : "Dean Smith",
+                "gender" : "male",
+                "birthday" : "2018-06-07"
+            }
+        ]
+    }
+}
