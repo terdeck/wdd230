@@ -56,3 +56,11 @@ img {
     box-shadow: 0 0 12px #2d2d2d;
     text-align: center;
 }
+footer {
+    background-color: var(--background);
+    color: var(--headings);
+    font-size: 1em;
+    padding: 25px 50px;
+    text-align: center;
+    font-weight: 600;
+}
