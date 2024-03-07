@@ -9,7 +9,7 @@
                 },
                 {
                     "url": "https://terdeck.github.io/wdd230/lesson01/holygrail.html",
-                    "title": "JS Pen"
+                    "title": " | JS Pen"
                 }
             ]
         },
@@ -22,7 +22,7 @@
                 },
                 {
                     "url": "https://terdeck.github.io/wdd230/lesson02/design-principles.html",
-                    "title": "Design Principles Document"
+                    "title": " | Design Principles Document"
                 }
             ]
         },
@@ -35,11 +35,11 @@
                 },
                 {
                     "url": "https://codepen.io/terdeck/pen/BabmaNb",
-                    "title": "Pseudo-Element"
+                    "title": " | Pseudo-Element"
                 },
                 {
                     "url": "https://codepen.io/terdeck/pen/bGZYNRq",
-                    "title": "Responsive Menu"
+                    "title": " | Responsive Menu"
                 }
             ]
         },
@@ -70,7 +70,7 @@
                 },
                 {
                     "url": "https://terdeck.github.io/wdd230/lesson06/responsive-images.html",
-                    "title": "Responsive Images"
+                    "title": " | Responsive Images"
                 }
             ]
         },
@@ -83,7 +83,7 @@
                 },
                 {
                     "url": "https://terdeck.github.io/wdd230/lesson07/bom.html",
-                    "title": "Book of Mormon Application II"
+                    "title": " | Book of Mormon Application II"
                 }
             ]
         },
@@ -96,11 +96,11 @@
                 },
                 {
                     "url": "https://terdeck.github.io/wdd230/lesson08/index.html",
-                    "title": "Web Form"
+                    "title": " | Web Form"
                 },
                 {
                     "url": "https://terdeck.github.io/wdd230/form.html",
-                    "title": "Form Build"
+                    "title": " | Form Build"
                 }
             ]
         },
@@ -108,12 +108,12 @@
             "lesson": "09",
             "links": [
                 {
-                    "url":
+                    "url": "https://terdeck.github.io/wdd230/lesson09/new-ward-members.json",
                     "title": "JSON Intro"
                 },
                 {
-                    "url":
-                    "title": "Latter-day Prophets"
+                    "url": "https://terdeck.github.io/wdd230/lesson09/prophets.html",
+                    "title": " | Latter-day Prophets"
                 }
             ]
         },
@@ -121,8 +121,8 @@
             "lesson": "10",
             "links": [
                 {
-                    "url":
-                    "title":
+                    "url": "",
+                    "title": ""
                 }
             ]
         }
