@@ -1,0 +1,94 @@
+{
+    "business": [
+        {
+            "name": "Sweetums",
+            "address": "1 Sweetums Way",
+            "city": "Pawnee IN, 47317",
+            "phone": "765-007-9338",
+            "webURL": "https://parksandrecreation.fandom.com/wiki/Sweetums_(company)",
+            "imageURL": "https://static.wikia.nocookie.net/parksandrecreation/images/8/87/CE112641-CDC1-4BDF-AFC4-C8DCFE03518E.jpeg/revision/latest?cb=20200610000846",
+            "membership": "Gold Member"
+        },
+        {
+            "name": "JJ's Diner",
+            "address": "122 Sunderland",
+            "city": "Pawnee IN, 47317",
+            "phone": "765-000-0923",
+            "webURL": "https://parksandrecreation.fandom.com/wiki/JJ%27s_Diner",
+            "imageURL": "https://dribbble.com/shots/4113140-JJ-s-Diner-Parody-Design#",
+            "membership": "Bronze Member"
+        },
+        {
+            "name": "Jamm Orthodontics",
+            "address": "217 Lowell Drive",
+            "city": "Pawnee IN, 47317",
+            "phone": "765-000-4266",
+            "webURL": "https://parksandrecreation.fandom.com/wiki/Jamm_Orthodontia",
+            "imageURL": "https://res.cloudinary.com/teepublic/image/private/s--YxkMsbPq--/t_Preview/b_rgb:36538b,c_limit,f_avif,h_630,q_auto:good,w_630/v1683671677/production/designs/45056880_0.jpg",
+            "membership": "Silver Member"
+        },
+        {
+            "name": "Paunch Burger",
+            "address": "65 Main St",
+            "city": "Pawnee IN, 47317",
+            "phone": "765-000-0328",
+            "webURL": "https://parksandrecreation.fandom.com/wiki/Paunch_Burger",
+            "imageURL": "https://www.nbcstore.com/cdn/shop/products/p_r_paunchburger_rollover_750x.jpg?v=1572164280",
+            "membership": "Silver Member"
+        },
+        {
+            "name": "The Snakehole Lounge",
+            "address": "713 Burnham Avenue",
+            "city": "Pawnee IN, 47317",
+            "phone": "765-000-0875",
+            "webURL": "https://parksandrecreation.fandom.com/wiki/The_Snakehole_Lounge",
+            "imageURL": "https://res.cloudinary.com/teepublic/image/private/s--mj2mvkmD--/t_Preview/b_rgb:c62b29,c_limit,f_auto,h_630,q_auto:good:420,w_630/v1565669039/production/designs/5591693_0.jpg",
+            "membership": "Silver Member"
+        },
+        {
+            "name": "Wamapoke Casino",
+            "address": "1 Wamapoke Way",
+            "city": "Pawnee IN, 47317",
+            "phone": "765-000-4653",
+            "webURL": "https://parksandrecreation.fandom.com/wiki/Wamapoke_Casino",
+            "imageURL": "https://64.media.tumblr.com/d2fdb21b17627d4dead1de898d33fddb/b784fa348ec940d6-b5/s2048x3072/d38b7aa1e53f771c9d4e5285bfe66841d40a64c3.jpg",
+            "membership": "Gold Member"
+        },
+        {
+            "name": "WTNW Channel 4",
+            "address": "155 Harper Ave",
+            "city": "Pawnee IN, 47317",
+            "phone": "765-000-6397",
+            "webURL": "https://parksandrecreation.fandom.com/wiki/Channel_4",
+            "imageURL": "https://static.wikia.nocookie.net/parksandrecreation/images/7/75/Channel_4_Logo.jpg/revision/latest?cb=20120913065359",
+            "membership": "Gold Member"
+        },
+        {
+            "name": "Tilton & Radomski Accounting",
+            "address": "750 Chester Street",
+            "city": "Pawnee IN, 47317",
+            "phone": "765-002-6868",
+            "webURL": "https://parksandrecreation.fandom.com/wiki/Tilton_%26_Radomski_Accounting",
+            "imageURL": "https://static.wikia.nocookie.net/parksandrecreation/images/d/d1/Tilton_and_Radomski_Accounting.png/revision/latest?cb=20130520200228",
+            "membership": "Bronze Member"
+        },
+        {
+            "name": "Pawnee Today",
+            "address": "121 Harper Ave",
+            "city": "Pawnee IN, 47317",
+            "phone": "765-000-5626",
+            "webURL": "https://parksandrecreation.fandom.com/wiki/Pawnee_Today",
+            "imageURL": "https://static.wikia.nocookie.net/parksandrecreation/images/4/40/Joan.jpg/revision/latest?cb=20111210072945",
+            "membership": "Gold Member"
+        },
+        {
+            "name": "Jurassic Fork",
+            "address": "2190 Valerian Road",
+            "city": "Patterson IN, 47318",
+            "phone": "765-000-0053",
+            "webURL": "https://parksandrecreation.fandom.com/wiki/Jurassic_Fork",
+            "imageURL": "https://static.wikia.nocookie.net/parksandrecreation/images/1/16/Jurassic_Fork_Menu.jpg/revision/latest?cb=20111130000835",
+            "membership": "Bronze Member"
+        }
+    ]
+}
