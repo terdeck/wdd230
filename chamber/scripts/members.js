@@ -1,5 +1,5 @@
-const baseURL = "https://github.com/terdeck/wdd230";
-const linksURL = "https://github.com/terdeck/wdd230/chamber/data/members.json"
+// const baseURL = "https://github.com/terdeck/wdd230";
+const linksURL = "https://terdeck.github.io/wdd230/chamber/data/members.json"
 const cards = document.querySelector("#members");
 
 const displayMembers = (members) => {
@@ -41,7 +41,8 @@ const displayMembers = (members) => {
 async function getMemberInfo() {
     const response = await fetch(linksURL);
     const data = await response.json();
-    displayMembers(data.members);
+    console.log(data);
+    displayMembers(data.businesses);
 }
 
 getMemberInfo();
