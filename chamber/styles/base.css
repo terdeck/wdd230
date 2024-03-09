@@ -424,3 +424,7 @@ figcaption {
 
 /* chamber site mobile page - DIRECTORY */
 
+.gold {
+    max-height: 150px;
+    padding: 15px;
+}
