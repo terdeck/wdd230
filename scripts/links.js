@@ -11,7 +11,7 @@ async function getLinks(){
 function displayLinks(weeks) {
     weeks.forEach((week) => {
         let learn = document.createElement("section");
-        let title = document.createElement("h3");
+        // let title = document.createElement("h3");
         let list = document.createElement("ul");
         // let assignments = document.createElement("li");
 
@@ -32,7 +32,7 @@ function displayLinks(weeks) {
         });
         // assignments.textContent = `${week.lesson}: ${week.links}`;
 
-        learn.appendChild(title);
+        // learn.appendChild(title);
         learn.appendChild(list);
         // learn.appendChild(assignments);
 
