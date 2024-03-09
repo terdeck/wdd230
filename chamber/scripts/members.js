@@ -2,7 +2,7 @@ const baseURL = "https://github.com/terdeck/wdd230";
 const linksURL = "https://github.com/terdeck/wdd230/chamber/data/members.json"
 const cards = document.querySelector("#members");
 
-const dipslayMembers = (members) => {
+const displayMembers = (members) => {
     members.forEach((member) => {
         let card = document.createElement("section");
         let logo = document.createElement("img");
@@ -39,9 +39,9 @@ const dipslayMembers = (members) => {
 }
 
 async function getMemberInfo() {
-    const response = await fetch(baseURL);
+    const response = await fetch(linksURL);
     const data = await response.json();
-    dipslayMembers(data.members);
+    displayMembers(data.members);
 }
 
 getMemberInfo();
