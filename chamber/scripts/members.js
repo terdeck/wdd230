@@ -17,7 +17,15 @@ const displayMembers = (members) => {
         address.textContent = `📍${member.address}`;
         city.textContent = `${member.city}`;
         phone.textContent = `📞${member.phone}`;
-        website.textContent = `🌐 Website ${member.webURL}`;
+        
+        // website.textContent = `🌐 Website ${member.webURL}`;
+        let websiteLink = document.createElement("a");
+        websiteLink.href = member.webURL;
+        websiteLink.textContent = "🌐 Website";
+        websiteLink.setAttribute("target", "_blank");
+
+        website.appendChild(websiteLink);
+
         membership.textContent = `${member.membership}`;
         logo.setAttribute("src", member.imageURL);
         logo.setAttribute("alt", `Logo for ${member.name}`);
