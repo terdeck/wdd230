@@ -11,7 +11,7 @@ const displayProphets = (prophets) => {
         fullName.textContent = `${prophet.name} ${prophet.lastname}`;
         info.innerHTML = `<p>Date of Birth: ${prophet.birthdate}</p>
         <p>Place of Birth: ${prophet.birthplace}</p>`;
-
+        console.log(prophet.imageurl)
         portrait.setAttribute("src", prophet.imageurl);
         portrait.setAttribute("alt", `Portrait of ${prophet.name} ${prophet.lastname}`);
         portrait.setAttribute("loading", "lazy");

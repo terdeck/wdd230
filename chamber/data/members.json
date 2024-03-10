@@ -33,7 +33,7 @@
             "city": "Pawnee IN, 47317",
             "phone": "765-000-0328",
             "webURL": "https://parksandrecreation.fandom.com/wiki/Paunch_Burger",
-            "imageURL": "https://www.nbcstore.com/cdn/shop/products/p_r_paunchburger_rollover_750x.jpg?v=1572164280",
+            "imageURL": "https://www.nbcstore.com/cdn/shop/products/p_r_paunchburger_rollover_750x.jpg",
             "membership": "Silver Member"
         },
         {
@@ -60,7 +60,7 @@
             "city": "Pawnee IN, 47317",
             "phone": "765-000-6397",
             "webURL": "https://parksandrecreation.fandom.com/wiki/Channel_4",
-            "imageURL": "https://static.wikia.nocookie.net/parksandrecreation/images/7/75/Channel_4_Logo.jpg/revision/latest?cb=20120913065359",
+            "imageURL": "https://static.wikia.nocookie.net/parksandrecreation/images/7/75/Channel_4_Logo.jpg",
             "membership": "Gold Member"
         },
         {
@@ -69,7 +69,7 @@
             "city": "Pawnee IN, 47317",
             "phone": "765-002-6868",
             "webURL": "https://parksandrecreation.fandom.com/wiki/Tilton_%26_Radomski_Accounting",
-            "imageURL": "https://static.wikia.nocookie.net/parksandrecreation/images/d/d1/Tilton_and_Radomski_Accounting.png/revision/latest?cb=20130520200228",
+            "imageURL": "https://static.wikia.nocookie.net/parksandrecreation/images/d/d1/Tilton_and_Radomski_Accounting.png",
             "membership": "Bronze Member"
         },
         {
@@ -78,7 +78,7 @@
             "city": "Pawnee IN, 47317",
             "phone": "765-000-5626",
             "webURL": "https://parksandrecreation.fandom.com/wiki/Pawnee_Today",
-            "imageURL": "https://static.wikia.nocookie.net/parksandrecreation/images/4/40/Joan.jpg/revision/latest?cb=20111210072945",
+            "imageURL": "https://static.wikia.nocookie.net/parksandrecreation/images/4/40/Joan.jpg",
             "membership": "Gold Member"
         },
         {
@@ -87,7 +87,7 @@
             "city": "Patterson IN, 47318",
             "phone": "765-000-0053",
             "webURL": "https://parksandrecreation.fandom.com/wiki/Jurassic_Fork",
-            "imageURL": "https://static.wikia.nocookie.net/parksandrecreation/images/1/16/Jurassic_Fork_Menu.jpg/revision/latest?cb=20111130000835",
+            "imageURL": "https://static.wikia.nocookie.net/parksandrecreation/images/1/16/Jurassic_Fork_Menu.jpg",
             "membership": "Bronze Member"
         }
     ]

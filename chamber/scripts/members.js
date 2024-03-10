@@ -1,6 +1,6 @@
 // const baseURL = "https://github.com/terdeck/wdd230";
 const linksURL = "https://terdeck.github.io/wdd230/chamber/data/members.json"
-const cards = document.querySelector("#members");
+const cards = document.querySelector("#cards");
 
 const displayMembers = (members) => {
     members.forEach((member) => {
@@ -20,7 +20,6 @@ const displayMembers = (members) => {
         phone.textContent = `${member.phone}`;
         website.textContent = `${member.webURL}`;
         membership.textContent = `${member.membership}`;
-
         logo.setAttribute("src", member.imageURL);
         logo.setAttribute("alt", `Logo for ${member.name}`);
         logo.setAttribute("loading", "lazy");
@@ -34,7 +33,9 @@ const displayMembers = (members) => {
         card.appendChild(city);
         card.appendChild(phone);
         card.appendChild(website);
-        card.appendChild(membership);       
+        card.appendChild(membership); 
+        
+        cards.appendChild(card);
     });
 }
 
