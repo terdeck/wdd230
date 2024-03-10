@@ -436,10 +436,53 @@ figcaption {
     margin: 30px 10px;
 }
 
-/* #cards {
+section {
+    border: 1px solid lightgray;
+    border-radius: 5px;
+    margin: 10px;
+    box-shadow: 0 0 5px #dfdfdf;
+    padding: 10px;
+}
+#cards hr {
+    max-width: 85%;
+}
+#cards {
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+#cards>* {
+    flex: 1 1 200px;
+    max-width: 270px;
+}
+#cards img {
+    max-width: 175px;
+    margin: 15px auto;
+    padding: 10px;
+    display: block;
+    text-align: center;
+}
+#cards h3 {
+    color: var(--font-color);
+    font-weight: 600;
+    font-size: larger;
+    margin: 20px 10px;
+}
+#cards p {
+    padding: 0px;
+    margin: 10px;
+}
+#cards h4 {
+    color: var(--back-color);
+    margin-top: 30px;
+}
 
-} */
 
+
+#thanks hr {
+    max-width: 90%;
+    border: 4px solid var(--back-color);
+}
 #thanks h2 {
     color: var(--font-color);
     padding: 20px 15px 30px 15px;

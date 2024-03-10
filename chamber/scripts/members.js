@@ -14,9 +14,9 @@ const displayMembers = (members) => {
         let membership = document.createElement("h4");
 
         busName.textContent = `${member.name}`;
-        address.textContent = `📍${member.address}`;
+        address.textContent = `📍 ${member.address}`;
         city.textContent = `${member.city}`;
-        phone.textContent = `📞${member.phone}`;
+        phone.textContent = `📞 ${member.phone}`;
         
         // website.textContent = `🌐 Website ${member.webURL}`;
         let websiteLink = document.createElement("a");
@@ -26,12 +26,12 @@ const displayMembers = (members) => {
 
         website.appendChild(websiteLink);
 
-        membership.textContent = `${member.membership}`;
+        membership.textContent = `⭐️ ${member.membership}`;
         logo.setAttribute("src", member.imageURL);
         logo.setAttribute("alt", `Logo for ${member.name}`);
         logo.setAttribute("loading", "lazy");
-        logo.setAttribute("width", "200");
-        logo.setAttribute("height", "225");
+        // logo.setAttribute("width", "200");
+        // logo.setAttribute("height", "225");
 
         card.appendChild(logo);
         card.appendChild(pageBreak);

@@ -2,8 +2,7 @@
     "businesses": [
         {
             "name": "Sweetums",
-            "address": "1 Sweetums Way",
-            "city": "Pawnee IN, 47317",
+            "address": "1 Sweetums Way, Pawnee IN, 47317",
             "phone": "765-007-9338",
             "webURL": "https://parksandrecreation.fandom.com/wiki/Sweetums_(company)",
             "imageURL": "https://static.wikia.nocookie.net/parksandrecreation/images/8/87/CE112641-CDC1-4BDF-AFC4-C8DCFE03518E.jpeg",
@@ -11,8 +10,7 @@
         },
         {
             "name": "JJ's Diner",
-            "address": "122 Sunderland",
-            "city": "Pawnee IN, 47317",
+            "address": "122 Sunderland, Pawnee IN, 47317",
             "phone": "765-000-0923",
             "webURL": "https://parksandrecreation.fandom.com/wiki/JJ%27s_Diner",
             "imageURL": "https://cdn.dribbble.com/users/2073892/screenshots/4113140/media/7ade71e007a69e88e3c877351068913c.jpg",
@@ -20,8 +18,7 @@
         },
         {
             "name": "Jamm Orthodontics",
-            "address": "217 Lowell Drive",
-            "city": "Pawnee IN, 47317",
+            "address": "217 Lowell Drive, Pawnee IN, 47317",
             "phone": "765-000-4266",
             "webURL": "https://parksandrecreation.fandom.com/wiki/Jamm_Orthodontia",
             "imageURL": "https://res.cloudinary.com/teepublic/image/private/s--YxkMsbPq--/t_Preview/b_rgb:36538b,c_limit,f_avif,h_630,q_auto:good,w_630/v1683671677/production/designs/45056880_0.jpg",
