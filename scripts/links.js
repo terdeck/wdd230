@@ -1,4 +1,3 @@
-// const baseURL = "https://github.com/terdeck/wdd230";
 const linksURL = "https://terdeck.github.io/wdd230/data/links.json";
 
 async function getLinks(){

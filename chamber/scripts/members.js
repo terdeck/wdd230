@@ -1,4 +1,3 @@
-// const baseURL = "https://github.com/terdeck/wdd230";
 const linksURL = "https://terdeck.github.io/wdd230/chamber/data/members.json"
 const cards = document.querySelector("#cards");
 
@@ -15,10 +14,10 @@ const displayMembers = (members) => {
         let membership = document.createElement("h4");
 
         busName.textContent = `${member.name}`;
-        address.textContent = `${member.address}`;
+        address.textContent = `📍${member.address}`;
         city.textContent = `${member.city}`;
-        phone.textContent = `${member.phone}`;
-        website.textContent = `${member.webURL}`;
+        phone.textContent = `📞${member.phone}`;
+        website.textContent = `🌐 Website ${member.webURL}`;
         membership.textContent = `${member.membership}`;
         logo.setAttribute("src", member.imageURL);
         logo.setAttribute("alt", `Logo for ${member.name}`);
