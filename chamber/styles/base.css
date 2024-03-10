@@ -436,6 +436,7 @@ figcaption {
     margin: 30px 10px;
 }
 
+/* cards */
 section {
     border: 1px solid lightgray;
     border-radius: 5px;
@@ -466,17 +467,16 @@ section {
     color: var(--font-color);
     font-weight: 600;
     font-size: larger;
-    margin: 20px 10px;
+    margin: 20px;
 }
 #cards p {
     padding: 0px;
-    margin: 10px;
+    margin: 20px;
 }
 #cards h4 {
     color: var(--back-color);
     margin-top: 30px;
 }
-
 
 
 #thanks hr {
