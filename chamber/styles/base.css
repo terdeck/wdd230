@@ -440,7 +440,7 @@ figcaption {
 #directory-main {
     padding: 30px;
 }
-section {
+#directory-main section {
     border: 1px solid lightgray;
     border-radius: 5px;
     margin: 15px 15px;
