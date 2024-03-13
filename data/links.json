@@ -121,8 +121,8 @@
             "lesson": "10",
             "links": [
                 {
-                    "url": "https://terdeck.github.io/wdd230",
-                    "title": ""
+                    "url": "https://terdeck.github.io/wdd230/lesson10/weather.html",
+                    "title": "Weather API"
                 }
             ]
         }
