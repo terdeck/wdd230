@@ -74,9 +74,16 @@
             <!-- </section> -->
             <section class="card" id="info">
                 <h3>Information</h3>
-                <p>Location</p>
-                <p>Forecast<span href="https://api.openweathermap.org/data/2.5/weather?lat=35.63&lon=-117.57&units=imperial&appid=fb2b969328f7c67e812d01d18df50663"></span></p>
-                <p><span class="label">Page Visits: </span><span class="visits"></span></p>
+                <h4>Location: </h4>
+                <p>Ridgecrest, CA</p>
+                <h4>Forecast: </h4>
+                <p><span id="current-temp"></span></p>
+                <figure>
+                    <img id="weather-icon" src="" alt="">
+                    <figcaption></figcaption>
+                </figure>
+                <h4><span class="label">Page Visits: </span></h4>
+                <p><span class="visits"></span></p>
             </section>
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d51891.43371488566!2d-117.70232724976974!3d35.62243555772381!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c16cbc000c8aa5%3A0xdcb273036710aeba!2sRidgecrest%2C%20CA%2093555!5e0!3m2!1sen!2sus!4v1706236367857!5m2!1sen!2sus" width="600" height="450" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
@@ -91,6 +98,7 @@
     <script src="scripts/hamnav.js"></script>
     <script src="scripts/pagecounter.js"></script>
     <script src="scripts/links.js"></script>
+    <script src="scripts/mainWeather.js"></script>
 </body>
 
 </html>

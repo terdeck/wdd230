@@ -133,6 +133,7 @@ hr {
     border-color: var(--main-purple);
     border-radius: 5px;
     margin: 20px;
+    text-align: center;
 }
 .card h3 {
     border-radius: 2.5px 2.5px 0px 0px;
@@ -150,8 +151,22 @@ li {
     list-style: none;
     padding: 4px 0px 4px 0px;
 }
+section h4 {
+    text-align: center;
+    font-size: large;
+    font-weight:700;
+    padding: .5em;
+    margin: 5px 0px 2px 0px;
+}
 section p {
     text-align: center;
+    padding-bottom: 5px;
+}
+figure {
+    display: block;
+    text-align: center;
+    margin-bottom: 50px;
+    /* padding-bottom: 5px; */
 }
 iframe {
     display: block;

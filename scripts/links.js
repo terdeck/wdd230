@@ -12,7 +12,7 @@ function displayLinks(weeks) {
         let learn = document.createElement("section");
         let list = document.createElement("ul");
 
-        list.textContent = "Lesson : ";
+        list.innerHTML = `<b>Lesson ${week.lesson}: </b>`;
         
         week.links.forEach(link => {
             const listItem = document.createElement("li");
