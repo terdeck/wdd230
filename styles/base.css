@@ -145,7 +145,7 @@ hr {
     padding: .5em;
     margin: 0;
 }
-#learn, ul {
+#learn, ul, #learn h4 {
     list-style-type: none;
     text-decoration: none;
     list-style: none;
@@ -153,14 +153,14 @@ hr {
     margin: 0px;
     text-align: center;
 }
-section h4 {
+#info h4 {
     text-align: center;
     font-size: large;
     font-weight:700;
     padding: .5em;
-    margin: 10px 0px 2px 0px;
+    margin: 15px 0px 2px 0px;
 }
-section p {
+#info p {
     text-align: center;
     padding-bottom: 5px;
     margin: 0px;
