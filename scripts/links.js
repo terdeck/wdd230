@@ -15,7 +15,7 @@ function displayLinks(weeks) {
         list.innerHTML = `<b>Lesson ${week.lesson}: </b>`;
         
         week.links.forEach(link => {
-            const listItem = document.createElement("li");
+            const listItem = document.createElement("ul");
             const linkElement = document.createElement("a");
             linkElement.href = link.url;
             linkElement.textContent = link.title;
