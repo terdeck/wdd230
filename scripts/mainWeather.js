@@ -1,3 +1,5 @@
+// temp info for main pg using OpenWeather API
+
 const currentTemp = document.querySelector("#current-temp");
 const weatherIcon = document.querySelector("#weather-icon");
 const captionDesc = document.querySelector("figcaption");
