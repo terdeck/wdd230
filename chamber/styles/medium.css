@@ -11,6 +11,10 @@
     body {
         max-width: 720px;
     }
+    .banner-content {
+        padding: 15px 75px;
+        max-width: 720px;
+    }
     .navigation {
         flex-direction: row;
         justify-content: space-around;

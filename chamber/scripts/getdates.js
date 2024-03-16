@@ -23,7 +23,7 @@ document.addEventListener("DOMContentLoaded", function() {
 const currentDate = new Date();
 const currentDay = currentDate.getDay();
 
-if (currentDay >= 1 && currentDay <= 3) {
+if (currentDay >= 1 && currentDay <= 6) {
   document.getElementById("banner").style.display = "block";
 }
 else {

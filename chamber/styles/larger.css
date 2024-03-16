@@ -11,6 +11,15 @@
     body {
         max-width: 100%;
     }
+    .banner-content {
+        padding: 20px 610px;
+        text-align: center;
+        width: max-content;
+        /* position:relative; */
+        /* display: flex;
+        flex-direction: row;
+        flex-wrap: wrap; */
+    }
     #hero {
         display: grid;
         grid-template-columns: .05fr 1fr .5fr .05fr;
