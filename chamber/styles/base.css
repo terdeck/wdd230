@@ -13,6 +13,30 @@ body {
     margin: 0 auto;
     font-family: 'Almarai', sans-serif;
 }
+.banner-content {
+    padding: 15px 100px;
+    max-width: 375px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    position: fixed;
+    background-color: var(--font-color);
+}
+.banner-text, .banner-text p{
+    flex-grow: 1;
+    line-height: 1.5;
+    color: var(--white-color);
+}
+.banner-close {
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: var(--white-color);
+    font-weight: 600;
+}
+.banner-text, .banner-close > span {
+    color: var(--font-color);
+}
 header {
     background-color: var(--back-color);
     display: flex;
@@ -136,9 +160,12 @@ header {
     font-weight:600;
 }
 .events {
-    display: grid;
+    /* display: grid;
     grid-template-columns: .05fr 1fr 1fr .05fr;
-    grid-template-rows: .25fr 1fr .25fr 1fr;
+    grid-template-rows: .25fr 1fr .25fr 1fr; */
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
     margin: 0px;
 }
 main h2 {
@@ -150,8 +177,8 @@ main h2 {
     grid-row: 1/2;
 }
 .fair {
-    grid-column: 2/3;
-    grid-row: 2/3;
+    /* grid-column: 2/3;
+    grid-row: 2/3; */
     text-align: left;
     padding: 5px;
     margin: 5px 5px 5px 10px;
@@ -160,8 +187,8 @@ main h2 {
     color: var(--font-color)
 }
 .sebastion {
-    grid-column: 3/4;
-    grid-row: 2/3;
+    /* grid-column: 3/4;
+    grid-row: 2/3; */
     text-align: left;
     padding: 5px;
     margin: 10px;
@@ -170,17 +197,34 @@ main h2 {
     color: var(--font-color);
 }
 .weather-info {
-    grid-column: 2/3;
-    grid-row: 4/5;
-    margin: 5px 5px 5px 10px;
+    /* grid-column: 2/3;
+    grid-row: 4/5; */
+    margin: 5px 5px 5px 15px;
     /* max-width: 375px; */
     color: var(--font-color);
     text-align: left;
+    font-weight: 600;
 }
 .weather-info h3 {
-    margin: 20px 0px 10px 0px;
+    margin: 20px 0px 25px 0px;
     /* max-width: 375px; */
     color: var(--font-color);
+}
+#weather h4 {
+    padding-top: 25px;
+}
+#forecast-list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    list-style-type: none;
+    text-decoration: none;
+    list-style: none;
+}
+#forecast-list p, #forecast-list figcaption,  #forecast-list img {
+    padding: 0px 15px 0px 0px;
+    display: block;
+    text-align: center;
 }
 footer {
     display: flex;

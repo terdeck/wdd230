@@ -11,11 +11,6 @@
     body {
         max-width: 100%;
     }
-    /* header {
-        padding: 0px;
-        margin: 0px;
-        width: 100vw;
-    } */
     #hero {
         display: grid;
         grid-template-columns: .05fr 1fr .5fr .05fr;
@@ -77,6 +72,23 @@
         margin: 0px;
         padding: 5px 25px 5px 25px;
     }
+    .fair {
+        grid-column: 2/3;
+        grid-row: 2/3;
+    }
+    .sebastion {
+        grid-column: 3/4;
+        grid-row: 2/3;
+    }
+    .weather-info {
+        grid-column: 2/5;
+        grid-row: 4/5;
+    }
+    /* #forecast-list {
+        display: flex;
+        flex-direction:column;
+        flex-wrap: wrap;
+    } */
 
     /* chamber larger - discover */
 

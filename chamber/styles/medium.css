@@ -11,11 +11,6 @@
     body {
         max-width: 720px;
     }
-    /* header {
-    padding: 0px;
-    margin: 0px;
-    width: 100vw;
-    } */
     .navigation {
         flex-direction: row;
         justify-content: space-around;
@@ -68,9 +63,6 @@
     .ad-msg {
         padding: 20px 5px;
     }
-    /* .weather {
-        max-width: 100%;
-    } */
     footer {
         display: block;
         max-height: 200px;
