@@ -22,7 +22,7 @@ document.addEventListener("DOMContentLoaded", function() {
                 message = "You last visited 1 day ago";
             }
             else {
-                message = "You last visited" + daysDifference + " days ago.";
+                message = "You last visited " + daysDifference + " days ago.";
             }
             document.getElementById("message").textContent = message;
         }
