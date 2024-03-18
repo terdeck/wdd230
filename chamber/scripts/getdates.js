@@ -1,4 +1,4 @@
-// chamber getdates & banner
+// chamber getdates
 
 document.addEventListener("DOMContentLoaded", function () {
     // Set current year for copyright
@@ -17,15 +17,3 @@ document.addEventListener("DOMContentLoaded", function() {
       timestampField.value = Date.now();
     }
   });
-
-  
-// banner
-const currentDate = new Date();
-const currentDay = currentDate.getDay();
-
-if (currentDay >= 1 && currentDay <= 3) {
-  document.getElementById("banner").style.display = "block";
-}
-else {
-  document.getElementById("banner").style.display = "none"
-}
