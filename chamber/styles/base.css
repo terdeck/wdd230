@@ -476,15 +476,21 @@ figcaption {
     padding: 20px;
 }
 #directory h1, #directory h3{
-    margin: 45px 10px 10px 10px;
+    margin: 45px 10px 10px 20px;
 }
 #directory p {
-    margin: 25px 10px -10px 10px;
+    margin: 25px 10px -10px 20px;
 }
 
 /* cards */
 #directory-main {
     padding: 30px;
+}
+.directory-toggle button{
+    color: var(--white-color);
+    background-color: var(--font-color);
+    margin: 10px 0px 0px 15px;
+    padding: 5px;
 }
 #directory-main section {
     border: 1px solid lightgray;

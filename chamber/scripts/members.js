@@ -1,6 +1,20 @@
 const linksURL = "https://terdeck.github.io/wdd230/chamber/data/members.json"
 const cards = document.querySelector("#cards");
 
+const gridButton = document.getElementById("direct-grid");
+const listButton = document.getElementById("direct-list");
+
+gridButton.addEventListener("click", () =>{
+    cards.classList.add("grid");
+    cards.classList.remove("list");
+});
+
+listButton.addEventListener("click", () => {
+    cards.classList.add("list");
+    cards.classList.remove("grid");
+});
+
+
 const displayMembers = (members) => {
     members.forEach((member) => {
         let card = document.createElement("section");
