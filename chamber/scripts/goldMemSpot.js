@@ -6,7 +6,7 @@ const spotlights = document.getElementById("spotlight");
 const displayMembers = (members) => {
     members = shuffleArray(members);
 
-    const randomMembers = selectRandom(members, 2);
+    const randomMembers = selectRandom(members, 3);
 
     randomMembers.forEach((member) =>{
         let spotlight = document.createElement("section");
@@ -29,7 +29,7 @@ const displayMembers = (members) => {
 
 function shuffleArray(members){
     for (let i = members.length - 1; i > 0; i--){
-        const j = Math.floor(Math.random() * (i + 1));
+        const j = Math.floor(Math.random() * (i + 2));
         [members[i], members[j]] = [members[j], members[i]];
     }
     return members;
@@ -41,7 +41,7 @@ function selectRandom(members, count) {
     for (let i = 0; i < count && i < members.length; i++) {
         const randomIndex = Math.floor(Math.random() * remainingMembers.length);
         const selectedMember = remainingMembers.splice(randomIndex, 1)[0];
-        randomMembers.push(members[randomIndex]);
+        randomMembers.push(selectedMember);
     }
     return randomMembers;
 }

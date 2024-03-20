@@ -53,20 +53,10 @@
         grid-row: 2/3;
         text-align: left;
         margin: -40px 0px 10px 0px;
+    } 
+    #spotlight section{
+        margin-left: 40px;
     }
-    /* #spotlight {
-        height: 175px;
-        display: flex;
-        flex-direction: row;
-    }
-    .ads {
-        max-height: 165px;
-        justify-items: center;
-        padding: 5px;
-    }
-    .ad-msg {
-        padding: 20px 5px;
-    } */
     footer {
         display: block;
         max-height: 200px;
