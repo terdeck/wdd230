@@ -20,6 +20,8 @@ function displayLinks(weeks) {
             linkElement.href = link.url;
             linkElement.textContent = link.title;
 
+            linkElement.setAttribute("target", "_blank");
+
             listItem.appendChild(linkElement);
             list.appendChild(listItem);
         });
