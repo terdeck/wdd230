@@ -1,4 +1,4 @@
-const linksURL = "https://terdeck.github.io/wdd230/chamber/data/members.json"
+const linksURL = "https://terdeck.github.io/wdd230/chamber/data/members.json";
 const cards = document.querySelector("#cards");
 
 const gridButton = document.getElementById("direct-grid");

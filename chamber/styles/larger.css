@@ -45,7 +45,7 @@
         padding: 0px 15px;
         margin-top: -5px;
     }
-    #background {
+    /* #spotlight {
         display: grid;
         grid-template-columns: .75fr .5fr .5fr .5fr .5fr .5fr .75fr;
         grid-template-rows: 1fr;
@@ -73,7 +73,7 @@
         margin: 0;
         padding: 20px 5px;
         justify-content: center;
-    }
+    } */
     .events {
         display: grid;
         grid-template-columns: .25fr .5fr .5fr .25fr;

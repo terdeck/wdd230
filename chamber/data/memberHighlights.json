@@ -1,24 +1,24 @@
 {
-    "gold-members": [
+    "goldMembers": [
         {
             "name": "Sweetums",
             "imageURL": "https://raw.githubusercontent.com/terdeck/wdd230/main/chamber/images/sweetums-logo3.webp",
-            "spotlight": "The best soda in town. Now in child sized containers!"
+            "blurb": "The best soda in town. Now in child sized containers!"
         },
         {
             "name": "Wamapoke Casino",
             "imageURL": "https://raw.githubusercontent.com/terdeck/wdd230/main/chamber/images/wamapoke-casino-edit.webp",
-            "spotlight": "Best casino in town! Offering Bingo, Slots, and More!"  
+            "blurb": "Best casino in town! Offering Bingo, Slots, and More!"  
         },
         {
             "name": "WTNW Channel 4",
             "imageURL": "https://raw.githubusercontent.com/terdeck/wdd230/main/chamber/images/WTNW-news.svg",
-            "spotlight": "Big stars and bigger headlines, WTNW Channel 4 covers all your local Pawnee news."
+            "blurb": "Big stars and bigger headlines, WTNW Channel 4 covers all your local Pawnee news."
         },
         {
             "name": "Pawnee Today",
             "imageURL": "https://raw.githubusercontent.com/terdeck/wdd230/main/chamber/images/pawnee-today-edit.svg",
-            "membership": "Gold Member"
+            "blurb": "Home to Pawnee's Hottest talkshow hosted by Joan Callamezzo."
         }
     ]
 }

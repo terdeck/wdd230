@@ -139,12 +139,17 @@ header {
     color: var(--font-color);
     background-color: var(--footer-color);
 }
-#background {
-    display: grid;
-    grid-template-rows: 1fr 1fr;
+#spotlight {
+    /* display: grid;
+    grid-template-rows: 1fr 1fr; */
     background-color: var(--back-color);
     height: 275px;
     margin: 40px 0px;
+}
+#spotlight section {
+    display: flex;
+    flex-direction: row;
+    background-color: red;
 }
 .ads {
     max-height: 150px;
