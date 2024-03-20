@@ -532,6 +532,7 @@ figcaption {
 #cards h4 {
     color: var(--back-color);
     margin: 40px 10px 30px 30px;
+    font-weight: bolder;
 }
 
 
