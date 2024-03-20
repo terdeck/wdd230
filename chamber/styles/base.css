@@ -552,6 +552,7 @@ figcaption {
     color: var(--font-color);
     font-size: 1rem;
     margin: 4px;
+    margin-bottom: 10px;
     text-align: left;
 }
 .list #bus-name {
