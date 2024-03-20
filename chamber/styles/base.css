@@ -261,7 +261,6 @@ footer {
     /* padding: 20px; */
     overflow-x: hidden;
     transition: 0.5s;
-    
 }
 /* collapsable sidebar for mobile */
 .sidebar a {
@@ -282,6 +281,9 @@ footer {
   font-size: 36px;
   margin-left: 50px;
   padding: 60px 10px;
+}
+.sidebar div {
+    padding: 10px 15px;
 }
 /* calendar section */
 .calendar-wrapper {
