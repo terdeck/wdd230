@@ -4,11 +4,6 @@ const linksURL = "https://terdeck.github.io/wdd230/chamber/data/memberHighlights
 const spotlights = document.getElementById("spotlight");
 
 const displayMembers = (members) => {
-    if (!members || members.length === 0){
-        console.error("No member data available");
-        return;
-    }
-
     members = shuffleArray(members);
 
     const randomMembers = selectRandom(members, 2);
@@ -23,6 +18,7 @@ const displayMembers = (members) => {
         logo.setAttribute("alt", `Logo for ${member.name}`);
         logo.setAttribute("loading", "lazy");
         blurb.setAttribute("class", "ad-msg");
+        blurb.textContent = `${member.blurb}`;
 
         spotlight.appendChild(logo);
         spotlight.appendChild(blurb);
@@ -41,29 +37,22 @@ function shuffleArray(members){
 
 function selectRandom(members, count) {
     const randomMembers = [];
+    const remainingMembers = [...members];
     for (let i = 0; i < count && i < members.length; i++) {
-        const randomIndex = Math.floor(Math.random() * members.length);
+        const randomIndex = Math.floor(Math.random() * remainingMembers.length);
+        const selectedMember = remainingMembers.splice(randomIndex, 1)[0];
         randomMembers.push(members[randomIndex]);
     }
     return randomMembers;
 }
 
 async function getMemberInfo() {
-    try {
-        const response = await fetch(linksURL);
-        if (!response.ok) {
-            throw new Error(`Failed to fetch data: ${response.status} ${response.statusText}`);
-        }
-        const data = await response.json();
-        if(!data || !data.goldMembers) {
-            throw new Error("Invalid data format: goldMembers property not found");
-        }
-        console.log(data);
-        // console.log(data.goldMembers);
-        displayMembers(data.goldMembers);
-    } catch (error) {
-        console.error("Error fetching or displaying members:", error);
-    }
+    const response = await fetch(linksURL);
+    const data = await response.json();
+    console.log(data);
+    const members = data.goldMembers;
+    console.log(members);
+    displayMembers(members);
 }
 
 getMemberInfo();

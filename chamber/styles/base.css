@@ -142,28 +142,35 @@ header {
 #spotlight {
     /* display: grid;
     grid-template-rows: 1fr 1fr; */
-    background-color: var(--back-color);
-    height: 275px;
-    margin: 40px 0px;
-}
-#spotlight section {
     display: flex;
     flex-direction: row;
-    background-color: red;
+    flex-wrap: wrap;
+    background-color: var(--back-color);
+    height: auto;
+    margin: 40px 0px;
+    padding: 10px;
+}
+#spotlight section {
+    margin: 5px;
+    padding: 10px;
+}
+#spotlight>* {
+    flex: 1 1 200px;
+    max-width: 270px;
 }
 .ads {
     max-height: 150px;
-    grid-row: 1/2;
+    /* grid-row: 1/2; */
     padding: 5px 5px;
     justify-content: center;
 }
 .ad-msg {
-    grid-row: 2/3;
+    /* grid-row: 2/3; */
     color: var(--white-color);
     text-align: left;
     padding: 5px 10px;
     margin: 5px;
-    font-size: larger;
+    font-size: medium;
     font-weight:600;
 }
 .events {
