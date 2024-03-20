@@ -41,6 +41,7 @@ const displayMembers = (members) => {
         website.appendChild(websiteLink);
 
         membership.textContent = `⭐️ ${member.membership}`;
+        logo.setAttribute("class", "logo-img");
         logo.setAttribute("src", member.imageURL);
         logo.setAttribute("alt", `Logo for ${member.name}`);
         logo.setAttribute("loading", "lazy");

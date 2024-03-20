@@ -5,6 +5,7 @@
 
 :root {
     --back-color: #5F6E0E;
+    --light-back-color: #d7dfaf;
     --font-color: #523000;
     --white-color: white;
     --footer-color: #FFC283;
@@ -486,7 +487,7 @@ figcaption {
 #directory-main {
     padding: 30px;
 }
-.directory-toggle button{
+.directory-toggle button {
     color: var(--white-color);
     background-color: var(--font-color);
     margin: 10px 0px 0px 15px;
@@ -532,6 +533,27 @@ figcaption {
     color: var(--back-color);
     margin: 40px 10px 30px 30px;
 }
+
+
+/* list view */
+.list .logo-img, .list hr, .list h4 {
+    display: none;
+}
+.list section {
+    margin: 0;
+    padding: 0.25rem;
+    border: 1px solid var(--font-color);
+    border-radius: 0;
+    box-shadow: none;
+    color: var(--font-color);
+    display: block;
+    font-size: 1rem;
+    margin: 2px;
+    text-align: left;
+}
+.list section:nth-child(odd) {
+	background-color: var(--light-back-color);
+} 
 
 
 #thanks hr {
