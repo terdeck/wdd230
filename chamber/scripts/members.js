@@ -27,7 +27,9 @@ const displayMembers = (members) => {
         let website = document.createElement("p");
         let membership = document.createElement("h4");
 
+        card.setAttribute("id", "bus-card");
         busName.textContent = `${member.name}`;
+        busName.setAttribute("id", "bus-name")
         address.textContent = `📍 ${member.address}`;
         city.textContent = `${member.city}`;
         phone.textContent = `📞 ${member.phone}`;
@@ -41,7 +43,7 @@ const displayMembers = (members) => {
         website.appendChild(websiteLink);
 
         membership.textContent = `⭐️ ${member.membership}`;
-        logo.setAttribute("class", "logo-img");
+        logo.setAttribute("id", "logo-img");
         logo.setAttribute("src", member.imageURL);
         logo.setAttribute("alt", `Logo for ${member.name}`);
         logo.setAttribute("loading", "lazy");

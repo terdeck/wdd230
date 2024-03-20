@@ -493,7 +493,7 @@ figcaption {
     margin: 10px 0px 0px 15px;
     padding: 5px;
 }
-#directory-main section {
+#cards section {
     border: 1px solid lightgray;
     border-radius: 5px;
     margin: 15px 15px;
@@ -536,20 +536,25 @@ figcaption {
 
 
 /* list view */
-.list .logo-img, .list hr, .list h4 {
+.list #logo-img, .list hr, .list h4 {
     display: none;
 }
-.list section {
-    margin: 0;
-    padding: 0.25rem;
-    border: 1px solid var(--font-color);
-    border-radius: 0;
-    box-shadow: none;
+.list {
+    display: flex;
+    flex-direction: column;
+    padding: 15px 10px;
+}
+.list #bus-card {
+    padding: 0;
     color: var(--font-color);
-    display: block;
     font-size: 1rem;
-    margin: 2px;
+    margin: 4px;
     text-align: left;
+}
+.list #bus-name {
+    color: var(--font-color);
+    margin-bottom: 2px;
+    padding: 0;
 }
 .list section:nth-child(odd) {
 	background-color: var(--light-back-color);
