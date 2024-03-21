@@ -216,6 +216,10 @@ main h2 {
 #weather h4 {
     padding-top: 25px;
 }
+.weather-icon, figure p {
+    padding: 0px;
+    margin: 0px -25px;
+}
 #forecast-list {
     display: flex;
     flex-direction: row;
@@ -228,6 +232,9 @@ main h2 {
     padding: 0px 15px 0px 0px;
     display: block;
     text-align: center;
+}
+#forecast-list img {
+    margin: 0px 25px;
 }
 footer {
     display: flex;
