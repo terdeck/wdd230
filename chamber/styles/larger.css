@@ -110,7 +110,7 @@
         flex-direction: column; */
         display: grid;
         grid-template-columns: .35fr 1fr .25fr;
-        margin: 30px;
+        margin: 0 auto;
         justify-content: center;
 
     }
