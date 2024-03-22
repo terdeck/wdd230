@@ -104,7 +104,7 @@ header {
     margin: 10px;
 }
 #hero-img {   
-    max-width: 675px; /* hero edit */
+    max-width: 375px; /* hero edit */
     justify-content: center;
     margin: 10px 0px 10px 0px;
     height: auto;
@@ -149,14 +149,14 @@ header {
     margin: 40px 0px;
 }
 #spotlight section {
-    margin: 5px 50px;
+    margin: 0 auto;
     padding: 10px;
     display: block;
     line-height: 1.5em;
 }
 #spotlight>* {
     flex: 1 1 200px;
-    max-width: 270px;
+    max-width: 200px;
 }
 .ads {
     margin: 0 auto;
@@ -240,7 +240,7 @@ footer {
     display: flex;
     max-height: 300px;
     background-color: var(--footer-color);
-    padding: 10px 0px;
+    padding: 10px 10px;
     text-align: center;
     color: var(--font-color);
 }
@@ -371,7 +371,7 @@ figcaption {
 
 /* chamber site mobile page - JOIN */
 
-#join {
+#join, #join-thanks {
     margin: 30px 30px 20px 30px;
     display: flex;
     flex-direction: column;
@@ -383,6 +383,14 @@ figcaption {
 #join img {
     max-width: 600px;
     margin: 0px 40px 0px 50px;
+}
+#join-thanks h1, #join-thanks h3 {
+    margin: 6px 0px 12.5px 0px;
+    text-align: left;
+    color: var(--font-color);
+}
+#join-thanks p {
+    margin: 2px;
 }
 
 /*----------- Join Main Columns --------------*/

@@ -42,7 +42,7 @@
     #hero-img { 
         grid-row: 1/2;
         /* max-width: 525px; */
-        /* max-width: 675px; */  /* this one */
+        max-width: 675px;  /* this one */
         margin: 10px 0px 0px 0px;
         padding: 0px;
         justify-self: center;
@@ -55,7 +55,7 @@
         margin: -40px 0px 10px 0px;
     } 
     #spotlight section{
-        margin-left: 40px;
+        margin: 0 auto;
     }
     footer {
         display: block;

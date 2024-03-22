@@ -46,7 +46,7 @@
         margin-top: -5px;
     }
     #spotlight section{
-        margin: 0px 155px;
+        margin: 0 auto;
     }
 
     .events {
@@ -105,7 +105,7 @@
 
     /* chamber large - join */
 
-    #join {
+    #join, #join-thanks{
         /* display: flex;
         flex-direction: column; */
         display: grid;
@@ -114,10 +114,10 @@
         justify-content: center;
 
     }
-    #join h1, #join h2 {
+    #join h1, #join h2, #join-thanks h1, #join-thanks h3 {
         grid-column: 2/3;
     }
-    #join p {
+    #join p, #join-thanks p {
         font-size: large;
         line-height: 1.5em;
         grid-column: 2/3;
