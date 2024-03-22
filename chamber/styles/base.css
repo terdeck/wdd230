@@ -204,21 +204,30 @@ main h2 {
     color: var(--font-color);
 }
 .weather-info {
-    margin: 5px 5px 5px 15px;
+    margin: 5px 5px 55px 15px;
     color: var(--font-color);
     text-align: left;
     font-weight: 600;
+    border: 2px solid var(--font-color);
+    border-radius: 5px;
+    border: solid 2px gray;
+    padding: 20px;
 }
 .weather-info h3 {
-    margin: 20px 0px 25px 0px;
+    margin: 5px 0px 5px 0px;
     color: var(--font-color);
 }
-#weather h4 {
-    padding-top: 25px;
+.current-temp, #forecast-list {
+    border: 1px solid var(--font-color);
+    border-radius: 5px;
+    background-color: var(--font-color);
+    color: var(--white-color);
 }
-.weather-icon, figure p {
-    padding: 0px;
-    margin: 0px -25px;
+#weather h4 {
+    padding-top: 10px;
+}
+.current-temp figcaption {
+    margin: 0px -15px;
 }
 #forecast-list {
     display: flex;
@@ -228,8 +237,8 @@ main h2 {
     text-decoration: none;
     list-style: none;
 }
-#forecast-list p, #forecast-list figcaption,  #forecast-list img {
-    padding: 0px 15px 0px 0px;
+#forecast-list p, #forecast-list figcaption,  #forecast-list img, .current-temp {
+    padding: 0px 10px;
     display: block;
     text-align: center;
 }
@@ -494,7 +503,7 @@ figcaption {
     padding: 20px;
 }
 #directory h1, #directory h3{
-    margin: 45px 10px 10px 20px;
+    margin: 35px 10px 10px 20px;
 }
 #directory p {
     margin: 25px 10px -10px 20px;

@@ -3,8 +3,8 @@
     
     :root {
         --back-color: #5F6E0E;
+        --light-back-color: #d7dfaf;
         --font-color: #523000;
-        /* --white-color: #FDFEFF; */
         --white-color: white;
         --footer-color: #FFC283;
     }
@@ -56,6 +56,9 @@
     } 
     #spotlight section{
         margin: 0 auto;
+    }
+    #forecast-list p, #forecast-list figcaption,  #forecast-list img, .current-temp {
+        padding: 0px 30px;
     }
     footer {
         display: block;

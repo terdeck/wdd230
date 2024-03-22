@@ -77,12 +77,14 @@
                             <p id="temperature">Temperature: </p>
                             <p id="windSpeed">Wind Speed: </p>
                             <p id="windChill">Wind Chill: </p> -->
-                            <h4>Current Temp: </h4>
-                            <p><span id="current-temp"></span></p>
-                            <figure>
-                                <img class="weather-icon" src="https://api.openweathermap.org/data/2.5/weather?lat=40.19&lon=-85.38&units=imperial&appid=fb2b969328f7c67e812d01d18df50663" alt="weather icon">
-                                <figcaption></figcaption>
-                            </figure>
+                            <h4 class="current">Current Temp: </h4>
+                            <div class="current-temp">
+                                <p><span id="current-temp"></span></p>
+                                <figure>
+                                    <img class="weather-icon" src="https://api.openweathermap.org/data/2.5/weather?lat=40.19&lon=-85.38&units=imperial&appid=fb2b969328f7c67e812d01d18df50663" alt="weather icon">
+                                    <figcaption></figcaption>
+                                </figure>
+                            </div>
                             <h4>5-Day Forecast: </h4>
                             <ul id="forecast-list"></ul>
                         </div>
