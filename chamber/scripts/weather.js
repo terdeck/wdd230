@@ -11,7 +11,7 @@ async function fetchCurrentWeather() {
         const response = await fetch(url);
         if (response.ok) {
             const data = await response.json();
-            console.log(data);
+            // console.log(data);
             displayCurrentWeather(data);
         } else {
             throw new Error(await response.text());
@@ -27,7 +27,7 @@ async function fetchForecast() {
         const response = await fetch(url);
         if (response.ok) {
             const data = await response.json();
-            console.log(data);
+            // console.log(data);
             displayForecast(data);
         } else {
             throw new Error(await response.text());

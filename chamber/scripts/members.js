@@ -66,7 +66,7 @@ const displayMembers = (members) => {
 async function getMemberInfo() {
     const response = await fetch(linksURL);
     const data = await response.json();
-    console.log(data);
+    // console.log(data);
     displayMembers(data.businesses);
 }
 

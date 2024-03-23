@@ -49,9 +49,9 @@ function selectRandom(members, count) {
 async function getMemberInfo() {
     const response = await fetch(linksURL);
     const data = await response.json();
-    console.log(data);
+    // console.log(data);
     const members = data.goldMembers;
-    console.log(members);
+    // console.log(members);
     displayMembers(members);
 }
 
