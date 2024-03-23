@@ -84,6 +84,7 @@
         width: 100%;
         font-size: medium;
         padding: 20px 40px 20px 40px;
+        position: sticky;
     }
     .sidebar a {
         display: none;
