@@ -22,8 +22,8 @@
 <body>
     <div id="home-banner">
         <div class="banner-content">
-            <div class="banner-text">
-                <!-- <p><strong>Daily High Temp:</strong></p> -->
+            <div>
+                <p class="banner-text"></p>
             </div>
             <button class="banner-close" type="button">ｘ<span class="close-icon"></span></button>
         </div>
@@ -87,6 +87,25 @@
                 <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1868.8595213289923!2d-86.97461270450749!3d20.47672967268355!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f4e5748abf8e2b1%3A0xe8a0742adec5ec0c!2sMarymar%20Rentals!5e0!3m2!1sen!2sus!4v1712072715832!5m2!1sen!2sus" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </section>
         </div>
+        <div class="weather-info">
+            <h2>Forecast: </h2>
+            <button id="toggle-weather">℉ / ℃</button>
+            <div id="weather">
+                <h3>Current Temp: </h3>
+                <div class="current-temp">
+                    <p><span id="current-temp"></span></p>
+                    <p><span id="current-humid"></span></p>
+                </div>
+                <h3>Tomorrow's Forecast: </h3>
+                <div class="forecast-temp">
+                    <p><span id="forecast-temp"></span></p>
+                </div>
+            </div>
+        </div>
     </main>
+    <footer>
+
+    </footer>
+    <script src="scripts/weather.js"></script>
 </body>
 </html>
