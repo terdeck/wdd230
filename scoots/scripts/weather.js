@@ -62,6 +62,7 @@ function displayCurrentWeather(data) {
             <figcaption>${desc}</figcaption>
         `;
     currentTemp.appendChild(listItem);
+    console.log();
 }
 
 function displayForecastWeather(data) {
@@ -83,6 +84,7 @@ function displayForecastWeather(data) {
             <figcaption>${desc}</figcaption>
         `;
     currentTemp.appendChild(listItem);
+    console.log();
 }
 
 function updateTemp(tempFahrenheit) {
@@ -93,6 +95,7 @@ function updateTemp(tempFahrenheit) {
     } else {
         return `${tempCelsius}&deg;C`;
     }
+    console.log();
 }
 
 function convertFahrenheitToCelsius(tempFahrenheit) {
@@ -102,6 +105,7 @@ function convertFahrenheitToCelsius(tempFahrenheit) {
 function weatherToggle() {
     isFahrenheit = !isFahrenheit;
     fetchWeather();
+    console.log();
 }
 
 document.getElementById("toggle-weather").addEventListener("click", weatherToggle);
@@ -115,6 +119,7 @@ function displayHighTemp(data) {
     const bannerClose = document.querySelector(".banner-close");
     bannerClose.addEventListener("click", () => {
     banner.style.display = "none";
+    console.log();
 });
 }
 

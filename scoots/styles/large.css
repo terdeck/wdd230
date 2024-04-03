@@ -1,0 +1,15 @@
+@media screen and (min-width: 720px) {
+
+    /* scoots large - MAIN */
+
+    :root {
+        --dark-green: #359144; /* main */
+        --light-green: #73c791;
+        --dark-blue: #25478F;
+        --light-blue: #9edbeb;
+        --white: #f5fcff;
+    }
+    body {
+        max-width: 100%;
+    }
+}
