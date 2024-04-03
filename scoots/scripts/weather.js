@@ -110,7 +110,7 @@ document.getElementById("toggle-weather").addEventListener("click", weatherToggl
 function displayHighTemp(data) {
     const highTemp = data.main.temp_max;
 
-    tempBanner.innerHTML = `<strong>Daily High Temp:</strong> ${updateTemp(highTemp)}`
+    tempBanner.innerHTML = `<strong>Daily High Temp:</strong> ${updateTemp(highTemp)}`;
     
     const bannerClose = document.querySelector(".banner-close");
     bannerClose.addEventListener("click", () => {
