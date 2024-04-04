@@ -56,12 +56,12 @@ header {
     font-size: 2rem;
     font-weight: 700;
     text-decoration: none;
-    padding: .5rem;
+    padding: .2rem;
     background-color: var(--dark-green);
     color: var(--white);
     position: absolute;
     top: 1rem;
-	right: .75rem;
+	right: .70rem;
     border: none;
 }
 #menu::before {
@@ -97,23 +97,23 @@ header {
 .open a {
 	display: block;
 }
-#hero-main {   
+#hero-main, #hero-rentals, .rental-vehicles {   
     max-width: 375px;
     margin: 0px auto;
     height: auto;
     display: block;
     text-align: center;
 }
-#hero-msg h1 {
+#hero-msg h1, #rentals-hero-msg h1 {
     text-align: center;
     color: var(--dark-blue);
     padding: 0px 20px;
 }
-#hero-msg p {
+#hero-msg p, #rental-warnings, #rental-list {
     color: black;
     text-align: center;
     margin: 10px;
-    padding: 5px 15px;
+    padding: 5px 10px;
     line-height: 1.25rem;
 }
 .reserve-button {
@@ -143,7 +143,7 @@ main h2 {
     margin: 50px 0px 5px 0px;
     font-size: xx-large;
 }
-.main-rentals, .main-locations {
+.main-rentals, .main-locations, .rental-rentals {
     margin: 0px 10px;
     display: flex;
     flex-wrap: wrap;
@@ -164,7 +164,7 @@ main h2 {
     padding: 10px;
     background-color: white;
 }
-.rental-info h3, .location-info h3 {
+.rental-info h3, .location-info h3, #weather h3, #rental-list h3 {
     text-align: center;
     color: var(--dark-blue);
     font-size: x-large;
@@ -208,13 +208,6 @@ main h2 {
     padding: 10px;
     background-color: white;
 }
-#weather h3 {
-    text-align: center;
-    color: var(--dark-blue);
-    font-size: x-large;
-    padding: 5px;
-    margin: 5px;
-}
 footer {
     background-color: var(--dark-green);
     display: block;
@@ -249,4 +242,64 @@ footer {
     font-size: medium;
     margin: 40px auto 0px auto;
     padding: 20px;
+}
+
+/* scoots mobile page - RENTALS */
+
+#rental-warnings {
+    background-color: var(--light-green);
+    max-width: fit-content;
+    display: block;
+    text-align: center;
+    margin: 0 auto;
+}
+#rental-warnings h3, #rental-list h3{
+    letter-spacing: .05rem;
+    font-size: x-large;
+}
+#liable-ins {
+    font-size: small;
+    color: var(--dark-blue);
+}
+#reserve-link {
+    /* text-decoration: none; */
+    color: white;
+    font-size: large;
+    font-weight: 700;
+    letter-spacing: .03rem;
+}
+.rental-vehicles {
+    background: var(--light-blue);
+    margin: 0 auto;
+    max-width: fit-content;
+    max-height: min-content;
+}
+.rental-rentals img {
+    display: block;
+    text-align: center;
+    margin: 25px auto;
+    max-width: 25%;
+    border: 10px solid var(--white);
+    border-radius: 7px;
+}
+.rental-rentals>* {
+    flex: 1 1 200px;
+    max-width: 10%;
+}
+#table-container {
+    border: 1px solid var(--dark-green);
+    border-radius: 7px;
+    margin: 10px;
+    border-collapse: collapse;
+}
+th:first-child {
+    background-color: var(--dark-green);
+    color: var(--white);
+}
+th, tr {
+    border: 1px solid var(--dark-green);
+}
+th {
+    background-color: var(--light-green);
+
 }

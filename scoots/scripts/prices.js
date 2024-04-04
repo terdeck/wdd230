@@ -39,7 +39,7 @@ function priceTable(data) {
     let tableHeading4 = document.createElement("th");
     tableHeading4.textContent = "Rental Type";
     let tableHeading5 = document.createElement("th");
-    tableHeading5.textContent = "Max Occupants";
+    tableHeading5.textContent = "Seats";
     let tableHeading6 = document.createElement("th");
     tableHeading6.textContent = "Half Day";
     let tableHeading7 = document.createElement("th");
