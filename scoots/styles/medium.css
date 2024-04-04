@@ -12,4 +12,30 @@
     body {
         max-width: 720px;
     }
+    .banner-content {
+        padding: 15px 75px;
+        max-width: 720px;
+    }
+    #logo {
+        width: 200px;
+        margin-right: 50px;
+    }
+    .navigation {
+        flex-direction: row;
+        justify-content: right;
+        margin-right: -50px;
+    }
+    .navigation a {
+        display: block;
+        padding: 2rem .74rem;
+    }
+    #menu {
+        display: none;
+    }
+    #hero-main {
+        max-width: 100%;
+    }
+    .footer-contact {
+        margin: 10px 40px;
+    }
 }

@@ -12,4 +12,41 @@
     body {
         max-width: 100%;
     }
+    .banner-content {
+        padding: 20px 610px;
+        text-align: center;
+        width: max-content;
+    }
+    header {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    #logo {
+        grid-column: 1/2;
+        width: 300px;
+        margin: 0 0 0 20px;
+    }
+    .navigation {
+        grid-column: 2/3;
+        margin: 0 40px 0 0;
+        text-align: right;
+    }
+    .navigation a {
+        display: block;
+        padding: 3rem .74rem;
+    }
+    .main-rentals, .main-locations {
+        margin: 0px 20px;
+    }
+    .main-rentals>* {
+        flex: 1 1 200px;
+        max-width: 400px;
+    }
+    .main-locations>* {
+        flex: 1 1 200px;
+        max-width: 50%;
+    }
+    .footer-contact {
+        margin: 10px 60px;
+    }
 }

@@ -51,45 +51,44 @@
             </div>
         </section>
     </div>
-    <main>
+    <main class="main-main">
         <h2>Rentals</h2>
         <div class="main-rentals">
             <section class="rental-info">
                <h3>Scooters</h3>
-                <img class="main-scooter" src="images/scooter-600x600.webp" alt="motorized scooter">
+                <img class="main-scooter" loading="lazy" src="images/scooter-600x600.webp" alt="motorized scooter">
                 <ul>⏺ Honda Metropolitan (49cc) - 1 person</ul>
                 <ul>⏺ Honda Dio (110cc) - 2 person</ul>
                 <ul>⏺ Honda PCX150 (149cc) - 2 person</ul>
             </section>
             <section class="rental-info">
                 <h3>ATVs</h3>
-                <img class="main-atv" src="images/buggy-600x600.webp" alt="atv side-by-side">
+                <img class="main-atv" loading="lazy" src="images/buggy-600x600.webp" alt="atv side-by-side">
                 <ul>⏺ Honda Pioneer 1000 - 4 person</ul>
             </section>
             <section class="rental-info">
                 <h3>Jeeps</h3>
-                <img class="main-jeep" src="images/jeep-600x600.webp" alt="jeep">
+                <img class="main-jeep" loading="lazy" src="images/jeep-600x600.webp" alt="jeep">
                 <ul>⏺ Jeep Wrangler - 4 door manual with A/C - 5 person</ul>
                 <ul>⏺ Jeep Wrangler - 2 door - open air - manual - 4 person</ul>
             </section>
         </div>
+        <h2>Locations</h2>
         <div class="main-locations">
-            <h2>Locations</h2>
             <!-- iframe size is small - can change to larger map if needed w/ google link -->
-            <section class="centro-cozumel">
+            <section class="location-info">
                 <h3>Centro de Cozumel</h3>
-                <img class="main-lighthouse" src="images/lighthouse-800x522.webp" alt="Centro de Cozumel">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1408.3058176636866!2d-86.9488051978759!3d20.510930200263953!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f4e59cebcc44c25%3A0x116ec79ef00cd461!2sHTL%20RENTALS%20scooter%20Buggy%20%26%20jeeps%20rentals!5e1!3m2!1sen!2sus!4v1712072674305!5m2!1sen!2sus" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <img class="main-lighthouse" loading="lazy" src="images/lighthouse-800x522.webp" alt="Centro de Cozumel">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14948.001615506833!2d-86.95360927573243!3d20.506209697752382!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f4e59cceda3d799%3A0xbf8ea7e97451cfd8!2sCentro%2C%20San%20Miguel%20de%20Cozumel%2C%20Quintana%20Roo%2C%20Mexico!5e0!3m2!1sen!2sus!4v1712157625063!5m2!1sen!2sus" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </section>
-            <section class="puerta-maya">
+            <section class="location-info">
                 <h3>Puerta Maya</h3>
-                <img class="main-beach-hut" src="images/beach-huts-800x522.webp" alt="beach huts">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1868.8595213289923!2d-86.97461270450749!3d20.47672967268355!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f4e5748abf8e2b1%3A0xe8a0742adec5ec0c!2sMarymar%20Rentals!5e0!3m2!1sen!2sus!4v1712072715832!5m2!1sen!2sus" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-            </section>
+                <img class="main-beach-hut" loading="lazy" src="images/beach-huts-800x522.webp" alt="beach huts">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14950.893744465156!2d-86.98747510887388!3d20.476549319166693!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f4e57491a71c81d%3A0x6933058e58e0ee3d!2sPuerta%20Maya%20Cruise%20Ship%20Maritime%20Terminal!5e0!3m2!1sen!2sus!4v1712157708568!5m2!1sen!2sus" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>            </section>
         </div>
         <div class="weather-info">
             <h2>Forecast: </h2>
-            <button id="toggle-weather">℉ / ℃</button>
+            <button class="toggle-weather">℉ / ℃</button>
             <div id="weather">
                 <h3>Current Temp: </h3>
                 <div class="current-temp">
@@ -105,9 +104,9 @@
     </main>
     <footer>
         <div class="footer-socials">
-            <img class="social-icon" src="images/fb-light-green.svg" href="www.facebook.com" alt="facebook logo">;
-            <img class="social-icon" src="images/insta-light-green.svg" href="www.instagram.com" alt="instagram logo">;
-            <img class="social-icon" src="images/tweet-light-green.svg" href="www.twitter.com" alt="twitter logo">;
+            <img class="social-icon" loading="lazy" src="images/fb-light-green.svg" href="www.facebook.com" alt="facebook logo">
+            <img class="social-icon" loading="lazy" src="images/insta-light-green.svg" href="www.instagram.com" alt="instagram logo">
+            <img class="social-icon" loading="lazy" src="images/tweet-light-green.svg" href="www.twitter.com" alt="twitter logo">
         </div>
         <div class="footer-contact">
             <h2>Contact</h2>
@@ -115,9 +114,9 @@
             <p>🗓️ Mon-Sat: 08:00-18:00 / 8am-6pm</p>
             <p>✉️ scoots@email.com</p>
         </div>
-        <p>&copy;<span id="copyright"></span>   ~Scoots~   |   <b>Tara Decker</b>   |   WDD 230 Project</p>
+        <p class="project-info">&copy;<span id="copyright"></span>   ~Scoots~   |   <b>Tara Decker</b>   |   WDD 230 Project</p>
     </footer>
     <script src="scripts/hamnav.js"></script>
-    <!-- <script src="scripts/weather.js"></script> -->
+    <script src="scripts/weather.js"></script>
 </body>
 </html>
