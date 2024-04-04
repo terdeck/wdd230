@@ -41,7 +41,7 @@
             "walkFull": "$90" 
         },
         {
-            "model": "Jeep Wrangler - 4 door - A/C",
+            "model": "Jeep Wrangler - 4 door",
             "maxOccupants": "5",
             "reserveHalf": "$70",
             "reserveFull": "$100",
