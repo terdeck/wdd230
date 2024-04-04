@@ -13,14 +13,14 @@ function priceTable(data) {
 
     let tableTitle = table.insertRow();
     let title = document.createElement("th");
-    title.textContent = "Rental Pricing";
+    title.textContent = "Daily Rates";
     title.setAttribute("colspan", "6");
     title.setAttribute("scope", "colgroup");
     tableTitle.appendChild(title);
     
     let titleRow1 = table.insertRow();
     let tableHeading1 = document.createElement("th");
-    tableHeading1.textContent = "&nbsp";
+    tableHeading1.textContent = "";
     const tableHeading2 = document.createElement("th");
     tableHeading2.textContent = "Reservation";
     const tableHeading3 = document.createElement("th");
@@ -63,19 +63,13 @@ function priceTable(data) {
 
     data.forEach(item => {
         const row = table.insertRow();
-        for (const key in item)
-    })
+        for (const key in item) {
+            const cell = row.insertCell();
+            cell.textContent = item[key];
+        }
+    });
     
     tableContainer.appendChild(table);
 }
 
 getPrices();
-
-
-// prices.forEach((price) => {
-//     let model = document.createElement();
-//     let maxOccupants = document.createElement();
-//     let reserveHalf = document.createElement();
-//     let reserveFull = document.createElement();
-//     let walkHalf = document.createElement();
-//     let walkFull = document.createElement();

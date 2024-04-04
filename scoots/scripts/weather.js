@@ -95,7 +95,6 @@ function updateTemp(tempFahrenheit) {
     } else {
         return `${tempCelsius}&deg;C`;
     }
-    console.log();
 }
 
 function convertFahrenheitToCelsius(tempFahrenheit) {
