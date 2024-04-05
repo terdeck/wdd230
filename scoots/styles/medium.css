@@ -32,10 +32,25 @@
     #menu {
         display: none;
     }
-    #hero-main {
+    /* #hero-main, #hero-rentals {
         max-width: 100%;
-    }
+    } */
     .footer-contact {
         margin: 10px 40px;
+    }
+
+
+    /* scoots medium - MAIN */
+
+
+    #rental-warnings {
+        margin: 0px 40px;
+        /* max-width: fit-content; */
+    }
+    th, td {
+        padding: 8px 10px;
+    }
+    th {
+        font-size: large;
     }
 }

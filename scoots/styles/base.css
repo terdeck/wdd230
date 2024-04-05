@@ -5,6 +5,7 @@
 :root {
     --dark-green: #359144; /* main */
     --light-green: #73c791;
+    --lighter-green: #7cd79c63;
     --dark-blue: #25478F;
     --light-blue: #9edbeb;
     --white: #f5fcff;
@@ -98,7 +99,7 @@ header {
 	display: block;
 }
 #hero-main, #hero-rentals, .rental-vehicles {   
-    max-width: 375px;
+    max-width: 100%;
     margin: 0px auto;
     height: auto;
     display: block;
@@ -181,7 +182,7 @@ main h2 {
 .rental-info ul {
     line-height: 1.25rem;
 }
-.weather-info {
+.weather-info, .price-table {
     display: flex;
     flex-direction: column;
     padding: 10px;
@@ -251,15 +252,19 @@ footer {
     max-width: fit-content;
     display: block;
     text-align: center;
-    margin: 0 auto;
+    margin: 0px 20px;
 }
-#rental-warnings h3, #rental-list h3{
+#rental-warnings h3 {
     letter-spacing: .05rem;
     font-size: x-large;
+    color: white;
 }
 #liable-ins {
     font-size: small;
     color: var(--dark-blue);
+    text-align: center;
+    margin: 10px;
+    padding: 5px 0px;
 }
 #reserve-link {
     /* text-decoration: none; */
@@ -287,19 +292,33 @@ footer {
     max-width: 10%;
 }
 #table-container {
-    border: 1px solid var(--dark-green);
-    border-radius: 7px;
-    margin: 10px;
+    /* margin: 10px; */
+    display: block;
+    text-align: center;
+    margin: 0 auto;
     border-collapse: collapse;
 }
 th:first-child {
-    background-color: var(--dark-green);
+    background-color: var(--light-green);
     color: var(--white);
 }
-th, tr {
-    border: 1px solid var(--dark-green);
+th, td {
+    padding: 8px 5px;
+    border-radius: 2px;
 }
 th {
-    background-color: var(--light-green);
-
+    background-color: var(--lighter-green);
+    /* color: var(--white); */
 }
+td:first-child {
+    font-weight: 600;
+    text-align: left;
+}
+td {
+    text-align: center;
+    font-size: medium;
+}
+tbody tr:nth-child(odd) {
+    background-color: var(--lighter-green);
+}
+
