@@ -32,9 +32,6 @@
     #menu {
         display: none;
     }
-    /* #hero-main, #hero-rentals {
-        max-width: 100%;
-    } */
     .footer-contact {
         margin: 10px 40px;
     }
@@ -47,10 +44,13 @@
         margin: 0px 40px;
         /* max-width: fit-content; */
     }
+    .rental-rentals img {
+        border: 15px solid var(--white);
+    }
     th, td {
         padding: 8px 10px;
     }
     th {
-        font-size: large;
+        font-size: larger;
     }
 }

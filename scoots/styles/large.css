@@ -36,7 +36,7 @@
         padding: 3rem .74rem;
     }
     .main-rentals, .main-locations {
-        margin: 0px 20px;
+        margin: 0px 50px;
     }
     .main-rentals>* {
         flex: 1 1 200px;
@@ -49,4 +49,22 @@
     .footer-contact {
         margin: 10px 60px;
     }
+
+
+    /* scoots large - MAIN */
+
+
+    #rental-warnings {
+        margin: 0px 80px;
+    }
+    .rental-rentals img {
+        border: 20px solid var(--white);
+        max-width: 20%;
+    }
+    th, td {
+        padding: 10px 12px;
+    }
+    th {
+        font-size: larger;
+    }    
 }
