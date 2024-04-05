@@ -179,8 +179,11 @@ main h2 {
     margin: 25px auto;
     border-radius: 2px;
 }
-.rental-info ul {
+.rental-info p, #rentals-hero-msg {
     line-height: 1.25rem;
+    display: block;
+    text-align: center;
+    margin: 15px;
 }
 .weather-info, .price-table {
     display: flex;
