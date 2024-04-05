@@ -110,7 +110,7 @@ header {
     color: var(--dark-blue);
     padding: 0px 20px;
 }
-#hero-msg p, #rental-warnings, #rental-list {
+#hero-msg p, #reserve-warnings, #rental-list {
     color: black;
     text-align: center;
     margin: 10px;
@@ -251,18 +251,7 @@ footer {
 
 /* scoots mobile page - RENTALS */
 
-#rental-warnings {
-    background-color: var(--light-green);
-    max-width: fit-content;
-    display: block;
-    text-align: center;
-    margin: 0px 20px;
-}
-#rental-warnings h3 {
-    letter-spacing: .05rem;
-    font-size: x-large;
-    color: white;
-}
+
 #liable-ins {
     font-size: small;
     color: var(--dark-blue);
@@ -326,3 +315,19 @@ tbody tr:nth-child(odd) {
     background-color: var(--lighter-green);
 }
 
+
+
+
+
+#reserve-warnings {
+    background-color: var(--light-green);
+    max-width: fit-content;
+    display: block;
+    text-align: center;
+    margin: 0px 20px;
+}
+#reserve-warnings h3 {
+    letter-spacing: .05rem;
+    font-size: x-large;
+    color: white;
+}
