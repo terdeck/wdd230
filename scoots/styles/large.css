@@ -2,13 +2,13 @@
 
     /* scoots large - MAIN */
 
-    :root {
-        --dark-green: #359144; /* main */
+    /* :root {
+        --dark-green: #359144; 
         --light-green: #73c791;
         --dark-blue: #25478F;
         --light-blue: #9edbeb;
         --white: #f5fcff;
-    }
+    } */
     body {
         max-width: 100%;
     }

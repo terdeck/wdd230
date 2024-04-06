@@ -3,12 +3,17 @@
 /* scoots mobile page - MAIN */
 
 :root {
-    --dark-green: #359144; /* main */
+    /* --dark-green: #359144;  */
+    --dark-green: #2c863e;
+    /* --dark-green: #2f803c;  */
+    /* --dark-green: #2c7839;  */
+    /* --dark-green: #276a32;  */
     --light-green: #73c791;
     --lighter-green: #7cd79c63;
     --dark-blue: #25478F;
     --light-blue: #9edbeb;
-    --white: #f5fcff;
+    /* --white-ish: #f5fcff; */
+    --white: white;
 }
 body {
     margin: 0 auto;
@@ -98,14 +103,14 @@ header {
 .open a {
 	display: block;
 }
-#hero-main, #hero-rentals, .rental-vehicles {   
+#hero-main, #hero-rentals, .rental-vehicles, #hero-reserve {   
     max-width: 100%;
     margin: 0px auto;
     height: auto;
     display: block;
     text-align: center;
 }
-#hero-msg h1, #rentals-hero-msg h1 {
+#hero-msg h1, #rentals-hero-msg h1, #reserve-hero-msg h1, #confirm-hero-msg h1 {
     text-align: center;
     color: var(--dark-blue);
     padding: 0px 20px;
@@ -163,7 +168,7 @@ main h2 {
     margin: 15px 15px;    
     box-shadow: 1px 2px 10px #dfdfdf;
     padding: 10px;
-    background-color: white;
+    background-color: var(--white);
 }
 .rental-info h3, .location-info h3, #weather h3, #rental-list h3 {
     text-align: center;
@@ -252,13 +257,6 @@ footer {
 /* scoots mobile page - RENTALS */
 
 
-#liable-ins {
-    font-size: small;
-    color: var(--dark-blue);
-    text-align: center;
-    margin: 10px;
-    padding: 5px 0px;
-}
 #reserve-link {
     /* text-decoration: none; */
     color: white;
@@ -320,7 +318,9 @@ tbody tr:nth-child(odd) {
 
 
 #reserve-warnings {
-    background-color: var(--light-green);
+    border: 10px solid var(--dark-green);
+    border-radius: 7px;  
+    /* background-color: var(--light-green); */
     max-width: fit-content;
     display: block;
     text-align: center;
@@ -329,5 +329,12 @@ tbody tr:nth-child(odd) {
 #reserve-warnings h3 {
     letter-spacing: .05rem;
     font-size: x-large;
-    color: white;
+    color: var(--dark-green);
+}
+#liable-ins {
+    font-size: small;
+    color: var(--dark-blue);
+    text-align: center;
+    margin: 10px;
+    padding: 5px 0px;
 }
