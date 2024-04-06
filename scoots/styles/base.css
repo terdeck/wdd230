@@ -115,7 +115,7 @@ header {
     color: var(--dark-blue);
     padding: 0px 20px;
 }
-#hero-msg p, #reserve-warnings, #rental-list {
+#hero-msg p, #reserve-warnings, #rental-list, #confirm-hero-msg p {
     color: black;
     text-align: center;
     margin: 10px;
