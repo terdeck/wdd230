@@ -61,12 +61,12 @@
     </div>
     <main class="reserve-main">
         <h2>Reservations</h2>
-        <div>
+        <div class="reservation-msg">
             <p>Whether you use our location in Centro de Cozumel or the location in Puerta Maya, we strive to offer the best rental experience on the island.</p>
             <p>Fill out the form below and you will be on your way to adventure!</p>
         </div>
         <div id="reserve-form">
-            <form method="get" action="confirm.html" class="wf1">
+            <form method="get" action="confirm.html" class="reserve-form">
                 <h3>Reservation Form </h3>
                 <fieldset>
                     <legend>Contact Information</legend>
@@ -74,7 +74,7 @@
                     <label>Last Name <input type="text" name="lname" id="lname" required></label>
                     <label>Email <input type="email" name="email" id="email" placeholder="someone@gmail.com" required></label>
                     <label>Phone <input type="tel" name="phone" id="phone" placeholder="1235551234" required></label>
-                    <label>Country <input type="" name="country" id="country" required></label>
+                    <label>Country <input type="" name="country" id="country" placeholder="Mexico, USA, Canada etc" required></label>
                 </fieldset>
                 <fieldset>
                     <legend>Rental Information</legend>
@@ -97,7 +97,7 @@
                     <label><input type="radio" name="addIns" value="later"> Purchase at counter</label>
                 </fieldset>
                 <fieldset>
-                    <legend>Pick-up Information</legend>
+                    <legend>Location Information</legend>
                     <div>Pick-up Location </div>
                     <label><input type="radio" name="centro" value="yes"> Centro de Cozumel</label>
                     <label><input type="radio" name="puertaMaya" value="no"> Puerta Maya</label>
@@ -106,11 +106,12 @@
                     <label><input type="radio" name="centro" value="yes"> Centro de Cozumel</label>
                     <label><input type="radio" name="puertaMaya" value="no"> Puerta Maya</label>
                     <label><input type="radio" name="deliver" value="no"> Same as pick-up/delivery location</label>
-                    <label>Hotel name OR Address OR Cruise <b>ship</b> name <input type="text" name="address" required></label>
+                    <div>Hotel name OR Address OR Cruise <b>ship</b> name</div>
+                    <label><input type="text" name="address" required></label>
                 </fieldset>
                 <fieldset>
-                    <legend>Additional Comments</legend>
-                    <label for="comments">Please let us know if there are any special accommodations or if you have any questions/concerns. </label>
+                    <legend>Additional Information</legend>
+                    <label for="comments" id="reserve-comments">Please let us know if there are any special accommodations or if you have any questions/concerns. </label>
                     <textarea id="comments" name="comments" rows="6"></textarea>
                 </fieldset>
                 <input type="submit" value="Confirm Reservation">

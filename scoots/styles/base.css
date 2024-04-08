@@ -115,7 +115,7 @@ header {
     color: var(--dark-blue);
     padding: 0px 20px;
 }
-#hero-msg p, #reserve-warnings, #rental-list, #confirm-hero-msg p {
+#hero-msg p, #reserve-warnings, #rental-list, #confirm-hero-msg p, .reservation-msg {
     color: black;
     text-align: center;
     margin: 10px;
@@ -170,7 +170,7 @@ main h2 {
     padding: 10px;
     background-color: var(--white);
 }
-.rental-info h3, .location-info h3, #weather h3, #rental-list h3 {
+.rental-info h3, .location-info h3, #weather h3, #rental-list h3, .reserve-form h3 {
     text-align: center;
     color: var(--dark-blue);
     font-size: x-large;
@@ -190,7 +190,7 @@ main h2 {
     text-align: center;
     margin: 15px;
 }
-.weather-info, .price-table {
+.weather-info, .price-table  {
     display: flex;
     flex-direction: column;
     padding: 10px;
@@ -337,4 +337,91 @@ tbody tr:nth-child(odd) {
     text-align: center;
     margin: 10px;
     padding: 5px 0px;
+}
+
+
+/*----- FORM STYLING -----*/
+
+.reserve-form h3 {
+    color: var(--white);
+    padding: .8rem 0px;
+    margin: .15rem 2% 4rem 0%;
+    margin-bottom: -10px;
+    background-color: var(--dark-green);
+    width: 100%;
+    max-width: 100%;
+    border-radius: 3px; 
+    letter-spacing: .05rem;
+}
+.reserve-form {
+    display: block;
+    margin: 0 auto;
+    text-align: left;
+    max-width: 70%;
+}
+.reserve-form fieldset {
+    margin: 2rem 0;
+    border: 2.5px solid var(--dark-green);
+    border-radius: 7px; 
+    padding: .5rem 8%;
+    padding-bottom: 25px;
+    font-weight: 500;
+}
+.reserve-form legend {
+    color: var(--dark-green);
+    padding: 0 .5rem;
+    font-size: larger;
+    font-weight: 700;
+    letter-spacing: .05rem;
+}
+.reserve-form label, .reserve-form div {
+    display: block;
+    padding-top: 1rem;
+    color: black;
+    font-size: medium;
+}
+.reserve-form div, #reserve-comments {
+    color: var(--dark-blue);
+    font-weight: 600;
+    letter-spacing: .05rem;
+}
+#reserve-comments {
+    padding-bottom: 1rem;
+}
+.reserve-form input[type="text"],
+.reserve-form input[type="email"],
+.reserve-form input[type="tel"],
+.reserve-form input[type=""],
+.reserve-form input[type="date"],
+.reserve-form select,
+.reserve-form textarea {
+    /* background-color: #f1f1f1; */
+    display: block;
+    border: 1px solid lightgray;
+    border-radius: 3px; 
+    padding: 1rem;
+    color: rgb(142, 142, 142);
+    /* color: gray; */
+    width: 100%;
+    max-width: 90%;
+    appearance: none;
+    margin: 4px 0px 4px 0px;
+}
+.reserve-form input[type="radio"] {
+    margin-right: 6px;
+}
+.reserve-form [type="submit"] {
+    border: 2.5px solid var(--dark-blue);
+    background-image: linear-gradient(#5173ba, var(--dark-blue));
+    /* background-image: linear-gradient(#349e49, var(--dark-green)); */
+    /* background-color: var(--dark-green); */
+    color: white;
+    border-radius: 3px; 
+    padding: .8rem 0px;
+    width: 100%;
+    max-width: 100%;
+    margin: .15rem 2% 4rem 0%;
+    font-weight: 700;
+    font-size: larger;
+    letter-spacing: .05rem;
 }
