@@ -46,10 +46,11 @@
     <main class="contact-main">
         <h2>Contact Information</h2>
         <div class="contact-msg">
-            <p>Our offices in Centro de Cozumel and Puerta Maya are open Mon-Sat, 08:00-18:00 / 8am-6pm. We can be reached using any of the methods found below:</p>
+            <p>Our offices in Centro de Cozumel and Puerta Maya are open <b>Mon-Sat, 08:00-18:00 / 8am-6pm</b>.</p>
+            <p>We can be reached using any of the following methods:</p>
             <p>📞 <b>+52-(980)-999-9999</b></p>
             <p>✉️ <b>scoots@email.com</b></p>
-            <p>📱 <b>Find us on Social Media:</b></p>
+            <p>📱 Find us on Social Media:</p>
             <div class="footer-socials">
                 <a class="social-link" href="https://www.facebook.com">
                     <img class="social-icon" loading="lazy" src="images/fb-light-green.svg" alt="facebook logo">
@@ -61,6 +62,20 @@
                     <img class="social-icon" loading="lazy" src="images/tweet-light-green.svg" alt="twitter logo">
                 </a>
             </div>
+            <form method="get" action="confirm.html" class="contact-form">
+                <h3>Submission Form </h3>
+                <p>Or submit a question in the field below. Any messages should be answered within 2-3 business days: </p>
+                <fieldset>
+                    <legend>Request Information</legend>
+                    <label>First Name <input type="text" name="fname" id="fname" required></label>
+                    <label>Last Name <input type="text" name="lname" id="lname" required></label>
+                    <label>Email <input type="email" name="email" id="email" placeholder="someone@gmail.com" required></label>
+                    <!-- <legend>Additional Information</legend> -->
+                    <label for="comments" id="reserve-comments">Enter any questions or comments in the box below: </label>
+                    <textarea id="comments" name="comments" rows="6"></textarea>
+                </fieldset>
+                <input type="submit" value="Request Submission">
+            </form>
         </div>
         <h2>Locations</h2>
         <div class="contact-locations">
@@ -92,6 +107,7 @@
         <div class="footer-contact">
             <h2>Contact</h2>
             <p>📞 +52-(980)-999-9999</p>
+            <p>🗓️ Mon-Sat: 08:00-18:00 / 8am-6pm</p>
             <p>✉️ scoots@email.com</p>
         </div>
         <p class="project-info">&copy;<span id="copyright"></span>   ~Scoots~   |   <b>Tara Decker</b>   |   WDD 230 Project</p>

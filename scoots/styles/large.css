@@ -35,14 +35,14 @@
         display: block;
         padding: 3rem .74rem;
     }
-    .main-rentals, .main-locations {
+    .main-rentals, .main-locations, .contact-locations {
         margin: 0px 50px;
     }
     .main-rentals>* {
         flex: 1 1 200px;
         max-width: 400px;
     }
-    .main-locations>* {
+    .main-locations>*, .contact-locations>* {
         flex: 1 1 200px;
         max-width: 50%;
     }
@@ -54,7 +54,7 @@
     }
 
 
-    /* scoots large - MAIN */
+    /* scoots large - RENTALS */
 
 
     #rental-warnings {

@@ -158,7 +158,7 @@ main h2 {
     flex: 1 1 200px;
     max-width: 260px;
 }
-.main-locations>* {
+.main-locations>*, .contact-locations>* {
     flex: 1 1 200px;
     max-width: 90%;
 }
@@ -170,7 +170,7 @@ main h2 {
     padding: 10px;
     background-color: var(--white);
 }
-.rental-info h3, .location-info h3, #weather h3, #rental-list h3, .reserve-form h3 {
+.rental-info h3, .location-info h3, #weather h3, #rental-list h3, .reserve-form h3, .contact-form h3 {
     text-align: center;
     color: var(--dark-blue);
     font-size: x-large;
@@ -357,13 +357,13 @@ tbody tr:nth-child(odd) {
     border-radius: 3px; 
     letter-spacing: .05rem;
 }
-.reserve-form {
+.reserve-form, .contact-form {
     display: block;
     margin: 0 auto;
     text-align: left;
     max-width: 70%;
 }
-.reserve-form fieldset {
+.reserve-form fieldset, .contact-form fieldset {
     margin: 2rem 0;
     border: 2.5px solid var(--dark-green);
     border-radius: 7px; 
@@ -371,14 +371,16 @@ tbody tr:nth-child(odd) {
     padding-bottom: 25px;
     font-weight: 500;
 }
-.reserve-form legend {
+.reserve-form legend, .contact-form legend {
     color: var(--dark-green);
     padding: 0 .5rem;
     font-size: larger;
     font-weight: 700;
     letter-spacing: .05rem;
 }
-.reserve-form label, .reserve-form div {
+.reserve-form label,
+.reserve-form div, 
+.contact-form label {
     display: block;
     padding-top: 1rem;
     color: black;
@@ -398,7 +400,9 @@ tbody tr:nth-child(odd) {
 .reserve-form input[type=""],
 .reserve-form input[type="date"],
 .reserve-form select,
-.reserve-form textarea {
+.reserve-form textarea,
+.contact-form input[type="text"],
+.contact-form input[type="email"] {
     /* background-color: #f1f1f1; */
     display: block;
     border: 1px solid lightgray;
@@ -414,7 +418,7 @@ tbody tr:nth-child(odd) {
 .reserve-form input[type="radio"] {
     margin-right: 6px;
 }
-.reserve-form [type="submit"] {
+.reserve-form [type="submit"], .contact-form [type="submit"] {
     border: none;
     background-image: linear-gradient(#5173ba, var(--dark-blue));
     /* background-image: linear-gradient(#349e49, var(--dark-green)); */
