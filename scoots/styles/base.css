@@ -115,7 +115,7 @@ header {
     color: var(--dark-blue);
     padding: 0px 20px;
 }
-#hero-msg p, #reserve-warnings, #rental-list, #confirm-hero-msg p, .reservation-msg, #contact-hero-msg p {
+#hero-msg p, #reserve-warnings, #rental-list, #confirm-hero-msg p, .reservation-msg, #contact-hero-msg p, .contact-msg p {
     color: black;
     text-align: center;
     margin: 10px;
@@ -149,7 +149,7 @@ main h2 {
     margin: 50px 0px 5px 0px;
     font-size: xx-large;
 }
-.main-rentals, .main-locations, .rental-rentals {
+.main-rentals, .main-locations, .rental-rentals, .contact-locations {
     margin: 0px 10px;
     display: flex;
     flex-wrap: wrap;
@@ -229,6 +229,9 @@ footer {
 .footer-socials {
     display: block;
     text-align: center;
+}
+.footer-socials a.social-link, .footer-socials a.social-icon {
+    text-decoration: none !important;
 }
 .social-icon {
     max-width: 50px;
@@ -426,3 +429,8 @@ tbody tr:nth-child(odd) {
     font-size: larger;
     letter-spacing: .05rem;
 }
+
+
+/* scoots mobile page - RESERVATIONS */
+
+
