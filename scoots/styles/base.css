@@ -103,19 +103,19 @@ header {
 .open a {
 	display: block;
 }
-#hero-main, #hero-rentals, .rental-vehicles, #hero-reserve {   
+#hero-main, #hero-rentals, .rental-vehicles, #hero-reserve, #hero-contact {   
     max-width: 100%;
     margin: 0px auto;
     height: auto;
     display: block;
     text-align: center;
 }
-#hero-msg h1, #rentals-hero-msg h1, #reserve-hero-msg h1, #confirm-hero-msg h1 {
+#hero-msg h1, #rentals-hero-msg h1, #reserve-hero-msg h1, #confirm-hero-msg h1, #contact-hero-msg h1 {
     text-align: center;
     color: var(--dark-blue);
     padding: 0px 20px;
 }
-#hero-msg p, #reserve-warnings, #rental-list, #confirm-hero-msg p, .reservation-msg {
+#hero-msg p, #reserve-warnings, #rental-list, #confirm-hero-msg p, .reservation-msg, #contact-hero-msg p {
     color: black;
     text-align: center;
     margin: 10px;
@@ -331,7 +331,7 @@ tbody tr:nth-child(odd) {
     font-size: x-large;
     color: var(--dark-green);
 }
-#liable-ins {
+#liable-ins, #contact-wait {
     font-size: small;
     color: var(--dark-blue);
     text-align: center;
@@ -412,7 +412,7 @@ tbody tr:nth-child(odd) {
     margin-right: 6px;
 }
 .reserve-form [type="submit"] {
-    border: 2.5px solid var(--dark-blue);
+    border: none;
     background-image: linear-gradient(#5173ba, var(--dark-blue));
     /* background-image: linear-gradient(#349e49, var(--dark-green)); */
     /* background-color: var(--dark-green); */
