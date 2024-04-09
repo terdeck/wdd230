@@ -2,9 +2,8 @@
 
 // lat and long for Cozumel: 20.42371851995887, -86.92918508907064
 
-const url = "https://api.openweathermap.org/data/2.5/weather?lat=20.42&lon=-86.93&units=standard&appid=fb2b969328f7c67e812d01d18df50663";
 const currentTemp = document.querySelector("#current-temp");
-const currentHumid = document.querySelector("current-humid");
+const currentHumid = document.querySelector("#current-humid");
 const forecastTemp = document.querySelector("#forecast-temp");
 const weatherIcon = document.querySelector(".weather-icon");
 const captionDesc = document.querySelector("figcaption");
@@ -12,6 +11,7 @@ const tempBanner = document.querySelector(".banner-text");
 let isFahrenheit = true;
 
 async function fetchWeather() {
+    const url = "https://api.openweathermap.org/data/2.5/weather?lat=20.42&lon=-86.93&units=standard&appid=fb2b969328f7c67e812d01d18df50663";
     try {
         const response = await fetch(url);
         if (response.ok) {
@@ -27,14 +27,14 @@ async function fetchWeather() {
 }
 
 async function fetchForecast() {
+    const url = "https://api.openweathermap.org/data/2.5/forecast/daily?lat=40.19&lon=-85.38&units=imperial&appid=fb2b969328f7c67e812d01d18df50663";
     try {
         const response = await fetch(url);
         if (response.ok) {
             const data = await response.json();
             console.log(data);
-            const forecast = data.daily[1];
-            const tomorrowForecast = forecast.temp.day;
-            displayForecastWeather(tomorrowForecast);
+            const forecast = data.list[1];
+            displayForecastWeather(forecast);
         } else {
             throw new Error(await response.text());
         }
@@ -44,7 +44,6 @@ async function fetchForecast() {
 }
 
 function displayCurrentWeather(data) {
-    currentTemp.innerHTML = "";
     const iconsrc = `https://openweathermap.org/img/w/${data.weather[0].icon}.png`;
     const desc = data.weather[0].description;
     const temperature = data.main.temp.toFixed(0);
@@ -54,19 +53,17 @@ function displayCurrentWeather(data) {
     weatherIcon.setAttribute('alt', desc);
     captionDesc.textContent = desc;
 
-    const listItem = document.createElement("li");
-    listItem.innerHTML = `
-            <p>Temperature: ${updateTemp(temperature)}</p>
-            <p>Humidity: ${humidity}%;</p>
-            <img src="${iconsrc}" alt="${desc}">
-            <figcaption>${desc}</figcaption>
+    currentTemp.innerHTML = `
+        <p>Temperature: ${updateTemp(temperature)}</p>
+        <img src="${iconsrc}" alt="${desc}">
+        <figcaption>${desc}</figcaption>
         `;
-    currentTemp.appendChild(listItem);
+    currentHumid.innerHTML = `<p>Humidity: ${humidity}%;</p>`;
+
     console.log();
 }
 
 function displayForecastWeather(data) {
-    tomorrowTemp.innerHTML = "";
     const iconsrc = `https://openweathermap.org/img/w/${data.weather[0].icon}.png`;
     const desc = data.weather[0].description;
     const temperature = data.main.temp.toFixed(0);
@@ -76,14 +73,12 @@ function displayForecastWeather(data) {
     weatherIcon.setAttribute('alt', desc);
     captionDesc.textContent = desc;
 
-    const listItem = document.createElement("li");
-    listItem.innerHTML = `
-            <p>Temperature: ${updateTemp(temperature)}</p>
-            <p>Humidity: ${humidity}%;</p>
-            <img src="${iconsrc}" alt="${desc}">
-            <figcaption>${desc}</figcaption>
-        `;
-    currentTemp.appendChild(listItem);
+    forecastTemp.innerHTML = `
+        <p>Temperature: ${updateTemp(temperature)}</p>
+        <p>Humidity: ${humidity}%;</p>
+        <img src="${iconsrc}" alt="${desc}">
+        <figcaption>${desc}</figcaption>
+    `;
     console.log();
 }
 
@@ -104,6 +99,7 @@ function convertFahrenheitToCelsius(tempFahrenheit) {
 function weatherToggle() {
     isFahrenheit = !isFahrenheit;
     fetchWeather();
+    fetchForecast();
     console.log();
 }
 
@@ -111,7 +107,7 @@ document.getElementById("toggle-weather").addEventListener("click", weatherToggl
 
 
 function displayHighTemp(data) {
-    const highTemp = data.main.temp_max;
+    const highTemp = data.main.temp_max.toFixed(0);
 
     tempBanner.innerHTML = `<strong>Daily High Temp:</strong> ${updateTemp(highTemp)}`;
     

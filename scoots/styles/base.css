@@ -245,7 +245,7 @@ footer {
     color: var(--white)
 }
 .footer-contact p {
-    line-height: 1rem;
+    line-height: 1.25rem;
     font-size: large;
 }
 .project-info {
