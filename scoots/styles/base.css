@@ -110,12 +110,12 @@ header {
     display: block;
     text-align: center;
 }
-#hero-msg h1, #rentals-hero-msg h1, #reserve-hero-msg h1, #confirm-hero-msg h1, #contact-hero-msg h1 {
+#hero-msg h1, #rentals-hero-msg h1, #reserve-hero-msg h1, #confirm-hero-msg h1, #contact-hero-msg h1, #submit-hero-msg h1 {
     text-align: center;
     color: var(--dark-blue);
     padding: 0px 20px;
 }
-#hero-msg p, #reserve-warnings, #rental-list, #confirm-hero-msg p, .reservation-msg, #contact-hero-msg p, .contact-msg p {
+#hero-msg p, #reserve-warnings, #rental-list, #confirm-hero-msg p, .reservation-msg, #contact-hero-msg p, .contact-msg p, #submit-hero-msg p {
     color: black;
     text-align: center;
     margin: 10px;
