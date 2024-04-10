@@ -24,7 +24,7 @@
         <a id="logo-link" href="index.html">
             <img id="logo" src="images/scoots-logo-green-back-edit2.svg" alt="Scoots logo">
         </a>
-        <button id="menu"></button>
+        <button id="menu">Menu</button>
         <nav class="navigation">
             <a href="index.html">Home</a>
             <a href="rentals.html">Rentals</a>
@@ -33,11 +33,11 @@
         </nav>
     </header>
     <div id="reserve-hero">
-        <img id="hero-reserve" src="images/hero-sunrise-1280x556.webp" alt="sunrise over Cozumel port" width="1200" height="600">
+        <img id="hero-reserve" src="images/hero-sunrise-1280x556.webp" alt="sunrise over Cozumel port" width="1280" height="556">
         <div id="reserve-hero-msg">
             <h1>Rental Agreement</h1>
             <section id="reserve-warnings">
-                <h3><b>Important:</b></h3>
+                <h2><b>Important:</b></h2>
                 <p>⏺ All online reservations <b>MUST</b> be submitted through our reservation form found below.</p>
                 <p>⏺ A <b>$50 security deposit</b> is required to confirm ANY reservation.</p>
                 <p>⏺ A <b>valid</b> drivers license is required in hand at the time of rental.</p>
@@ -47,7 +47,7 @@
             </section>
             <div id="rentals-hero-msg">
                 <section id="rental-list">
-                    <h3>Includes:</h3>
+                    <h2>Includes:</h2>
                     <p>⏺ <b>Unlimited</b> mileage.</p>
                     <p>⏺ Liability insurance.</p>
                     <p>⏺ <b>Free</b> delivery to Cozumel hotels or Airbnbs for 2+ day rentals.</p>
@@ -81,7 +81,7 @@
                     <label>Pick-up Date <input type="date" name="pickup" required></label>
                     <label>Drop-off Date <input type="date" name="dropoff" required></label>
                     <div>Rental Type</div>
-                        <select name="vehicle" required>
+                        <label for="vehicle"><select id="vehicle" name="vehicle" required>
                             <!-- &#9662; is a down arrow -->
                             <option value="">Please Select &#9662;</option> 
                             <option value="metro">Honda Metro Scooter, 1 seat</option> 
@@ -90,7 +90,7 @@
                             <option value="pioneer">Honda Pioneer ATV, 4 seats</option>
                             <option value="jeep2">Jeep Wrangler - 2door, 4 seats, no A/C</option>
                             <option value="jeep4">Jeep Wrangler - 4door, 5 seats, A/C</option>    
-                        </select>
+                        </select></label>
                     <div>Do you wish to purchase additional Damage Insurance? (optional)</div>
                     <label><input type="radio" name="addIns" value="yes"> Yes</label>
                     <label><input type="radio" name="addIns" value="no"> No</label>
@@ -107,7 +107,7 @@
                     <label><input type="radio" name="puertaMaya" value="no"> Puerta Maya</label>
                     <label><input type="radio" name="deliver" value="no"> Same as pick-up/delivery location</label>
                     <div>Hotel name OR Address OR Cruise <b>ship</b> name</div>
-                    <label><input type="text" name="address" required></label>
+                    <label><input type="text" name="address" placeholder="Address where you will be located" required></label>
                 </fieldset>
                 <fieldset>
                     <legend>Additional Information</legend>

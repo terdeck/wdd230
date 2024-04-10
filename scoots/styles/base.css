@@ -178,7 +178,7 @@ main h2 {
     padding: 10px;
     background-color: var(--white);
 }
-.rental-info h3, .location-info h3, #weather h3, #rental-list h3, .reserve-form h3, .contact-form h3 {
+.rental-info h3, .location-info h3, #weather h3, #rental-list h2, .reserve-form h3, .contact-form h3 {
     text-align: center;
     color: var(--dark-blue);
     font-size: x-large;
@@ -357,7 +357,7 @@ tbody tr:nth-child(odd) {
     text-align: center;
     margin: 0px 20px;
 }
-#reserve-warnings h3 {
+#reserve-warnings h2 {
     letter-spacing: .05rem;
     font-size: x-large;
     color: var(--dark-green);
