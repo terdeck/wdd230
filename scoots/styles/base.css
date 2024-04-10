@@ -261,7 +261,7 @@ footer {
     margin: 20px auto 10px auto;
 }
 .footer-contact {
-    margin: 0px 15px;
+    margin: 10px 15px;
     height: auto;
     display: block;
     text-align: left;
@@ -270,6 +270,9 @@ footer {
 .footer-contact p {
     line-height: 1.5rem;
     font-size: large;
+    /* padding: 0px; */
+    margin: 10px 0px;
+    font-weight: 500;
 }
 .project-info {
     display: block;
@@ -278,6 +281,8 @@ footer {
     font-size: medium;
     margin: 40px auto 0px auto;
     padding: 20px;
+    font-weight: 500;
+    letter-spacing: .04rem;
 }
 
 /* scoots mobile page - RENTALS */
