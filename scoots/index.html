@@ -20,14 +20,14 @@
     <meta property="og:url" content="https://terdeck.github.io/wdd230/">
 </head>
 <body>
-    <!-- <div id="home-banner">
+    <div id="home-banner">
         <div class="banner-content">
             <div>
                 <p class="banner-text"></p>
             </div>
             <button class="banner-close" type="button">ｘ<span class="close-icon"></span></button>
         </div>
-    </div> -->
+    </div>
     <header>
         <a id="logo-link" href="index.html">
             <img id="logo" src="images/scoots-logo-green-back-edit2.svg" alt="Scoots logo">
@@ -89,12 +89,23 @@
         </div>
         <div class="weather-info">
             <h2>Forecast: </h2>
-            <button class="toggle-weather">℉ / ℃</button>
+            <div class="toggle-weather">
+                <button class="toggle-fahrenheit">℉</button>
+                <button class="toggle-celsius">℃</button>
+            </div>
             <div id="weather">
                 <h3>Current Temp: </h3>
                 <div class="current-temp">
                     <p><span id="current-temp"></span></p>
+                    <figure>
+                        <img class="weather-icon" src="https://api.openweathermap.org/data/2.5/weather?lat=20.42&lon=-86.93&units=standard&appid=fb2b969328f7c67e812d01d18df50663" alt="weather icon">
+                        <figcaption></figcaption>
+                    </figure>
                     <p><span id="current-humid"></span></p>
+                    <figure>
+                        <img class="weather-icon" src="https://api.openweathermap.org/data/2.5/weather?lat=20.42&lon=-86.93&units=standard&appid=fb2b969328f7c67e812d01d18df50663" alt="weather icon">
+                        <figcaption></figcaption>
+                    </figure>
                 </div>
                 <h3>Tomorrow's Forecast: </h3>
                 <div class="forecast-temp">

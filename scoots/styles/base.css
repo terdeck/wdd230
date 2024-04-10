@@ -21,17 +21,19 @@ body {
 }
 .banner-content {
     padding: 20px 100px;
-    max-width: 375px;
+    max-width: 100%;
     margin: 0 auto;
     display: flex;
-    align-items: center;
     position: fixed;
     background-color: var(--white);
 }
-.banner-text, .banner-text p{
-    flex-grow: 1;
+.banner-text {
+    display: block;
+    /* flex-grow: 1; */
     line-height: 1.5;
-    color: var(--dark-green);
+    /* color: var(--dark-green); */
+    color: red;
+    background-color: red;
     padding-right: 10px;
     text-align: center;
 }
@@ -196,18 +198,28 @@ main h2 {
     margin-bottom: 75px;
 }
 .toggle-weather {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+}
+/* .toggle-weather a:hover, .toggle-weather a:active {
+    color: white;
+    background-color: var(--light-green);
+} */
+.toggle-fahrenheit:hover, .toggle-fahrenheit:active,
+.toggle-celsius:hover, .toggle-celsius:active {
+    color: var(--white);
+    background-color: var(--light-green);
+}
+.toggle-fahrenheit, .toggle-celsius {
     border: none;
     width: 75px;
     padding: 5px;
-    margin: 15px auto;
+    margin: 5px auto;
     background-color: var(--dark-green);
     color: var(--white);
     border-radius: 7px;
     font-weight: 600;
-}
-.toggle-weather a:hover, .toggle-weather a:active {
-    color: white;
-    background-color: var(--light-green);
 }
 #weather {
     border: 1px solid lightgray;
@@ -216,6 +228,11 @@ main h2 {
     box-shadow: 1px 2px 10px #dfdfdf;
     padding: 10px;
     background-color: white;
+}
+.current-temp, .forecast-temp {
+    display: block;
+    margin: auto 0;
+    text-align: center;
 }
 footer {
     background-color: var(--dark-green);

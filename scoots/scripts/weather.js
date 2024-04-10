@@ -7,16 +7,19 @@ const currentHumid = document.querySelector("#current-humid");
 const forecastTemp = document.querySelector("#forecast-temp");
 const weatherIcon = document.querySelector(".weather-icon");
 const captionDesc = document.querySelector("figcaption");
+// const tempBanner = document.querySelector(".banner-content");
 const tempBanner = document.querySelector(".banner-text");
+
 let isFahrenheit = true;
 
 async function fetchWeather() {
-    const url = "https://api.openweathermap.org/data/2.5/weather?lat=20.42&lon=-86.93&units=standard&appid=fb2b969328f7c67e812d01d18df50663";
+    const url = "https://api.openweathermap.org/data/2.5/weather?lat=20.42&lon=-86.93&units=imperial&appid=fb2b969328f7c67e812d01d18df50663";
     try {
         const response = await fetch(url);
         if (response.ok) {
             const data = await response.json();
             console.log(data);
+            // const weather = data.weather;
             displayCurrentWeather(data);
         } else {
             throw new Error(await response.text());
@@ -27,7 +30,7 @@ async function fetchWeather() {
 }
 
 async function fetchForecast() {
-    const url = "https://api.openweathermap.org/data/2.5/forecast/daily?lat=40.19&lon=-85.38&units=imperial&appid=fb2b969328f7c67e812d01d18df50663";
+    const url = "https://api.openweathermap.org/data/2.5/forecast?lat=40.19&lon=-85.38&units=imperial&appid=fb2b969328f7c67e812d01d18df50663";
     try {
         const response = await fetch(url);
         if (response.ok) {
@@ -45,7 +48,7 @@ async function fetchForecast() {
 
 function displayCurrentWeather(data) {
     const iconsrc = `https://openweathermap.org/img/w/${data.weather[0].icon}.png`;
-    const desc = data.weather[0].description;
+    const desc = data.weather.description;
     const temperature = data.main.temp.toFixed(0);
     const humidity = data.main.humidity;
 
@@ -58,7 +61,7 @@ function displayCurrentWeather(data) {
         <img src="${iconsrc}" alt="${desc}">
         <figcaption>${desc}</figcaption>
         `;
-    currentHumid.innerHTML = `<p>Humidity: ${humidity}%;</p>`;
+    currentHumid.innerHTML = `<p>Humidity: ${humidity}%</p>`;
 
     console.log();
 }
@@ -103,20 +106,41 @@ function weatherToggle() {
     console.log();
 }
 
-document.getElementById("toggle-weather").addEventListener("click", weatherToggle);
+const toggleF = document.querySelector(".toggle-fahrenheit");
+const toggleC = document.querySelector(".toggle-celsius");
+
+toggleF.addEventListener("click", () =>{
+    isFahrenheit = true;
+    weatherToggle().classList.add("fahrenheit");
+    weatherToggle().classList.remove("celsius");
+    weatherToggle().classList.remove("fahrenheit");
+    weatherToggle().classList.add("celsius");
+});
+
+toggleC.addEventListener("click", () =>{
+    isFahrenheit = false;
+    weatherToggle().classList.add("fahrenheit");
+    weatherToggle().classList.remove("celsius");
+    weatherToggle().classList.remove("fahrenheit");
+    weatherToggle().classList.add("celsius");
+});
 
 
 function displayHighTemp(data) {
     const highTemp = data.main.temp_max.toFixed(0);
 
-    tempBanner.innerHTML = `<strong>Daily High Temp:</strong> ${updateTemp(highTemp)}`;
-    
-    const bannerClose = document.querySelector(".banner-close");
-    bannerClose.addEventListener("click", () => {
+    tempBanner.innerHTML = `<strong>Daily High Temp:</strong> ${highTemp}`;
+
+    // displayHighTemp();
+    console.log();
+}
+const banner = document.getElementById("home-banner");
+const bannerClose = document.querySelector(".banner-close");
+
+bannerClose.addEventListener("click", () => {
     banner.style.display = "none";
     console.log();
 });
-}
 
 fetchWeather();
 fetchForecast();
