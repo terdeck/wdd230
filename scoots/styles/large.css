@@ -12,10 +12,10 @@
     body {
         max-width: 100%;
     }
-    #home-banner {
+    /* #home-banner {
         padding: 20px 610px;
-        /* text-align: center; */
-    }
+        /* text-align: center; 
+    } */
     header {
         display: grid;
         grid-template-columns: 1fr 1fr;

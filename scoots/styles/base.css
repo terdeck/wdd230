@@ -20,22 +20,31 @@ body {
     font-family: 'Poppins', sans-serif;
 }
 #home-banner {
-    padding: 20px 100px !important;
+    padding: 10px 50px;
     width: 100%;
     max-width: 100%;
     margin: 0 auto;
     display: flex;
     position: fixed;
-    background-color: var(--light-blue);
+    background-color: var(--dark-blue);
 }
-.banner-text {
+.banner-text strong {
     display: block;
-    /* flex-grow: 1; */
     line-height: 1.5;
-    /* color: var(--dark-green); */
-    color: red;
-    /* background-color: red; */
-    padding-right: 10px;
+    color: var(--white);
+    /* padding-right: 10px; */
+    margin: 0 auto;
+    text-align: center;
+    max-width: 100%;
+    font-size: x-large;
+    letter-spacing: .08rem;
+}
+.banner-text p {
+    display: block;
+    line-height: 1.5;
+    color: var(--white);
+    /* padding-right: 10px; */
+    margin: 0 auto;
     text-align: center;
     max-width: 100%;
     font-size: xx-large;
