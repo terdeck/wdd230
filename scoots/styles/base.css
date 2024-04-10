@@ -28,7 +28,7 @@ body {
     position: fixed;
     background-color: var(--dark-blue);
 }
-.banner-text strong {
+.banner-text strong, .banner-text p {
     display: block;
     line-height: 1.5;
     color: var(--white);
@@ -36,17 +36,12 @@ body {
     margin: 0 auto;
     text-align: center;
     max-width: 100%;
+}
+.banner-text strong {
     font-size: x-large;
     letter-spacing: .08rem;
 }
 .banner-text p {
-    display: block;
-    line-height: 1.5;
-    color: var(--white);
-    /* padding-right: 10px; */
-    margin: 0 auto;
-    text-align: center;
-    max-width: 100%;
     font-size: xx-large;
 }
 .banner-close {
@@ -266,7 +261,7 @@ footer {
     margin: 20px auto 10px auto;
 }
 .footer-contact {
-    margin: 10px 15px;
+    margin: 0px 15px;
     height: auto;
     display: block;
     text-align: left;
