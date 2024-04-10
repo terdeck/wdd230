@@ -60,7 +60,7 @@ function displayCurrentWeather(data) {
         <figcaption>${desc}</figcaption>
         `;
 
-    console.log();
+    // console.log();
 }
 
 function displayForecastWeather(data) {
@@ -96,11 +96,6 @@ function convertFahrenheitToCelsius(tempFahrenheit) {
     return ((tempFahrenheit - 32) * 5 / 9).toFixed(1);
 }
 
-// function weatherToggle() {
-//     fetchWeather();
-//     fetchForecast();
-//     console.log();
-// }
 function fetchWeatherData(){
     fetchWeather();
     fetchForecast();
@@ -109,35 +104,15 @@ function fetchWeatherData(){
 const toggleF = document.querySelector("#toggle-fahrenheit");
 const toggleC = document.querySelector("#toggle-celsius");
 
-// toggleF.addEventListener("click", () =>{
-//     isFahrenheit = true;
-//     fetchWeatherData().classList.add("fahrenheit");
-//     fetchWeatherData().classList.remove("celsius");
-//     fetchWeatherData().classList.remove("fahrenheit");
-//     fetchWeatherData().classList.add("celsius");
-// });
-
-// toggleC.addEventListener("click", () =>{
-//     isFahrenheit = false;
-//     fetchWeatherData().classList.add("celsius");
-//     fetchWeatherData().classList.remove("fahrenheit");
-//     fetchWeatherData().classList.remove("celsius");
-//     fetchWeatherData().classList.add("fahrenheit");
-// });
-
 toggleF.addEventListener("click", () => {
     isFahrenheit = true;
-    // weatherToggle();
     fetchWeatherData();
 });
 
 toggleC.addEventListener("click", () => {
     isFahrenheit = false;
-    // weatherToggle();
     fetchWeatherData();
 });
-
-// fetchWeatherData();
 
 fetchWeather();
 fetchForecast();
