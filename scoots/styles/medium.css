@@ -12,9 +12,8 @@
     body {
         max-width: 720px;
     }
-    .banner-content {
+    #home-banner {
         padding: 15px 75px;
-        max-width: 720px;
     }
     #logo {
         width: 200px;

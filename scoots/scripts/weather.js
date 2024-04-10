@@ -7,8 +7,6 @@ const currentHumid = document.querySelector("#current-humid");
 const forecastTemp = document.querySelector("#forecast-temp");
 const weatherIcon = document.querySelector(".weather-icon");
 const captionDesc = document.querySelector("figcaption");
-// const tempBanner = document.querySelector(".banner-content");
-const tempBanner = document.querySelector(".banner-text");
 
 let isFahrenheit = true;
 
@@ -119,20 +117,37 @@ toggleF.addEventListener("click", () =>{
 
 toggleC.addEventListener("click", () =>{
     isFahrenheit = false;
-    weatherToggle().classList.add("fahrenheit");
-    weatherToggle().classList.remove("celsius");
-    weatherToggle().classList.remove("fahrenheit");
     weatherToggle().classList.add("celsius");
+    weatherToggle().classList.remove("fahrenheit");
+    weatherToggle().classList.remove("celsius");
+    weatherToggle().classList.add("fahrenheit");
 });
 
 
 function displayHighTemp(data) {
+    // const highTemp = data.main.temp_max.toFixed(0);
+    // let tempBanner = document.querySelector(".banner-text");
+    // let displayTemp = document.createElement("section");
+    // let tempHigh = document.createElement("p");
+
+    // tempHigh.textContent = `<strong>Daily High Temp:</strong>${highTemp}`;
+
+    // displayTemp.appendChild(tempHigh);
+    // displayTemps.appendChild(displayTemp);
+    // // tempBanner.appendChild(displayTemp);
     const highTemp = data.main.temp_max.toFixed(0);
+    
+    let tempBanner = document.querySelector(".banner-text");
+    let tempHigh = document.createElement("p");
+    let strongElement = document.createElement("strong");
 
-    tempBanner.innerHTML = `<strong>Daily High Temp:</strong> ${highTemp}`;
+    strongElement.textContent = "Daily High Temp: ";
 
-    // displayHighTemp();
-    console.log();
+    tempHigh.appendChild(strongElement);
+    tempHigh.innerHTML += ` ${highTemp}&deg;F`;
+
+    tempBanner.appendChild(tempHigh); // Assuming 'tempBanner' is the container for your banner text
+    
 }
 const banner = document.getElementById("home-banner");
 const bannerClose = document.querySelector(".banner-close");
@@ -142,5 +157,8 @@ bannerClose.addEventListener("click", () => {
     console.log();
 });
 
+
 fetchWeather();
+// fetchWeather().then(displayHighTemp(data));
+// fetchWeather().then(displayHighTemp);
 fetchForecast();

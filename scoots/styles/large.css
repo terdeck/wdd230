@@ -12,10 +12,9 @@
     body {
         max-width: 100%;
     }
-    .banner-content {
+    #home-banner {
         padding: 20px 610px;
-        text-align: center;
-        width: max-content;
+        /* text-align: center; */
     }
     header {
         display: grid;
