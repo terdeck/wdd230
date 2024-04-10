@@ -87,21 +87,23 @@
         </div>
         <div class="weather-info">
             <h2>Forecast: </h2>
-            <div class="toggle-weather">
-                <button class="toggle-fahrenheit">℉</button>
-                <button class="toggle-celsius">℃</button>
+            <div id="toggle-weather">
+                <button id="toggle-fahrenheit">℉</button>
+                <button id="toggle-celsius">℃</button>
             </div>
             <div id="weather">
                 <h3>Current Temp: </h3>
                 <div class="current-temp">
                     <p><span id="current-temp"></span></p>
                     <figure>
-                        <img class="weather-icon" src="https://api.openweathermap.org/data/2.5/weather?lat=20.42&lon=-86.93&units=standard&appid=fb2b969328f7c67e812d01d18df50663" alt="weather icon">
+                        <!-- <img class="weather-icon" src="https://api.openweathermap.org/data/2.5/weather?lat=20.42&lon=-86.93&units=standard&appid=fb2b969328f7c67e812d01d18df50663" alt="weather icon"> -->
+                        <div class="weather-icon"></div>
                         <figcaption></figcaption>
                     </figure>
                     <p><span id="current-humid"></span></p>
                     <figure>
-                        <img class="weather-icon" src="https://api.openweathermap.org/data/2.5/weather?lat=20.42&lon=-86.93&units=standard&appid=fb2b969328f7c67e812d01d18df50663" alt="weather icon">
+                        <!-- <img class="weather-icon" src="https://api.openweathermap.org/data/2.5/forecast?lat=20.42&lon=-86.93&units=standard&appid=fb2b969328f7c67e812d01d18df50663" alt="weather icon"> -->
+                        <div class="weather-icon"></div>
                         <figcaption></figcaption>
                     </figure>
                 </div>
@@ -134,5 +136,6 @@
     </footer>
     <script src="scripts/hamnav.js"></script>
     <script src="scripts/weather.js"></script>
+    <script src="scripts/banner.js"></script>
 </body>
 </html>

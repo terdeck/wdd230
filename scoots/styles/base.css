@@ -200,7 +200,7 @@ main h2 {
     padding: 10px;
     margin-bottom: 75px;
 }
-.toggle-weather {
+#toggle-weather {
     display: flex;
     flex-direction: column;
     margin: 0 auto;
@@ -209,12 +209,12 @@ main h2 {
     color: white;
     background-color: var(--light-green);
 } */
-.toggle-fahrenheit:hover, .toggle-fahrenheit:active,
-.toggle-celsius:hover, .toggle-celsius:active {
+#toggle-fahrenheit:hover, #toggle-fahrenheit:active,
+#toggle-celsius:hover, #toggle-celsius:active {
     color: var(--white);
     background-color: var(--light-green);
 }
-.toggle-fahrenheit, .toggle-celsius {
+#toggle-fahrenheit, #toggle-celsius {
     border: none;
     width: 75px;
     padding: 5px;
